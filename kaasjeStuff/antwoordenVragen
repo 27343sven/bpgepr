@@ -1,0 +1,14 @@
+# 1
+Van de chinese aligator
+# 2
+Om te kijken hoe het komt dat dit dier zowel op het land als in het water kan leven.
+# 3
+cat blastOut | grep -A8 \<Iteration\> | grep \<Hit_id\> | cut -b11-22
+# de `namen`
+cat blastOut | grep -A8 \<Iteration\> | grep \<Hit_id\> | cut -b13-22 |sed 's!\(.*\)!https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nucleotide\&id=\1\&rettype=gb\&retmode=xml!g' | wget -q -i - -O - | grep \<GBSeq_definition\> | sed 's/ *<GBSeq_definition>\(.*\)<\/GBSeq_definition>/\1/g'
+
+# 4
+cat blastOut | grep -A10 \<Iteration\> | grep acc | sed 's/ *<Hit_accession>\(.*\)<\/Hit_accession>/\1/g'
+# de `namen`
+cat blastOut | grep -A10 \<Iteration\> | grep acc | sed 's/ *<Hit_accession>\(.*\)<\/Hit_accession>/\1/g' | sed 's!\(.*\)!https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=protein\&id=\1\&rettype=gb\&retmode=xml!g' | wget -q -i - -O - | grep \<GBSeq_definition\> | sed 's/ *<GBSeq_definition>\(.*\)<\/GBSeq_definition>/\1/g'
+

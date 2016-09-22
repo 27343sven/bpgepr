@@ -1,0 +1,13 @@
+#!/bin/bash
+# dit is een wrapper script om alles heen!
+# geschreven door partOfKaasje Community
+# 22 september
+# compile
+./encodeBASH shellkaasje kaasjeStommePython.py
+# (
+# geef uitvoer rechten
+chmod +x kaasjeStommePython.py
+# )
+# run
+echo "hi" | ./kaasjeStommePython.py
+# in nieuwe versies de sequentie meegeven

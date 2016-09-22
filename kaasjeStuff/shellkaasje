@@ -1,0 +1,72 @@
+#!/bin/bash
+# dit is het script dat werkt met de sequentie
+# dit werkt daadwerkelijk
+# het is intelectueel eigendom van de
+# partOfKaasje Community
+# 22 september
+
+# enkel de linux dingen zijn geïnplementeerd
+# grootste deel niet kunnen testen door
+# storing
+# dit script werkt het best in bash
+# of zsh
+
+# Dit script maakt gebruik van hexe
+# een ruby applicatie
+# nilsding heeft hexe geschreven bovenop een mit
+# licentie
+# je kunt natuurlijk die lijn weg halen
+# in de toekomst misschien de optimale
+# laadbalk
+# zit minstens 1 bug in
+function stage0 {
+	echo "We gaan blast Downloaden van de ftp sever
+	van ncbi. Dit duurt in de ochtend ongeveer 11 minuten en 41 seconden" 
+	mkdir .blast/
+	if test `uname -o` = "GNU/Linux";then
+	
+		wget ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/ncbi-blast-2.4.0+-x64-linux.tar.gz -O .blast/blast.tar.gz > /dev/null
+		if test $? -ne 0;then
+			echo "er is iets fout gegaan.
+:-(
+Is het internet toevallig uitgevallen
+ncbi kan ook offline zijn
+Of heeft jou organisatie de toegang tot ncbi of ftp:// geblokeerd?"
+			exit
+		fi
+		echo $?
+		date  +%S\ %N
+	fi
+	echo "blast is gedownload"
+	gunzip .blast/blast.tar.gz
+	cd .blast
+	tar -xf blast.tar
+	rm blast.tar
+	cd ..
+}
+
+function stage1 {
+echo $dog > .sequenties.fa
+
+}
+
+function stage2 {
+
+}
+
+echo hi
+hexe
+#just a comment
+
+dog=`cat`
+echo $dog | sed 's/s/p/g'
+if test "$dog" = "";then
+	echo "geef invoer mee"
+	exit
+fi
+#stage0
+#cow=`stage1 $dog`
+# cow is het organisme gevonden
+
+echo $cow
+stage2 $cow

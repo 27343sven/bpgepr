@@ -1,0 +1,7 @@
+#!/bin/bash
+# dit script verwijderd alle bestanden en mapjes die de andere scripts
+# maken
+# voor ontwikelaars doeleinden enkel
+# gemaakt door een deel van Kaasje
+rm -r .blast
+rm ./kaasjeStommePython.py

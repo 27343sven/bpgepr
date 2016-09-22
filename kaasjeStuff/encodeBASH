@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# deze functie whrapt om
+# base64 versleuteling heen
+function init {
+	operateFile="shellkaasje"
+	if test $# -gt 0;then operateFile=$1;fi
+	echo $operateFile
+}
+echo $*
+
+function uit {
+	if test $# -gt 1;then
+		echo "$encoded" > $2;
+	else
+		echo "$encoded"	  ;
+	fi
+}
+
+myFile=`init $*`
+encoded="#!/usr/bin/python3
+import base64
+import os
+os.system(base64.b64decode (\""
+
+export encoded="$encoded`base64 $myFile|tr -d '\n'`\"))"
+uit $*
