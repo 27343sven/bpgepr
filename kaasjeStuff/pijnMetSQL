@@ -1,0 +1,782 @@
+-- Dit SQL `script` is deel van de open part of kaasje `bpjeper` groep 
+-- Dit script wordt beschermd door copyright wetgeving en Nederland 
+-- en inernationale verdragen
+-- wordt 35 % of minder van de in commentariëerde regels in dit script 
+-- gebruikt voor parodiërende doeleinden zal dit worden gedoogd
+-- meer is illegaal!
+--
+-- Het part of kaasje ascii art logo is intelectueel eigendom van de
+-- bpdjeper part of open kaas groep
+--
+-- De scripts werken niet allemaal
+-- er word van uit gegaan dat er een database binnen de sql bevind met de naam
+-- `eenvalue`
+-- De waardes van deze tabel zijn losse nummers
+-- de output zij alle exonen, of alle intronen binnen een tabel
+-- waarbij het bereik binnen een cel staat
+-- Dit script is het laatst bewerkt rond 10 over tien
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--			 ______________________
+--			/  __	(_)			  /|
+--		   /  (__)		  _		 / |
+--		  /______________(_)___	/  |
+--		 /      _   {_}		  \/   |
+--		|	_  |_|			  |	   |
+--		|  / \	   []		  |	[] |
+--		|  \_/	/\    /\	  |	  /
+--		|	   |  |	  \/	  |	 /
+--		|		\_/			  | /
+--		|					  |/
+--		+---------------------+
+--
+--			PartOfKaasje
+--
+--			 BPDJEPPER
+--
+-- 
+-- deze code werkt niet
+-- kijk verder
+--
+select * from (
+	select exon_start, gen_id From (
+		select *, count(*),ROW_NUMBER() OVER (
+			order by gen_id
+		) From eenvalue group by exon_start, gen_id
+	) As kaas where row_number % 2 = 1) as kaaz
+inner join (
+	select exon_start, gen_id From (
+		select *, count(*), ROW_NUMBER() OVER (
+			order by gen_id
+		) From eenvalue group by exon_start, gen_id
+	) As kaas where row_number % 2 = 1) As minderKaas
+ON kaaz.gen_id = minderKaas.gen_id;
+
+-- ook deze code werkt niet, je bent er bijna
+select * from database;
+
+-- hieronder werkt het wel
+-- new one
+-- dit is exon
+-- waarschuwing
+-- meer code dan je zou moeten zien
+-- zwaarder dan je zou moeten tillen
+select kaaz.gen_id, kaaz.exon_start::text || E'\t-\t' || minderKaas.exon_start::text from (
+	select exon_start, gen_id, ROW_NUMBER() OVER (
+		PARTITION BY gen_id order by exon_start
+	) From (
+		select exon_start, gen_id From (
+			select *,ROW_NUMBER() OVER (
+				PARTITION BY gen_id order by exon_start
+				-- pak eenvalue
+				-- weergeef alles
+				-- inclusief het rij nummer
+				-- dit nummer verschilt per waarde
+				-- maar start weer bij 1
+				-- als er een nieuw gen ID
+			) From eenvalue group by exon_start, gen_id
+			-- pak alleen de on even nummers
+			-- ik weet niet of de sorteer nodig is
+		) As ks where row_number % 2 = 1 ORDER by gen_id, exon_start
+	) As kaas
+order by gen_id) As kaaz inner join (
+
+	select exon_start, gen_id, ROW_NUMBER() OVER (
+		PARTITION BY gen_id order by exon_start
+	) From (
+		select exon_start, gen_id From (
+			select *, ROW_NUMBER() OVER (
+				PARTITION BY gen_id order by exon_start
+				-- pak eenvalue
+				-- weergeef alles
+				-- inclusief het rij nummer
+				-- dit nummer verschilt per waarde
+				-- maar start weer bij 1
+				-- als er een nieuw gen ID
+			) From eenvalue group by exon_start, gen_id
+		) As ks where row_number % 2 = 0 ORDER by gen_id, exon_start
+			-- pak alleen de even nummers
+			-- ik weet niet of de sorteer nodig is
+	) As kaas
+) As minderKaas
+-- als rij gelijks is
+-- en gen ook
+-- voeg ze samen
+
+On kaaz.row_number = minderKaas.row_number and kaaz.gen_id = minderKaas.gen_id;
+
+
+-- somewhatmoreNew
+-- jet another tool to give introns becouse someone thinks it is
+-- reduntant?
+select kaaz.gen_id, kaaz.exon_start::text || E'\t-\t' || minderKaas.exon_start::text AS bereik from (
+	select exon_start, gen_id, ROW_NUMBER() OVER (
+		PARTITION BY gen_id order by exon_start
+	) From (
+		select exon_start, gen_id From (
+			select *, ROW_NUMBER() OVER (
+				PARTITION BY gen_id order by exon_start
+			) From eenvalue group by exon_start, gen_id
+		) As ks where row_number % 2 = 0 ORDER by gen_id, exon_start
+	) As kaas
+	order by gen_id) As kaaz
+inner join (
+	select exon_start, gen_id, ROW_NUMBER() OVER (
+	PARTITION BY gen_id order by exon_start
+	) From (
+		select exon_start, gen_id From (
+			select *, ROW_NUMBER() OVER (
+				PARTITION BY gen_id order by exon_start
+			) From eenvalue group by exon_start, gen_id
+		) As ks where row_number % 2 = 1 AND NOT row_number = 1 ORDER by gen_id, exon_start
+		-- als het 1 is gooi die weg want dat is het eerste punt van het exon
+	) As kaas
+) As minderKaas
+On kaaz.row_number = minderKaas.row_number and kaaz.gen_id = minderKaas.gen_id;
+
+-- fout!
+-- hieronder staat foute code
+-- neem deze niet over
+select kaaz.gen_id, kaaz.exon_start As "Start punt", minderKaas.exon_start As "Stop punt" from (
+	select exon_start, gen_id, ROW_NUMBER() OVER (
+		PARTITION BY gen_id order by exon_start
+	) From (
+		select exon_start, gen_id From (
+			select *, count(*),ROW_NUMBER() OVER (
+				PARTITION BY gen_id order by exon_start
+			) From (
+				select * from (
+					select * from eenvalue order by exon_start desc limit 4
+				) As nothingToSeeHereYouAreAllWrongGoHomeAndBeHappyBeLuckyHaveFun order by exon_start
+			) As thereIsNoUseInThisWhyAreYouStillReadinThis group by exon_start, gen_id
+		) As ks where row_number % 2 = 1 ORDER by exon_start
+	) As kaas
+order by gen_id) As kaaz inner join (
+
+	select exon_start, gen_id, ROW_NUMBER() OVER (
+		order by gen_id
+	) From (
+		select exon_start, gen_id From (
+			select *, count(*),ROW_NUMBER() OVER (
+				PARTITION BY gen_id order by exon_start
+			) From (
+				select * from (
+					select * from eenvalue order by exon_start desc limit 4
+				) As nothingToSeeHereYouAreAllWrongGoHomeAndBeHappyBeLuckyHaveFun order by exon_start
+			) As thereIsNoUseInThisWhyAreYouStillReadinThis group by exon_start, gen_id
+		) As ks where row_number % 2 = 0 ORDER by exon_start
+	) As kaas
+) As minderKaas
+On kaaz.row_number = minderKaas.row_number and kaaz.gen_id = minderKaas.gen_id;

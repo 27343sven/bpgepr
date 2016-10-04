@@ -46,17 +46,32 @@ Of heeft jou organisatie de toegang tot ncbi of ftp:// geblokeerd?"
 }
 
 function stage1 {
+
+# voer blast uit
 echo $dog > .sequenties.fa
+./.blast/ncbi-blast-2.4.0+/bin/blastp -query .sequenties.fa -remote -db nr -out .outPBlast
 
 }
 
 function stage2 {
-
+curl 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=protein&term=Alligator%20sinensis\[orgn\]&retstart=0&retmax=100000' | grep '<Id>' | sed 'sm\t*<Id>\(.*\)</Id>m\1mg' > .bestandMetIds
+if test $? = 1;then
+	echo "Je staat in een map waarin je niet mag schrijven
+Wat ook kan is dat iemand al een bestand hebt aangemaakt genaamd
+.bestandMetIds\n
+En andere rechten heeft."
+	exit
+else
+	if test `ls .bestandMetIds -hs | awk '{print $1}'` = 0;then
+		echo "Er is niks gedownload, heb je wel verbinding met
+internet/ncbi, als je dit script via een proxy/vpn
+route verzeker dan dat de vpn of proxy online is."
+		exit
+	fi
+fi
 }
 
-echo hi
-hexe
-#just a comment
+
 
 dog=`cat`
 echo $dog | sed 's/s/p/g'
