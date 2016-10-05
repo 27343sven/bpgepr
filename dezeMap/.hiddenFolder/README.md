@@ -20,10 +20,15 @@ omdat je
 de exonen on intronen hebt???
 dat was dan A?
 * B
-Coming soon
-=================
 
-We doen het beter
+        SELECT m.Eiwit_ID, t.positieve_aminozuren
+        FROM(
+        SELECT MAX(length(replace(Eiwit_Sequentie,'deqnstycmwailfvpg',''))) AS positieve_aminozuren 
+        FROM Eiwit_14
+        ) t JOIN Eiwit_14 m ON t.positieve_aminozuren = length(replace(Sequentie,'deqnstycmwailfvpg',''));
+  ;
+
+We doen [het](http://ddg.gg?q=A) beter
 
 	CREATE TABLE betterValue (gen_id int NOT NULL, EXON_START int NOT NULL, EXON_END int NOT NULL, PRIMARY KEY (Gen_ID, EXON_START, EXON_END));
 Zo wordt de <font color=red >exon</font> tabel?
