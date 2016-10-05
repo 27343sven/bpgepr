@@ -673,7 +673,7 @@ select * from database;
 -- waarschuwing
 -- meer code dan je zou moeten zien
 -- zwaarder dan je zou moeten tillen
-select kaaz.gen_id, kaaz.exon_start::text || E'\t-\t' || minderKaas.exon_start::text from (
+select kaaz.gen_id, minderKaas.exon_start - kaaz.exon_start As lengte from (
 	select exon_start, gen_id, ROW_NUMBER() OVER (
 		PARTITION BY gen_id order by exon_start
 	) From (
@@ -721,7 +721,7 @@ On kaaz.row_number = minderKaas.row_number and kaaz.gen_id = minderKaas.gen_id;
 -- somewhatmoreNew
 -- jet another tool to give introns becouse someone thinks it is
 -- reduntant?
-select kaaz.gen_id, kaaz.exon_start::text || E'\t-\t' || minderKaas.exon_start::text AS bereik from (
+select kaaz.gen_id,  minderKaas.exon_start - kaaz.exon_start As lengte AS lengte from (
 	select exon_start, gen_id, ROW_NUMBER() OVER (
 		PARTITION BY gen_id order by exon_start
 	) From (
