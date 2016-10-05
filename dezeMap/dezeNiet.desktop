@@ -1,0 +1,16 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=true
+# Indicates the type as listed above
+# The version of the desktop entry specification to which this file complies
+Name=dezeWel
+# De naam van de zooi
+Comment=PAN tool
+# A comment which can/will be used as a tooltip
+# The path to the folder in which the executable is run
+Exec=bash -c "\$(dirname \$1)/code.sh" dummy %k
+# The executable of the application.
+Icon=/home/jolohenk/contigs/schrikken.gif
+# Dit desktop bestand is gemaakt met hulp van
+# arch linux documentatie, Bedankt!

@@ -728,10 +728,7 @@ select kaaz.gen_id,  minderKaas.exon_start - kaaz.exon_start AS lengte from (
 		select exon_start, gen_id From (
 			select *, ROW_NUMBER() OVER (
 				PARTITION BY gen_id order by exon_start
-			) From (
-				SELECT gen_id, EXON_START  From bettervalue UNION
-				SELECT gen_id, EXON_END From bettervalue
-			) group by exon_start, gen_id
+			) From eenvalue group by exon_start, gen_id
 		) As ks where row_number % 2 = 0 ORDER by gen_id, exon_start
 	) As kaas
 	order by gen_id) As kaaz
@@ -742,10 +739,7 @@ inner join (
 		select exon_start, gen_id From (
 			select *, ROW_NUMBER() OVER (
 				PARTITION BY gen_id order by exon_start
-			) From (
-				SELECT gen_id, EXON_START  From bettervalue UNION
-				SELECT gen_id, EXON_END From bettervalue
-			) group by exon_start, gen_id
+			) From eenvalue group by exon_start, gen_id
 		) As ks where row_number % 2 = 1 AND NOT row_number = 1 ORDER by gen_id, exon_start
 		-- als het 1 is gooi die weg want dat is het eerste punt van het exon
 	) As kaas
