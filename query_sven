@@ -1,5 +1,5 @@
-SELECT m.Eiwit_ID, t.positieve_aminozuren
+SELECT m.Eiwit_ID, t.verhouding_positieve_aminozuren
 FROM(
-SELECT MAX(length(replace(Eiwit_Sequentie,'deqnstycmwailfvpg',''))) AS positieve_aminozuren 
+SELECT MAX(CAST(length(replace(Eiwit_Sequentie,'deqnstycmwailfvpg','')) AS DECIMAL)/CAST(length(Eiwit_sequentie) AS DECIMAL)) AS verhouding_positieve_aminozuren 
 FROM Eiwit_14
-) t JOIN Eiwit_14 m ON t.positieve_aminozuren = length(replace(Sequentie,'deqnstycmwailfvpg',''));
+) t JOIN Eiwit_14 m ON t.verhouding_positieve_aminozuren = length(replace(Sequentie,'deqnstycmwailfvpg',''));
