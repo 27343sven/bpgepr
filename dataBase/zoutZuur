@@ -1,0 +1,6 @@
+-- zoutzuur;
+-- de oplossing voor al je gecompliceerde
+-- database relatieproblemen
+DROP TABLE GEN_14;
+DROP TABLE EIWIT_14;
+DROP TABLE exon_14;

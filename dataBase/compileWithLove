@@ -1,0 +1,2 @@
+dog=`cat beerDiertje`
+psql -c "$dog"

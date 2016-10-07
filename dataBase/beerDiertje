@@ -1,0 +1,27 @@
+-- Dit document bevat hoe de tabellen er uit zien?
+-- het bevat nu 3 tabellen
+
+-- versie 0.0.1
+CREATE TABLE GEN_14 (
+	GEN_ID smallint,
+	gen_naam varchar,
+	chromosoomNummer smallint,
+	gen_Lengte smallint,
+	primary key (GEN_ID));
+
+CREATE TABLE EIWIT_14 (
+	EIWIT_ID smallint,
+	Eiwit_naam varchar,
+	gen_naam varchar,
+	Eiwit_sequentie varchar,
+	Accessienummer smallint,
+	primary key (eiwit_ID),
+	FOREIGN KEY
+);
+
+CREATE TABLE EXON_14 (
+	exon_ID smallint,
+	Start_exon smallint,
+	Stop_exon smallint,
+	gen_id smallint
+);
