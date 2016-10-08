@@ -1,0 +1,13 @@
+CREATE TABLE betterValue (gen_id int NOT NULL, EXON_START int NOT NULL, EXON_END int NOT NULL, PRIMARY KEY (Gen_ID, EXON_START, EXON_END));
+insert INTO bettervalue VALUES (1, 0, 20);
+insert INTO bettervalue VALUES (1, 34, 99);
+insert INTO bettervalue VALUES (1, 102, 120);
+insert INTO bettervalue VALUES (1, 143, 150);
+insert INTO bettervalue VALUES (1, 170, 590);
+insert INTO bettervalue VALUES (2, 0, 23);
+insert INTO bettervalue VALUES (2, 35, 120);
+insert INTO bettervalue VALUES (2, 600, 824);
+insert INTO bettervalue VALUES (2, 923, 987);
+insert INTO bettervalue VALUES (3, 0, 16);
+insert INTO bettervalue VALUES (3, 18, 19);
+insert INTO bettervalue VALUES (3, 54, 72);
