@@ -1,0 +1,70 @@
+SELECT * FROM (
+SELECT kaaz.gen_id,  minderKaas.exon_start - kaaz.exon_start AS lengte FROM (
+	SELECT exon_start, gen_id, ROW_NUMBER() OVER (
+		PARTITION BY gen_id ORDER BY exon_start
+	) FROM (
+		SELECT exon_start, gen_id FROM (
+			SELECT *, ROW_NUMBER() OVER (
+				PARTITION BY gen_id ORDER BY exon_start
+			) FROM (
+				SELECT gen_id, EXON_START FROM bettervalue UNION
+				SELECT gen_id, EXON_END FROM bettervalue
+			) AS myname GROUP BY exon_start, gen_id
+		) AS ks WHERE row_number % 2 = 0 ORDER BY gen_id, exon_start
+	) AS kaas
+	ORDER BY gen_id) AS kaaz
+	INNER JOIN (
+		SELECT exon_start, gen_id, ROW_NUMBER() OVER (
+			PARTITION BY gen_id ORDER BY exon_start
+		) FROM (
+			SELECT exon_start, gen_id FROM (
+				SELECT *, ROW_NUMBER() OVER (
+					PARTITION BY gen_id ORDER BY exon_start
+				) FROM (
+					SELECT gen_id, EXON_START FROM bettervalue UNION
+					SELECT gen_id, EXON_END FROM bettervalue
+				) AS nee GROUP BY exon_start, gen_id
+			) AS ks WHERE row_number % 2 = 1 AND NOT row_number = 1 ORDER BY gen_id, exon_start
+			-- als het 1 is gooi die weg want dat is het eerste punt van het exon
+		) AS kaas
+	) AS minderKaas
+	ON kaaz.row_number = minderKaas.row_number AND kaaz.gen_id = minderKaas.gen_id
+) AS TOTAL
+WHERE lengte = (
+	SELECT MAX(max) AS lengteGrootsteIntron FROM (
+		SELECT gen_id, MAX(lengte) FROM (
+			SELECT kaaz.gen_id,  minderKaas.exon_start - kaaz.exon_start AS lengte FROM (
+				SELECT exon_start, gen_id, ROW_NUMBER() OVER (
+					PARTITION BY gen_id ORDER BY exon_start
+				) FROM (
+					SELECT exon_start, gen_id FROM (
+						SELECT *, ROW_NUMBER() OVER (
+							PARTITION BY gen_id ORDER BY exon_start
+						) FROM (
+							SELECT gen_id, EXON_START FROM bettervalue UNION
+							SELECT gen_id, EXON_END FROM bettervalue
+						) AS myname group by exon_start, gen_id
+					) AS ks where row_number % 2 = 0 ORDER BY gen_id, exon_start
+				) AS kaas
+				ORDER BY gen_id
+			) AS kaaz
+			INNER JOIN (
+				SELECT exon_start, gen_id, ROW_NUMBER() OVER (
+					PARTITION BY gen_id ORDER BY exon_start
+				) FROM (
+					SELECT exon_start, gen_id From (
+						SELECT *, ROW_NUMBER() OVER (
+							PARTITION BY gen_id ORDER BY exon_start
+						) FROM (
+							SELECT gen_id, EXON_START FROM bettervalue UNION
+							SELECT gen_id, EXON_END FROM bettervalue
+						) AS nee group by exon_start, gen_id
+					) AS ks WHERE row_number % 2 = 1 AND NOT row_number = 1 ORDER BY gen_id, exon_start
+					-- als het 1 is gooi die weg want dat is het eerste punt van het exon
+				) AS kaas
+			) AS minderKaas
+			ON kaaz.row_number = minderKaas.row_number AND kaaz.gen_id = minderKaas.gen_id
+		) AS FINAL
+		GROUP BY gen_id
+	) AS latest
+);
