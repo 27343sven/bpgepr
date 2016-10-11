@@ -1,0 +1,15 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+# hier geen terminal voor nodig
+Terminal=true
+Name=klik hier op en installeer using $PATH
+# De naam van de productie
+Comment=linkerFile
+# A comment which can/will be used as a tooltip
+# The path to the folder in which the executable is run
+Exec=bash -c "\$(dirname \$1)/install.sh \$(dirname \$1)" dummy %k
+# The executable of the application.
+Icon=editor
+# Dit desktop bestand is gemaakt met hulp van
+# arch linux documentatie, Bedankt!

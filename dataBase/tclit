@@ -1,0 +1,156 @@
+#!/usr/bin/wish
+# semctl(2293766, 3, SETVAL, 0) failed: Ongeldig argument
+# is een error
+
+
+proc inputBox {{entryTexts {{"Insert a value" ""}}}} {
+    global _ok
+
+    set _ok ""
+    set t ".inputBox"
+    if {[winfo exists $t]} {destroy $t}
+    toplevel $t
+    wm geometry . +250+116
+    wm title . "InputBox"
+    wm transient $t .
+    wm protocol $t WM_DELETE_WINDOW "set _ok 0"
+    set f1 [frame $t.f1]
+    set f2 [frame $t.f2]
+    pack $f1 -side top -expand 1 -fill both
+    pack $f2 -side top -expand 1 -fill both
+
+    set pos 0
+    foreach entryText $entryTexts {
+        set f [frame $f1.f$pos]
+        label $f.l$pos -text [lindex $entryText 0]
+        entry $f.e$pos -show *
+        $f.e$pos insert end [lindex $entryText 1]
+        pack $f -side top -expand 1 -fill both
+        pack $f.l$pos $f.e$pos -side left -expand 1 -fill both
+        incr pos
+    }
+
+    button $f2.bOk -text "OK" -command "set _ok 1"
+    button $f2.bCancel -text "Cancel" -command "set _ok 0"
+
+
+    pack $f2.bOk $f2.bCancel -side left
+	bind $t <Return> "$f2.bOk invoke"
+    focus $f1.f0.e0
+
+    #wait for button
+    vwait _ok
+    if {$_ok==0} {
+        set tmp "_CANCEL"
+    } else {
+        set tmp [list]
+        set pos 0
+        foreach entryText $entryTexts {
+            lappend tmp [$f1.f$pos.e$pos get]
+            incr pos
+        }
+    }
+    destroy $t
+    unset _ok
+    return $tmp
+}
+
+if {! [file exists ".onzichtbaarBestand"] } {
+	tk_dialog .dialog1 "EULA" "Deze software is gelicenceert ondere de WFTPL versie 2.0 of hoger\n\
+	This work is free. You can redistribute it and/or modify it under the\n\
+	terms of the Do What The F*** You Want To Public License, Version 2,\n\
+	as published by Sam H*c**a*." info 0 "boeit me niet!"
+	set f [open ".onzichtbaarBestand" w]
+	puts $f ""
+	close $f
+}
+
+set q 1
+set onthoudOfVergeet "onthoud mijn wachtwoord"
+set ww ""
+while {$q==1} {
+	set reply [tk_dialog .foo "Okay???" "Wil je de database verwijderen \
+	\[oke\]\nDe database opbouwen\[oke\]\nof alle rows\[exon waarden\] toevoegen?" \
+		    questhead 0 \
+			"verwijderen" \
+			"maken" \
+			"invullen" \
+			"I'm not sure" \
+			"helemaal niks!"\
+			"\[dit werkt niet\]"\
+			$onthoudOfVergeet]
+	# verwijderen
+	if { $reply==0 } {
+		if {$ww== ""} {
+			set buttons {{"Vul je wachtwoord in" ""}}
+			set returnValues [inputBox $buttons]
+			puts stderr "$returnValues"
+			if {$onthoudOfVergeet == "vergeet mijn wachtwoord"} {
+				set ww "$returnValues"
+			}
+		}
+		if {[catch {if {$onthoudOfVergeet == "vergeet mijn wachtwoord"} {
+				exec -ignorestderr >&@stdout "./verwijderAsShellScript" "$returnValues\n"
+			} else {
+				exec -ignorestderr >&@stdout "./verwijderAsShellScript" "$ww\n"} }]
+		} {
+			puts ""
+		}
+	}
+	# maken !
+	if { $reply==1 } {
+		if {$ww== ""} {
+			set buttons {{"Vul je wachtwoord in" ""}}
+			set returnValues [inputBox $buttons]
+			puts stderr "$returnValues"
+			if {$onthoudOfVergeet == "vergeet mijn wachtwoord"} {
+				set ww "$returnValues"
+			}
+		}
+		if {[catch {if {$onthoudOfVergeet == "vergeet mijn wachtwoord"} {
+			exec -ignorestderr >&@stdout "./maakAsShellScript" "$returnValues\n"
+		} else {
+			exec -ignorestderr >&@stdout "./maakAsShellScript" "$ww\n"
+		}
+		}]} {
+			puts ""
+		}
+	}
+	if { $reply==2 } {
+		if {$ww== ""} {
+			set buttons {{"Vul je wachtwoord in" ""}}
+			set returnValues [inputBox $buttons]
+			puts stderr "$returnValues"
+			if {$onthoudOfVergeet == "vergeet mijn wachtwoord"} {
+				set ww "$returnValues"
+			}
+		}
+		if {[catch {
+			if {$onthoudOfVergeet == "vergeet mijn wachtwoord"} {
+				exec -ignorestderr >&@stdout "./vullAsShellScript" "$returnValues\n"
+			} else {
+				exec -ignorestderr >&@stdout "./vullAsShellScript" "$ww\n"
+			}
+		}]} {
+			puts ""
+		}
+	}
+	if { $reply==3} {
+	 after 1500 {destroy .dialog1}
+	 tk_dialog .dialog1 "geeft niet" "Maakt niet uit, denk er nog maar even over na" info 0 OK
+	}
+	if { $reply==4} {
+		set q 0
+		exit
+	}
+	if {$reply==5} {
+		exec -ignorestderr >&@stdout "./myscript" "$ww\n"
+	}
+	if { $reply==6} {
+		if {$onthoudOfVergeet=="onthoud mijn wachtwoord"} {
+			set onthoudOfVergeet "vergeet mijn wachtwoord"
+		} else {
+			set onthoudOfVergeet "onthoud mijn wachtwoord"
+		}
+	}
+}

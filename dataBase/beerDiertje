@@ -1,9 +1,13 @@
 -- Dit document bevat hoe de tabellen er uit zien?
 -- het bevat nu 3 tabellen
 
--- versie 0.0.1
+-- beste iedereen die dit leest,
+-- gen ID is groter dan smallint
+-- wijzig dit dus dan ook niet terug!
+-- oja genstart en stop trouwens ook!
+-- versie 0.1.0
 CREATE TABLE GEN_14 (
-	GEN_ID smallint,
+	GEN_ID int,
 	gen_naam varchar,
 	chromosoomNummer smallint,
 	gen_Lengte smallint,
@@ -15,13 +19,20 @@ CREATE TABLE EIWIT_14 (
 	gen_naam varchar,
 	Eiwit_sequentie varchar,
 	Accessienummer smallint,
-	primary key (eiwit_ID),
-	FOREIGN KEY
+	primary key (eiwit_ID)
 );
 
 CREATE TABLE EXON_14 (
-	exon_ID smallint,
-	Start_exon smallint,
-	Stop_exon smallint,
-	gen_id smallint
+	exon_I smallint,
+	gen_id int,
+	Start_exon int,
+	Stop_exon int,
+	primary key (exon_I, gen_id)
+
 );
+
+CREATE TABLE koppel_14 (
+	exon_I smallint,
+	eiwit_ID smallint,
+	primary key (exon_I, eiwit_ID)	
+)
