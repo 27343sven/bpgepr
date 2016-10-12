@@ -1,0 +1,1 @@
+cat Proteoom_* | tr "\n" " "| sed 's/>/\n>/g'| egrep "cytochrome c-type heme lyase"
