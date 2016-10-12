@@ -1,0 +1,14 @@
+
+
+
+
+
+1#
+cat enkele_xm_nummers | sed 's!\(.*\).*!http://www.ncbi.nlm.nih.gov/gene/?term=&!g'| wget -i- -q -O- > files_ncbi_voor_genid
+
+2#
+cat files_ncbi_voor_genid |egrep "Gene ID: [0-9]{9}" -o >alle_gen_id
+
+3#
+pr -m -t enkele_xm_nummers alle_gen_id > xm_met_gen_id
+
