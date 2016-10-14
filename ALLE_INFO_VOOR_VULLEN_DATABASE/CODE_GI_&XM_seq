@@ -1,0 +1,19 @@
+#1
+cat enkele_xm_nummers | sed 's!\(.*\).*!https://www.ncbi.nlm.nih.gov/nuccore/&?report=fasta!g'|wget -i- -q -O- >NCBI_gen_sequentie
+#2
+cat NCBI_gen_sequentie|egrep "val=\"[0-9]{9}" -o| sed 's/val=\"//g' > alle_gi
+#3
+pr -m -t -J enkele_xm_nummers alle_gi > lijst_XM_en_GI
+
+
+
+
+
+
+
+#1
+cat rna.fa | tr "\n||" " "| sed 's/>/\n>/g'|egrep -f enkele_xm_nummers | sed 's/mRNA/@/g'|tr "ref" "@"| sed 's/PREDICTED/@/g'| sed 's/ //g'| tr "@" " "| awk '{print $2 "\t" $NF}'> ALLE_XM_en_hun_sequentie
+
+
+
+
