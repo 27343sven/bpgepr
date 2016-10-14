@@ -1,0 +1,167 @@
+#!/bin/bash
+
+# officeel intellectueel eigenDOM van partOfKaasje open groep
+# ja ik had eigenlijk een functie moeten maken voor grep, maar boeit niet
+# " jes om ` zijn nuttig omdat bash
+# of welke shell je ook gebruikt
+# als de uitkomst van tussen de `` jes niks is
+# een foutmelding geef
+
+# deze functie kijkt of een array een bepaalde waarde bezit
+function bezit() {
+    local n=$#
+    local value=${!n}
+    for ((i=1;i < $#;i++)) {
+		if [ "${!i}" == "${value}" ];then
+			return 0
+		fi
+	}
+    return 1
+}
+
+# initialisatie van wat variablen
+w=false
+bTrace=false
+flist=()
+tlist=()
+noBounds=false
+putOn=false
+lbound=
+rbound=
+complementair=
+prolist=()
+
+
+# ja anders pakt hij of en spaties en nieuwe regels
+# of hij pakt niks
+# :-(
+old_ifs=$IFS
+IFS="
+"
+echo -e waarschuwing\!\\n\
+\\n\\n\\n\
+dit script werkt niet in alle talen zsh, \[da\]sh enz\
+een deel van het script werkt wel bij zsh\
+sh \(dash\) werkt niet omdat het geen arrays aan kan \
+ksh werkt niet omdat het \|\'s ofzo de andere kant op leest 
+#read
+
+# dit is trouwens de zwakste loop die ik ooit gezien heb
+# eerst een for loop over de xml
+# om te zien wat de start en stopposieties op het gen zijn
+# hierdoor werkt de rest goed
+# (hoop ik)
+for t in `cat $1`
+do
+	if test $noBounds = false;then
+		if test $putOn = true;then
+			if test "`echo $t | grep \</Seq-loc`" = "";then
+				if test "`echo $t | grep Seq-interval_from`" != "";then
+					echo -n "Het gen loopt van "
+					echo -n $t | sed 's/ *<Seq-interval_from>\(.*\)<\/Seq-interval_from>/\1/'
+					lbound=`echo -n $t | sed 's/ *<Seq-interval_from>\(.*\)<\/Seq-interval_from>/\1/'`
+					#echo $t
+				fi
+				if test "`echo $t | grep Seq-interval_to`" != "";then
+					echo -n " tot "
+					echo -n $t | sed 's/ *<Seq-interval_to>\(.*\)<\/Seq-interval_to>/\1/'
+					rbound=`echo $t | sed 's/ *<Seq-interval_to>\(.*\)<\/Seq-interval_to>/\1/'`
+					echo "."
+					if test $rbound -gt $lbound;then
+						complementair=oplopend
+					else
+						complementair=aflopend
+						echo Dit gen is aflopend.
+					fi
+					#echo $t
+					# hier kijken we of het oplopent of afdalend is
+				fi
+			else
+				#echo "ho"
+				putOn=false
+			fi
+		fi
+		
+		if test "`echo $t | grep Gene-commentary_label`" != "";then
+			if test "`echo $t | grep Assembly`" != "";then
+				putOn=true
+				#echo hi
+			fi
+		fi
+	fi
+done
+i=0
+for h in `cat $1`
+ 	do
+ 	# voeg dingen toe
+ 	if test "$w" = true
+ 		then #echo "$h"
+ 		if test "`echo $h | grep "Seq-interval_from"`" != "";then
+ 			flist+=("$h")
+		fi
+		if test "`echo $h | grep "Seq-interval_to"`" != "";then
+			tlist+=("$h")
+		fi
+	fi
+	# losse proteïne namen
+	if test "`echo $h | egrep "<Gene-commentary_accession>"`" != "";then
+		if test "`echo $h | sed -r 's/[ \t]*<Gene-commentary_accession>XP(.*)<\/Gene-commentary_accession>/\1/' | grep '<Gene-commentary_accession>'`" = ""
+			then
+				tijdelijkproteine=`echo -en $h | sed -r 's/[ \t]*<Gene-commentary_accession>(.*)<\/Gene-commentary_accession>/\1/'`
+				if bezit "${prolist[@]}" $tijdelijkproteine;then
+					echo -n ""
+				else
+					bTrace=true # volgens mij ondersteunt bash geen booleans
+					# vind je niet?
+					echo -en $h | sed -r 's/[ \t]*<Gene-commentary_accession>(.*)<\/Gene-commentary_accession>/\1/'
+					prolist+=("`echo -en $h | sed -r 's/[ \t]*<Gene-commentary_accession>(.*)<\/Gene-commentary_accession>/\1/'`")
+					echo " heeft de exonen:"
+				fi
+		else
+			w=false
+		fi
+	fi
+	# weergeef de exonen
+	if test "`echo $h | grep \<Gene-commentary_genomic-coords\>`" != ""
+		then # doe geen dubbele quotes om de echo anders moet je weer dingen doen met spaties
+			 # wacht laat maar
+			if test "$bTrace" = true;then
+					# hier nog als array leeg is
+					#echo -e ${#flist[@]}\\nDe array start nu\!
+					#echo `seq $(($(echo -e ${#flist[@]} ) -1))`
+					for b in `seq $(($(echo -e ${#flist[@]} ) -1))`
+					do
+						echo -en \\t$((`echo ${flist[$b]} | sed 's/ *<Seq-interval_from>\(.*\)<\/Seq-interval_from>/\1/'`- lbound))
+						echo -e -$((`echo ${tlist[$b]} | sed 's/[ \t]*<Seq\-interval_to>\(.*\)<\/Seq-interval_to>/\1/'` - lbound))
+						
+					done
+					w=true
+					flist=()
+					tlist=()
+					flist+=("a")
+					tlist+=("b")
+					echo ""
+			fi
+	else
+		if test `echo $h` = "</Gene-commentary_genomic-coords>";then
+			w=false
+		fi
+	fi
+	i=$((i+1))
+done
+# nog een laatste keer alles weergeven
+# weet niet of het nodig is, doe toch maar
+echo Wacht, wat is dit eigenlijk\?
+for b in `seq $(($(echo -e ${#flist[@]} ) -1))`
+do
+	echo -en \\t$((`echo ${flist[$b]} | sed 's/ *<Seq-interval_from>\(.*\)<\/Seq-interval_from>/\1/'`- lbound))
+
+	echo -e -$((`echo ${tlist[$b]} | sed 's/[ \t]*<Seq\-interval_to>\(.*\)<\/Seq-interval_to>/\1/'` - lbound))
+done
+w=true
+flist=()
+tlist=()
+flist+=("a")
+tlist+=("b")
+echo ""
+IFS=$old_ifs
