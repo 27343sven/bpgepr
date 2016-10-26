@@ -36,3 +36,24 @@ CREATE TABLE koppel_14 (
 	eiwit_ID smallint,
 	primary key (exon_I, eiwit_ID)	
 )
+
+CREATE TABLE PATHWAY_14 (
+	pathway_nummer smallint,
+	pathway_naam varchar(25),
+	primary key (pathway_nummer)
+)
+CREATE TABLE PATHWAY_KOPPEL (
+	eiwit_id smallint,
+	pathway_nummer smallint,
+	primary key (eiwit_id, pathway_nummer)
+)
+CREATE TABLE EC_KOPPEL (
+	eiwit_id smallint,
+	ec_nummer varchar(10),
+	primary key (eiwit_id, ec_nummer)
+)
+CREATE TABLE EC_14 (
+	ec_nummer varchar(10),
+	ec_naam varchar(20),
+	primary key (ec_nummer)
+)
