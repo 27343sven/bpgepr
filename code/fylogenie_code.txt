@@ -1,0 +1,16 @@
+
+
+
+#1 eiwitten van de bioserver af halen
+cat  Proteoom_01.fa Proteoom_04.fa Proteoom_05.fa Proteoom_06.fa Proteoom_08.fa Proteoom_09.fa Proteoom_10.fa Proteoom_11.fa  Proteoom_12.fa  Proteoom_13.fa  Proteoom_14.fa|tr "\n" " "| sed 's/>/\n>/g'|  egrep "cytochrome c-type heme lyase"
+
+#2 XP_014374584.1 is tekst bestand met daarin. (toch?)
+blastp -db nr -query XP_014374584.1 -remote -max_target_seqs 30 -outfmt 5 -out Blasttest
+
+#3
+cat Blasttest | awk '/<Hit_accession>/{print}/<Hsp_hseq>/{print}' | sed ':again;$!N;$!b again; s/<[^>]*>//g' | tr -d ' ' | sed 's/^/>/;n' > tpE_XP_sequentie
+
+#4
+cat XP_014374584.1 >> tpE_XP_sequentie 
+clustalw -TYPE=PROTEIN -ALIGN -infile=tpE_XP_sequentie -outfile=tpe2boom.aln
+
