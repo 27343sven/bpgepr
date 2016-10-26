@@ -1,0 +1,9 @@
+
+#1
+wget -q -O ncbiID_test "http://rest.kegg.jp/conv/ncbi-proteinid/asn"
+
+#2
+cat test_klaar | egrep XP_ | sort | uniq | awk -F"." '{print $1}' > XP_nummers_zonder_versie
+
+#3
+cat ncbiID_test | egrep -f XP_nummers_zonder_versie

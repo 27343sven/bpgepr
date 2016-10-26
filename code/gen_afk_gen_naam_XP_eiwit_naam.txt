@@ -1,0 +1,47 @@
+#opdracht B
+#1 Download het rna.fa bestand van de Alligator sinensis.
+wget ftp://ftp.ncbi.nlm.nih.gov/genomes/Alligator_sinensis/RNA/rna.fa.gz
+
+#2 Pak het gedownloade bestand uit.
+gunzip rna.fa.gz 
+
+#3 Maak er een database van.
+formatdb -pF -i rna.fa 
+
+#4 Blast de sequentie tegen de database en selecteer de XM_nummers en zet deze in een bestand.
+blastall -d rna.fa -i sequenties_groep_14.fa -p blastn -m9 | awk 'BEGIN{b=1}{if(substr($1,7,1)==b){print $1 "  " $2 "  "$NF;b+=1} else if (substr($1,6,2)==b){print $1 "  " $2 "  " $NF ; b+=1}}' | tr "|" " " | awk '{print $5}' > XM_nummers
+
+#5 Geeft van alle xm_nummers de ncbi site. De titelregels hiervan worden in een bestand gezet.
+# LET OP: dit kan even duren (paar minuten).
+
+cat XM_nummers | sed 's!\(.*\).*!http://www.ncbi.nlm.nih.gov/gene/?term=&!g'| wget -i- -q -O- | egrep "<title>" > alle_titels
+
+#6 Uit alle titel regels wordt de gennaam geselecteerd en in een bestand gezet.
+cat alle_titels | awk '{print $1}' |  cut -b8-66 > alle_genen_op_naam
+
+#7 Zet bestand "XM_nummers" en "alle_genen_op_naam" in een bestand.
+pr -m -t -J XM_nummers alle_genen_op_naam  > Lijst_gen_code_en_naam
+
+----------------------------------------------
+
+Opdracht 4, weekopdracht 2:
+
+#1 Maakt een bestand waarin alleen de unieke xm_nummers in zitten.
+cat XM_nummers | sort | uniq > enkele_xm_nummers
+
+#2 Download elke NCBI pagina van het XM nummer en zet deze in bestand "ncbi_page_file".
+cat enkele_xm_nummers | sed 's!\(.*\).*!http://www.ncbi.nlm.nih.gov/gene/?term=&!g'| wget -i- -q -O- > ncbi_page_file
+
+#opnieuw  LETOP
+cat enkele_xm_nummers| sed 's!\(.*\).*!http://www.ncbi.nlm.nih.gov/gene/?term=&!g'| wget -i- -q -O- |egrep -o "XP_[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9].[0-9]|<title>.*"|awk '{print $1}' | tr -d "\<title\>" > test_klaar
+
+#opnieuw LETOP
+cat test_klaar |egrep XP|sort|uniq > XP_nummers
+
+
+#5 Geeft van alle XP_nummers de ncbi site. De eiwit namen worden hiervan in een bestand gezet.
+# LET OP: dit kan even duren (paar minuten).
+cat XP_nummers | sed 's!\(.*\).*!http://www.ncbi.nlm.nih.gov/protein/?term=&!g'| wget -i- -q -O- | egrep "<title>" | awk -F"- " '{print $1}' | cut -d [ -f 1 | awk -v N=2 '{sep=""; for (i=N; i<=NF; i++) {printf("%s%s",sep,$i); sep=OFS}; printf("\n")}' > eiwit_namen
+
+#6 Zet bestand "XP_nummers" en "eiwit_namen" in een bestand.
+pr -m -t -J XP_nummers eiwit_namen  > Lijst_eiwit_code_en_naam

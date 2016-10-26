@@ -1,0 +1,4 @@
+#geeft alle informatie van de eiwitten op kegg. EC_nummer,pathway, naam ec[naam van ec is niet goed].
+
+#1
+cat alle_keg_asn_codes |sed 's%.*%http://www.genome.jp/dbget-bin/www_bget?&%'| wget -i- -O- -q |tr "/" "\n" | egrep "y\?asn[0-9][0-9][0-9][0-9][0-9]|ec:|\[EC|&nbsp;&nbsp;&nbsp;&nbsp" | tr " " "-"| sed 's@-\[EC\:@ @g'| sed 's@a-href=\"@ @g'| tr "<|>" "\t" | awk '{print $NF}' |tr "-" " " |sed ':a;N;$!ba;s/\nbr/ /g' | sed 's@&nbsp;@@g'|tr -d CDS| sed 's@102@\n102@g'

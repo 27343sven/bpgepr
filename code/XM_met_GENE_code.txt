@@ -1,0 +1,3 @@
+
+#1
+cat XM_nummers | sort | uniq | sed 's@.*@http://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore\&id=&\&retmode=text@' | wget -O- -i- -q | egrep GeneID -A3 | egrep [0-9]{9} -o | sort | uniq > gene_ids

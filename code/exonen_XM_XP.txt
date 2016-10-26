@@ -1,0 +1,10 @@
+
+
+
+
+#1 geeft alle info van exon table per XM.
+
+cat enkele_xm_nummers | sed 's!\(.*\).*!https://www.ncbi.nlm.nih.gov/gene/?term=&\&report=gene_table\&format=text!g'| wget -i- -q -O-> gen_table_files_ncbi
+
+#2 geeft alle exonen met xm en xp.
+cat gen_table_files_ncbi|egrep "[0-9]-[0-9]|XM_[0-9]{9}|XP_[0-9]{8}|XR_[0-9]|GENE" |egrep exons -v|tr " " -d|awk '{print $1}'|egrep "<" -v| sed 's/Exon-table-for\-\-mRNA\-\-//g'| sed 's/\-and\-protein\-/\t/g' | awk 'BEGIN{B = "test"} {if(substr($0, 1, 1) == "X" || substr($0, 1, 1) == "E"){B = $0;} else {print($0 "\t" B);};}'
