@@ -53,6 +53,7 @@ cat gen_table_files_ncbi|egrep "[0-9]-[0-9]|XM_[0-9]{9}|XP_[0-9]{8}|XR_[0-9]|GEN
 #-----------------------------------------------------------------------------------
 # INFO KEG , pathway, EC
 # Eiwit aan ASN code koppelen.
+
 #1
 wget -q -O ncbiID_test "http://rest.kegg.jp/conv/ncbi-proteinid/asn"
 wget http://rest.kegg.jp/link/asn/enzyme -O ASN_code_met_EC
@@ -70,20 +71,25 @@ cat asn_id_GEKOPPELD_MET_XPnummer|awk '{print $1}'> alleen_asn_id
 #5
 cat  alleen_asn_id |sed 's%.*%http://rest.kegg.jp/get/&%'| wget -i- -O- -q > alle_kegg_site
 
+# PATHWAY
+#10
+cat ASN_code_met_pathway | egrep -f alleen_asn_id |sort | sed 's/path://g' > Pathway_met_ASN
+#11
+cat Pathway_met_ASN |awk '{print $1}'|sort|uniq > alle_enkele_pathways
+#12
+cat alle_kegg_site | egrep -f alle_enkele_pathways |sed 's/PATHWAY//g'| sort|uniq| awk '{print $1 "@" $2 " "  $3 " " $4 " "$5 " " $6}'| tr "@" "\t" > pathwaycode_met_pathwaynaam
 
 #EC code
 #8
 cat ASN_code_met_EC | egrep -f alleen_asn_id |sort| sed 's/ec://g' > EC_code_met_ASN
-
-# PATHWAY
+#9
+cat alle_kegg_site | grep -o -P '(?<=\[).*(?=\])'|egrep "EC"|tr " " "\n"| tr -d "EC:" > alle_EC_nummers
 #10
-cat ASN_code_met_pathway | egrep -f alleen_asn_id |sort | sed 's/path://g' > Pathway_met_ASN
+cat alle_kegg_site | grep -o -P '(?<=K[0-9]{5}).*(?=\[)'| tr "/" "\n"| awk '{if(substr($0,1,2)=="  "){print substr($0,3,length($0))}else if(substr($0,1,1)==" "){print substr($0,2,length($0))}   else{print $0}}' > alle_ec_namen
 
 #11
-cat Pathway_met_ASN |awk '{print $1}'|sort|uniq > alle_enkele_pathways
+pr -m -t -J alle_EC_nummers alle_ec_namen > test_ec_naam
 
-#12
-cat alle_kegg_site | egrep -f alle_enkele_pathways |sed 's/PATHWAY//g'| sort|uniq| awk '{print $1 "@" $2 " "  $3 " " $4 " "$5 " " $6}'| tr "@" "\t" > pathwaycode_met_pathwaynaam
 #------------------------------------------------------------------------------------
 # Fylogenie
 
