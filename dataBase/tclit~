@@ -151,7 +151,7 @@ while {$q==1} {
 			puts ""
 		}
 	}
-	if { $reply==1 } {
+	if { $reply==2 } {
 		if {$ww== ""} {
 			set buttons {{"Vul je wachtwoord in" ""}}
 			set returnValues [inputBox $buttons]

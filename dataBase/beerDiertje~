@@ -11,7 +11,7 @@ CREATE TABLE GEN_14 (
 	GEN_ID int,
 	gen_naam varchar,
 	chromosoomNummer smallint,
-	gen_Lengte int,
+	gen_Lengte smallint,
 	primary key (GEN_ID));
 
 CREATE TABLE EIWIT_14 (
