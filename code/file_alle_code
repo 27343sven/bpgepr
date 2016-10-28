@@ -87,7 +87,7 @@ clustalw -TYPE=PROTEIN -ALIGN -infile=tpE_XP_sequentie -outfile=tpe2boom.aln
 #------------------------------------------------------------------------------------
 # Eiwit sequentie
 
-#code davy
+cat protein.fa | tr -d '\n' | sed 's/>/\n&/g' | egrep -f XP_nummers | sed 's/]/&\n/g'
 
 #------------------------------------------------------------------------------------
 #GEN ID met XM
