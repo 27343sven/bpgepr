@@ -1,4 +1,3 @@
-1234hello
 -- zoutzuur;
 -- de oplossing voor al je gecompliceerde
 -- database relatieproblemen
@@ -6,7 +5,3 @@ DROP TABLE GEN_14;
 DROP TABLE EIWIT_14;
 DROP TABLE EXON_14;
 DROP TABLE KOPPEL_14;
-DROP TABLE PATHWAY_14;
-DROP TABLE PATHWAY_KOPPEL;
-DROP TABLE EC_KOPPEL;
-DROP TABLE EC_14;

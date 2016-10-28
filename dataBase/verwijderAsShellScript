@@ -1,1 +1,1 @@
-echo $1 | sudo -S su - postgres -c "psql `cat .postSettings` < `pwd`/zoutZuur"
+echo $1 | sudo -S su - postgres -c "psql < `pwd`/zoutZuur" 

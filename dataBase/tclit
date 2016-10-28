@@ -2,29 +2,6 @@
 # semctl(2293766, 3, SETVAL, 0) failed: Ongeldig argument
 # is een error
 
-#
-# Dit script is de grafische frontend van BPDJEPPR
-#
-# Deze software is gelicenceert ondere de WFTPL versie 2.0 of hoger
-#	This work is free. You can redistribute it and/or modify it under the
-#	terms of the Do What The F*** You Want To Public License, Version 2,
-#	as published by Sam H*c**a*
-#
-# Dit is een insider build
-#	Versie rond de 43.0.1
-# Vijf jaar lang
-#
-# oja
-# het heeft meerdere opties
-# als je iets aanklikt word de desbetreffende dinges uitgevoerd
-# de versie werkt momenteel op WSL (onder Xming of vcxsrv)
-# binnen bash / tcl / ubuntu binnen windows
-# de postgreSQL zit [enkel] binnen windows, nu kan dat niet op WSL
-# als je een maak verwijder of vul optie gebruikt
-# word het wachtwoord gevraagt de optie onthoud wachtwoord
-# slaat het wachtwoord tijdelijk op in het geheugen
-# deze optie staat aan bij nieuwere versies
-#
 
 proc inputBox {{entryTexts {{"Insert a value" ""}}}} {
     global _ok
@@ -89,45 +66,20 @@ if {! [file exists ".onzichtbaarBestand"] } {
 }
 
 set q 1
-set onthoudOfVergeet "vergeet mijn wachtwoord"
+set onthoudOfVergeet "onthoud mijn wachtwoord"
 set ww ""
 while {$q==1} {
 	set reply [tk_dialog .foo "Okay???" "Wil je de database verwijderen \
 	\[oke\]\nDe database opbouwen\[oke\]\nof alle rows\[exon waarden\] toevoegen?" \
 		    questhead 0 \
+			"verwijderen" \
 			"maken" \
 			"invullen" \
-			"verwijderen" \
 			"I'm not sure" \
 			"helemaal niks!"\
 			"\[dit werkt niet\]"\
 			$onthoudOfVergeet]
 	# verwijderen
-	if { $reply==2 } {
-		if {$ww== ""} {
-			set buttons {{"Vul je wachtwoord in" ""}}
-			set returnValues [inputBox $buttons]
-			puts stderr "$returnValues"
-			
-			if {$onthoudOfVergeet == "vergeet mijn wachtwoord"} {
-				set ww "$returnValues"
-			}
-		}
-		# dit kan vast korter maar boeit niet
-		puts "$ww"
-		#puts [string compare "$ww" "_Cancel"]
-			if {[catch {if {$onthoudOfVergeet == "vergeet mijn wachtwoord"} {
-				if {! 0 == [string compare "$returnValues" "_CANCEL"]} {
-					exec -ignorestderr >&@stdout "./verwijderAsShellScript" "$returnValues\n"
-				}
-			} else {
-				if {! 0==[string compare "$ww" "_CANCEL"]} {
-					exec -ignorestderr >&@stdout "./verwijderAsShellScript" "$ww\n"}} }]
-			} {
-				puts ""
-			}
-	}
-	# maken !
 	if { $reply==0 } {
 		if {$ww== ""} {
 			set buttons {{"Vul je wachtwoord in" ""}}
@@ -138,20 +90,33 @@ while {$q==1} {
 			}
 		}
 		if {[catch {if {$onthoudOfVergeet == "vergeet mijn wachtwoord"} {
-			if {! 0 == [string compare "$returnValues" "_CANCEL"]} {
-				exec -ignorestderr >&@stdout "./maakAsShellScript" "$returnValues\n"
+				exec -ignorestderr >&@stdout "./verwijderAsShellScript" "$returnValues\n"
+			} else {
+				exec -ignorestderr >&@stdout "./verwijderAsShellScript" "$ww\n"} }]
+		} {
+			puts ""
+		}
+	}
+	# maken !
+	if { $reply==1 } {
+		if {$ww== ""} {
+			set buttons {{"Vul je wachtwoord in" ""}}
+			set returnValues [inputBox $buttons]
+			puts stderr "$returnValues"
+			if {$onthoudOfVergeet == "vergeet mijn wachtwoord"} {
+				set ww "$returnValues"
 			}
+		}
+		if {[catch {if {$onthoudOfVergeet == "vergeet mijn wachtwoord"} {
+			exec -ignorestderr >&@stdout "./maakAsShellScript" "$returnValues\n"
 		} else {
-			
-			if {! 0==[string compare "$ww" "_CANCEL"]} {
-				exec -ignorestderr >&@stdout "./maakAsShellScript" "$ww\n"
-			}
+			exec -ignorestderr >&@stdout "./maakAsShellScript" "$ww\n"
 		}
 		}]} {
 			puts ""
 		}
 	}
-	if { $reply==1 } {
+	if { $reply==2 } {
 		if {$ww== ""} {
 			set buttons {{"Vul je wachtwoord in" ""}}
 			set returnValues [inputBox $buttons]
@@ -162,13 +127,9 @@ while {$q==1} {
 		}
 		if {[catch {
 			if {$onthoudOfVergeet == "vergeet mijn wachtwoord"} {
-				if {! 0 == [string compare "$returnValues" "_CANCEL"]} {
-					exec -ignorestderr >&@stdout "./vullAsShellScript" "$returnValues\n"
-				}
+				exec -ignorestderr >&@stdout "./vullAsShellScript" "$returnValues\n"
 			} else {
-				if {! 0==[string compare "$ww" "_CANCEL"]} {
-					exec -ignorestderr >&@stdout "./vullAsShellScript" "$ww\n"
-				}
+				exec -ignorestderr >&@stdout "./vullAsShellScript" "$ww\n"
 			}
 		}]} {
 			puts ""
