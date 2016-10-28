@@ -12,5 +12,5 @@ COPY EXON_14 FROM 'C:/Users/Public/vullDataBase' DELIMITER ' '\"" \
 && mv genIDLength /mnt/c/Users/Public/vullDataBase \
 && cd ../dataBase \
 && echo $1 | sudo -S su - postgres -c "psql `cat .postSettings` <<< \"1234hello
-COPY GEN_14 FROM 'C:/Users/Public/vullDataBase' DELIMITER ' ' NULL AS 'NULL'\""
+COPY GEN_14 FROM 'C:/Users/Public/vullDataBase' DELIMITER ' ' WITH NULL AS 'NULL'\""
 # verplaats vullDataBase naar een plaats waar rechten zijn
