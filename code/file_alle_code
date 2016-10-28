@@ -18,6 +18,7 @@ blastall -d rna.fa -i sequenties_groep_14.fa -p blastn -m9 | awk 'BEGIN{b=1}{if(
 cat XM_nummers | sort | uniq > enkele_xm_nummers
 
 #5 Download elke NCBI pagina van het XM nummer en zet deze in bestand "ncbi_page_file".
+
 cat enkele_xm_nummers | sed 's!\(.*\).*!http://www.ncbi.nlm.nih.gov/gene/?term=&!g'| wget -i- -q -O- > ncbi_page_file
 
 #6
@@ -127,10 +128,15 @@ cat protein.fa | tr -d '\n' | sed 's/>/\n&/g' | egrep -f XP_nummers | sed 's/]/&
 #GEN ID met XM
 
 #1
-cat ncbi_page_file |egrep "Gene ID: [0-9]{9}" -o >alle_gen_id
+cat exonen_sven | awk '{print $2}' | sort | uniq | awk '{if(substr($0, 1, 1) != "E"){print $0}}' > XM_tabel_2
+
+cat XM_tabel_2 | sed 's!\(.*\).*!http://www.ncbi.nlm.nih.gov/gene/?term=&!g'| wget -i- -O- > files_ncbi_voor_genid
+
+cat files_ncbi_voor_genid |egrep "Gene ID: [0-9]{9}" -o >alle_gen_id
 
 #2
-pr -m -t enkele_xm_nummers alle_gen_id > xm_met_gen_id
+pr -m -t XM_tabel_2 alle_gen_id > xm_met_gen_id
+
 #------------------------------------------------------------------------------------
 #
 
