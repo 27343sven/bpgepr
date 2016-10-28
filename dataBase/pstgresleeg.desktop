@@ -8,7 +8,7 @@ Name=klik hier anders ook op!
 Comment=initdingetje
 # A comment which can/will be used as a tooltip
 # The path to the folder in which the executable is run
-Exec=bash -c "cd \$(dirname \$1);touch .postSettings;echo voltooit\;druk op enter;read me" dummy %k
+Exec=bash -c "cd \\$(dirname \\$1);touch .postSettings;echo voltooit\\;druk op enter;read me" dummy %k
 # The executable of the application.
 Icon=/home/jolohenk/bpgepr/bpgepr/dataBase/.superCoolLogo.png
 # Dit desktop bestand is gemaakt met hulp van

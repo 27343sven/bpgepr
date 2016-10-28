@@ -1,0 +1,1644 @@
+ENTRY       102367922         CDS       T02922
+NAME        PPOX
+DEFINITION  (RefSeq) protoporphyrinogen oxidase
+ORTHOLOGY   K00231  oxygen-dependent protoporphyrinogen oxidase [EC:1.3.3.4]
+ORGANISM    asn  Alligator sinensis (Chinese alligator)
+PATHWAY     asn00860  Porphyrin and chlorophyll metabolism
+            asn01100  Metabolic pathways
+BRITE       KEGG Orthology (KO) [BR:asn00001]
+             Metabolism
+              Metabolism of cofactors and vitamins
+               00860 Porphyrin and chlorophyll metabolism
+                102367922 (PPOX)
+            Enzymes [BR:asn01000]
+             1. Oxidoreductases
+              1.3  Acting on the CH-CH group of donors
+               1.3.3  With oxygen as acceptor
+                1.3.3.4  protoporphyrinogen oxidase
+                 102367922 (PPOX)
+POSITION    Un
+MOTIF       Pfam: Amino_oxidase
+DBLINKS     NCBI-ProteinID: XP_006038252
+            NCBI-GeneID: 102367922
+AASEQ       319
+            LADVAIDSLCRGVFAGDCRALSLRSCFPALFEAEQRHRSVLLGMALGAGKGPALDSALIR
+            RARAERWSQWSLRSGMETLPEALLDFTHSHGVELHCHAAPKRLQRTADQRWQIILEDGSI
+            MADHVISAIPAGALADLLPDEARPLAQALRGIQAVSVGVVNLQYDDATLPVTGFGHLVPS
+            FENSSLLGIVYDSVAFPEQNGAKGNSIRLTVMLGGAWFTQSFGDPETVLPATLLHQAQEA
+            VRTQLGVLATPSHSIVMVHKACLPQYTLGHCQRIETITRYLQQEGLPLSLVGASYEGVSV
+            IDCLYSAKMAVARLLGQAC
+NTSEQ       960
+            ctggccgacgtggccatagacagcctgtgccgcggggtgtttgctggggactgccgggcg
+            ctgagcctgcgctcctgcttcccggcgctgttcgaggctgagcagaggcaccgctccgtc
+            ctcctgggcatggccttgggggcagggaagggcccagccctggattcagctttgatccgc
+            agggcccgcgccgagcgctggagccagtggtcgctgcgcagcggcatggagacgctgcct
+            gaggccctgttggacttcacgcacagccatggcgtggagctgcactgccacgcggcccca
+            aagcgcctgcagcggacggccgaccagcgctggcagatcatcctggaggacggcagcatc
+            atggcagaccacgtgatcagtgccatcccggctggagctctggccgacctgctcccagat
+            gaggccaggccgctggctcaggcgctgcgcggcatccaggcggtgtcggtgggggtggtg
+            aacctgcagtacgatgatgccacgctgcccgtcacggggttcgggcacctggtgccctcc
+            tttgagaacagctccctgctgggcattgtctatgactcggtggcctttccagagcagaac
+            ggtgccaaaggcaattccatccggctcacggtgatgctgggaggcgcgtggttcacccag
+            agcttcggggacccagagaccgtgctgccagccacgctgctgcaccaagcccaagaggca
+            gtaaggacgcagctgggggtgttggctacgccttcccactccatcgtcatggtgcacaag
+            gcctgcctcccccagtacacacttggccactgccagaggatagaaaccatcacccggtac
+            ctacagcaggaggggttgccgctgagcctggtcggggcctcctatgagggtgtctccgtg
+            atcgactgcctctacagtgccaagatggctgtggccaggctcctaggccaggcctgctga
+///
+ENTRY       102368811         CDS       T02922
+NAME        HMOX2
+DEFINITION  (RefSeq) heme oxygenase 2
+ORTHOLOGY   K00510  heme oxygenase (biliverdin-producing) [EC:1.14.14.18]
+ORGANISM    asn  Alligator sinensis (Chinese alligator)
+PATHWAY     asn00860  Porphyrin and chlorophyll metabolism
+BRITE       KEGG Orthology (KO) [BR:asn00001]
+             Metabolism
+              Metabolism of cofactors and vitamins
+               00860 Porphyrin and chlorophyll metabolism
+                102368811 (HMOX2)
+            Enzymes [BR:asn01000]
+             1. Oxidoreductases
+              1.14  Acting on paired donors, with incorporation or reduction of molecular oxygen
+               1.14.14  With reduced flavin or flavoprotein as one donor, and incorporation of one atom of oxygen into the other donor
+                1.14.14.18  heme oxygenase (biliverdin-producing)
+                 102368811 (HMOX2)
+POSITION    Un
+MOTIF       Pfam: Heme_oxygenase
+DBLINKS     NCBI-ProteinID: XP_006034310
+            NCBI-GeneID: 102368811
+AASEQ       314
+            MLSDVMEASEGADEAEGLHYKEMEEENDVSPTDLSELLKEGTKESHDRAENTQFVKDFLK
+            GRIKKELFKLATVALYFTYSALEEEMDHNKDHPAFAPLYFPLELHRKKELAKDLKFFYGE
+            DWKEKIQCSEAAKCYVDRIHQVGQNEPELLVAHAYTRYMGDLSGGQVLKKVAQRALKLPS
+            SGKGIQFYVFENISNAQQFKQFYRARMNALDLDKKTKEKIVEEANAAFKFNMQVFDELDK
+            IGALLTEEAQDGGLPVHDGKGDLHKCPYYATKLGKGDASCPYHIAMAMLKQPTMQFILAA
+            CIAMAAGVAAWYVM
+NTSEQ       945
+            atgttgtctgatgtaatggaggcttcagagggagcagatgaagcagaagggttgcactac
+            aaagaaatggaagaagaaaatgatgttagtcccactgatctctcagagctgctaaaggag
+            gggaccaaggagtcccatgatcgtgcagagaacactcagtttgtcaaagacttcctgaaa
+            ggacggatcaagaaggagctctttaagctagcaactgtagcactctacttcacctactct
+            gccctggaagaagaaatggaccacaacaaggaccatccagcatttgcacctctctacttc
+            cctctggaacttcatcgaaaaaaagagttggctaaagacttgaaatttttttatggagaa
+            gactggaaagagaagatacagtgttcagaggcagccaagtgttatgtggatagaatccat
+            caagttgggcaaaatgagccagagctgctggtggcccatgcttacacgcgttatatgggg
+            gacctgtcaggggggcaggtgctgaaaaaggtggcccagagggccctaaagctacccagc
+            tctgggaaagggatccagttctatgtgtttgagaatatttccaatgcacagcagttcaag
+            cagttctacagggcaagaatgaatgccctggatttggacaagaaaaccaaggagaagatt
+            gtggaggaagccaatgcagcctttaaattcaacatgcaggtgtttgatgaattggacaag
+            attggtgcactgctaacagaagaagcccaagatggaggcctccctgtacatgatgggaaa
+            ggagacctgcacaaatgcccatactatgccacaaaactaggcaaaggggatgccagctgc
+            ccgtaccatattgccatggccatgctgaagcagcctaccatgcagttcattcttgcagct
+            tgcatcgccatggcagcaggagttgcagcctggtacgtgatgtga
+///
+ENTRY       102370025         CDS       T02922
+NAME        MMAB
+DEFINITION  (RefSeq) methylmalonic aciduria (cobalamin deficiency) cblB type
+ORTHOLOGY   K00798  cob(I)alamin adenosyltransferase [EC:2.5.1.17]
+ORGANISM    asn  Alligator sinensis (Chinese alligator)
+PATHWAY     asn00860  Porphyrin and chlorophyll metabolism
+            asn01100  Metabolic pathways
+BRITE       KEGG Orthology (KO) [BR:asn00001]
+             Metabolism
+              Metabolism of cofactors and vitamins
+               00860 Porphyrin and chlorophyll metabolism
+                102370025 (MMAB)
+            Enzymes [BR:asn01000]
+             2. Transferases
+              2.5  Transferring alkyl or aryl groups, other than methyl groups
+               2.5.1  Transferring alkyl or aryl groups, other than methyl groups (only sub-subclass identified to date)
+                2.5.1.17  cob(I)yrinic acid a,c-diamide adenosyltransferase
+                 102370025 (MMAB)
+POSITION    Un
+MOTIF       Pfam: Cob_adeno_trans
+DBLINKS     NCBI-ProteinID: XP_014373201
+            NCBI-GeneID: 102370025
+AASEQ       201
+            PPDAGAEPPARPAPRVYTRTGDKGFSSTFTGERRSKDDQVFEALGTTDELSSAIGLASEL
+            SSESGHIFAEQLHKVQCMLQDVGANIATPISSAREAHLKRTSFTEKPVLELEQWIDKYTE
+            QLPPLTAFILPSGGKSSAALHFSRAVCRRAERCVVPIVQAGEADPNVAKYLNRLSDYLFV
+            LARYAAMKEGKEEKIYTRSEP
+NTSEQ       606
+            ccgccggatgccggggcggagccgcccgccaggcccgccccgcgggtctacacccgcacc
+            ggggacaaaggattttccagcacattcacaggtgagaggaggtcaaaagacgatcaagta
+            tttgaagctttgggaacaacagatgaattgagttcagctattggacttgctagtgaatta
+            agcagtgaaagtggccatatatttgccgaacaactgcacaaagtccagtgcatgctgcag
+            gatgtcggggccaacattgccacccccatctcttcagccagggaggctcacttaaaacgg
+            acctcatttactgaaaaaccagtgctggagctggagcagtggattgataaatacacagaa
+            caacttccacctctcactgctttcattttgccttcaggaggtaagagtagcgctgccctt
+            cacttctccagagctgtctgccgcagagcagagagatgtgtggttcccatagtgcaagca
+            ggagaagcggatccaaacgtggccaaatatttgaacagactcagtgattatctcttcgtt
+            ttggcacgttacgctgcaatgaaggaagggaaggaagaaaaaatatacaccaggagtgag
+            ccgtaa
+///
+ENTRY       102370667         CDS       T02922
+NAME        CP
+DEFINITION  (RefSeq) ceruloplasmin
+ORTHOLOGY   K13624  ceruloplasmin [EC:1.16.3.1]
+ORGANISM    asn  Alligator sinensis (Chinese alligator)
+PATHWAY     asn00860  Porphyrin and chlorophyll metabolism
+BRITE       KEGG Orthology (KO) [BR:asn00001]
+             Metabolism
+              Metabolism of cofactors and vitamins
+               00860 Porphyrin and chlorophyll metabolism
+                102370667 (CP)
+            Enzymes [BR:asn01000]
+             1. Oxidoreductases
+              1.16  Oxidizing metal ions
+               1.16.3  With oxygen as acceptor
+                1.16.3.1  ferroxidase
+                 102370667 (CP)
+            Exosome [BR:asn04147]
+             Exosomal proteins
+              Exosomal proteins of cortical neuronal cells
+               102370667 (CP)
+POSITION    Un
+MOTIF       Pfam: Cu-oxidase_3 Cu-oxidase_2
+DBLINKS     NCBI-ProteinID: XP_006033005
+            NCBI-GeneID: 102370667
+AASEQ       1080
+            MKLFLLICFLACCCCQIWAVTREYYFGITETVWNYAPGTKNIISGQLFSEEEQSKVFLQR
+            GPDRIGSAYKKAIYVQYTDTSFKKTVEKPSWLGLLGPIIKAEVGDSIIVHLKNFASRSYT
+            LHPHGVKYTKENEGAFYPDNTKDLLKKDDTVKPGEQYTYQWDVTEDHGPAEGDDNCITRI
+            YHSHIDAPKDVASGLVGPLITCKKGTLDGGRDNQIDAEFTVMFSVMDENLSWYLDDNIKT
+            YCSEPARVDKENEDFQESNKMHSINGYMYGYLPNLTMCAGDRVKWHLFGMGNEADIHSAY
+            FHGQILTEKNHHIDSVSLFPATFVDALMIPKNPGEWMLSCQVNDHIEGGMQAIFEVKDCK
+            KPTIDQNESTNTRHYYIAAEEIIWNYGPTAINNFTGQELVTDGESQTFFEQGDKRIGGSY
+            KKAVYNEYTDNTFTKRKNRLPEEEHLGLLGPVIRAEVGDIIRVTFRNNGSHPFSIQSHGV
+            TYSKQNEGAFYNTISGGTEAPASHVSPGATFTYEWKVPQDAGPTQEDPDCITWLYYSATD
+            AVKDTNAGLVGPLLVCRKGSLLPSGKQKNVDKEFILLATVFDENLSWYLDENILMFIINP
+            DNIDKEDEDFQESNKMHSINGYMYGNQPGLKMCKGNTVSWHLIGLGSEVDIHGIYFSENT
+            FLTKGTRRDTVNLFPHTSLTAIMKPDSEGVFEVECLTTDHYLGGMKQKYKVEKCHWWNVD
+            PSLYLHEKTYYIAAVELEWDYSPNRTWEHERHEFHDESPGNPFLSKGNTFIGSKYKKAVY
+            REYTDSSFSTPKERAEEEEHLEILGPLLLANMGDKIKIVFKNMASRPYSIHAHGVKTGSS
+            TVAITNPGQTETYIWKIPERSTSGKGDPHCIPWAYYSAVDIVKDTFSGLIGTLVVCSDRY
+            LPSFQLQKKVQFALLFVVFDENESWYLDENIQTYSANPDQVNKEDEEFLESNKMHAINGK
+            VFGNLHGLTMHVGDKVNWYLMGMGNEVDMHTVHFHGHSFEYKRTGLYRADVFDLFPGTFQ
+            TVEMIPKYPGSWLLHCHVTDHIHAGMETTYTVLPNKRQSPLLTLLKQIKLQHQREEVGSH
+NTSEQ       3243
+            atgaagctgttcttactaatctgctttttggcttgttgctgttgccaaatctgggcagtg
+            accagagaatactactttggaattacagagaccgtttggaattatgcacctgggactaaa
+            aacataatatcgggacagcttttctcagaagaagaacaatctaaagtctttctccagagg
+            ggcccagacagaataggaagtgcttacaagaaagccatctacgtacaatacaccgatacc
+            tcgtttaaaaaaacagtggagaaaccctcctggctggggttacttggccccattattaag
+            gcagaagttggagattctattattgtccacttgaaaaactttgcttccagatcctacact
+            cttcatccacatggtgtgaaatacactaaagaaaatgaaggtgctttttatccagacaac
+            accaaagatttgctaaagaaagatgatactgtgaagcctggagaacagtatacttatcaa
+            tgggatgtgacagaagatcatggtccagctgaaggagatgataattgtattaccaggatt
+            tatcactcacatatagatgccccaaaggatgttgcctctgggcttgttggacctctgata
+            acatgcaagaaagggacactggatgggggacgtgataatcaaattgatgctgaatttact
+            gttatgttctctgtgatggatgaaaatctcagctggtatctggatgacaatatcaagaca
+            tattgttctgaacctgccagagttgacaaggaaaatgaagactttcaggagagtaataaa
+            atgcattcaatcaatggatacatgtatgggtaccttcccaatctcaccatgtgtgcagga
+            gatagggtgaagtggcacctttttggcatgggtaatgaagctgatatccactcagcttat
+            ttccatggacagatattgacagagaagaatcaccacattgactctgtgagcctcttccct
+            gctacatttgttgatgctctcatgataccaaaaaaccctggagaatggatgcttagctgc
+            caggtcaatgaccatatagaaggtggcatgcaggccatttttgaagtaaaagactgtaaa
+            aaacccacaattgatcagaatgagtctacaaacacaagacattactacattgccgctgag
+            gaaattatctggaactatggcccaactgcaataaataattttacaggacaggaattagtt
+            actgatggagagtctcagacattttttgagcaaggtgacaaaagaattggtggctcttac
+            aagaaagcagtttacaatgaatacacagacaacaccttcacaaagcgtaaaaatagactc
+            cctgaggaggaacatcttgggcttctaggaccagtcatcagagcggaagtgggtgacatc
+            atcagagtgaccttccgcaacaatggcagccacccattcagcatccagtcccatggtgtg
+            acctacagcaaacaaaatgagggagcattctacaataccatctctggaggcactgaagct
+            cctgcctcacatgtgagtcctggcgctacatttacatacgaatggaaggtgccacaagat
+            gcaggtcccacccaggaagatccagactgtattacctggctctattattcagctactgat
+            gcagtcaaagacaccaatgctggccttgtgggccctctcttagtctgcagaaaaggatct
+            ctgctcccctctgggaaacagaaaaatgtagacaaggagttcatcctacttgctacagta
+            tttgatgagaatctgagctggtacttggatgaaaatattttgatgtttataataaatcct
+            gacaacatagacaaagaagatgaagacttccaagagtccaacaaaatgcattccatcaat
+            ggatacatgtatggaaaccaacctggccttaagatgtgtaagggaaacacagtttcttgg
+            catttgattggcttgggatcagaagttgacatccatgggatatacttttcagaaaacaca
+            ttcctaaccaaaggaacaaggagggacacagtaaatctgtttccacatacctctctcaca
+            gcaattatgaagcctgactctgaaggggtttttgaagtggagtgcctcacaacagatcat
+            tatctggggggcatgaaacagaaatacaaagtggaaaaatgccattggtggaatgtggat
+            ccatcattatatttgcatgaaaagacttactacattgctgcagtggaactggaatgggac
+            tattcacccaacaggacatgggaacatgagaggcatgaattccatgatgaaagccctggc
+            aatccatttttaagtaagggtaatacgttcattggctcgaagtacaagaaagctgtatat
+            cgggaatacactgacagttcattcagtactcccaaagaaagggcagaggaggaagagcat
+            ctggaaattctagggccattactacttgcgaatatgggagataaaattaaaattgttttt
+            aagaacatggcttcaagaccttattctatacatgcccatggagtgaaaacagggagctcc
+            actgttgctataactaacccaggtcaaacagaaacatacatctggaaaattcctgagaga
+            tctacttctgggaaaggagatccacattgtatcccttgggcttattactcagctgtggat
+            atagtcaaggataccttcagtggattgataggaacacttgttgtctgtagtgaccgttat
+            ttgccatcatttcagttgcaaaagaaagttcagtttgctcttctttttgtggtttttgat
+            gaaaatgagtcttggtacttggatgaaaatatccaaacctattctgccaatccagaccaa
+            gtgaacaaagaggatgaggaattccttgaaagcaataaaatgcatgccatcaatgggaaa
+            gtgtttggaaacttacatggtcttacaatgcatgttggtgataaagtaaactggtatctg
+            atgggaatggggaatgaagtggatatgcatacagttcatttccacggccacagttttgag
+            tataagcgcacaggactttaccgggctgatgtttttgatctcttccctgggacatttcaa
+            acagtagaaatgattccaaagtatcctggctcctggctgctgcactgtcatgtgactgac
+            cacatccatgccggcatggaaaccacatatacagtactcccaaacaagaggcagtcccca
+            ttactaacactacttaaacaaataaagctgcaacatcaaagggaagaagttggctcccac
+            tga
+///
+ENTRY       102371445         CDS       T02922
+NAME        BLVRA
+DEFINITION  (RefSeq) biliverdin reductase A
+ORTHOLOGY   K00214  biliverdin reductase [EC:1.3.1.24]
+ORGANISM    asn  Alligator sinensis (Chinese alligator)
+PATHWAY     asn00860  Porphyrin and chlorophyll metabolism
+BRITE       KEGG Orthology (KO) [BR:asn00001]
+             Metabolism
+              Metabolism of cofactors and vitamins
+               00860 Porphyrin and chlorophyll metabolism
+                102371445 (BLVRA)
+            Enzymes [BR:asn01000]
+             1. Oxidoreductases
+              1.3  Acting on the CH-CH group of donors
+               1.3.1  With NAD+ or NADP+ as acceptor
+                1.3.1.24  biliverdin reductase
+                 102371445 (BLVRA)
+POSITION    Un
+MOTIF       Pfam: Biliv-reduc_cat GFO_IDH_MocA NAD_binding_3 UDPG_MGDP_dh_C
+DBLINKS     NCBI-ProteinID: XP_014382434
+            NCBI-GeneID: 102371445
+AASEQ       296
+            MIGTVVVGIGIAGSVRIRDLLNPVPSSPSEHLKLFGFVSRRNVGNVKEAKQINLEDALRN
+            KEIQAAIISTDNKNHEESVRMFLEAGKHVLVEYPMALSARAARDLWELAEQKGKVLHVEH
+            IELMTEEYKLLKKEVAGKELVKGLLHFTGGPLDEERSGFPSFNGIARLTWLIDLFGDLTV
+            TSATREEQKEKDYSRMTAHFETAVKKPLTWIEERGPGMKREKKINFCFTSGCLEKLPQPP
+            PATVGPFMQDQNLFAKKLLGQVSREELATEKWRILRCLDLAEEIQQHCEQPENIHS
+NTSEQ       891
+            atgattgggactgtggtggttggaattggaattgctggatcagtgcggatcagggacttg
+            ctgaatccagtcccttccagcccatctgagcatctgaagctgtttggctttgtatccagg
+            agaaatgtgggaaatgttaaagaggccaagcagattaacctggaagatgctctgagaaac
+            aaagagatccaagcagccatcatcagcacagacaacaaaaaccatgaagagagcgtcaga
+            atgtttctggaggctgggaaacatgtcctggttgagtatcccatggcactgtctgctagg
+            gcagcccgtgacctctgggagttggctgagcagaaaggtaaagtcctccatgtggagcac
+            attgaacttatgacggaagagtacaagctgctgaaaaaggaggtagctgggaaggaactt
+            gtcaagggactcctacacttcacaggtggtcccctggatgaagagcgatcaggcttcccc
+            tcttttaatggaattgcccgccttacttggctaattgatctctttggggaccttactgtc
+            acctcagccaccagagaggaacagaaagaaaaggattattccagaatgacagcccatttt
+            gagactgcagtcaagaaacctctgacttggattgaagaaaggggaccaggaatgaaacgt
+            gaaaagaaaatcaacttctgcttcacaagcggctgcctggagaagctccctcagccccca
+            ccagccacggtgggcccttttatgcaggatcagaatctctttgccaaaaaactgttgggc
+            caagtctccagggaggagctggctactgagaaatggcgtatcctgaggtgccttgacctt
+            gcagaggaaatacagcagcactgtgaacagccagagaatatccattcataa
+///
+ENTRY       102371719         CDS       T02922
+DEFINITION  (RefSeq) ferritin heavy chain B-like
+ORTHOLOGY   K00522  ferritin heavy chain [EC:1.16.3.2]
+ORGANISM    asn  Alligator sinensis (Chinese alligator)
+BRITE       Enzymes [BR:asn01000]
+             1. Oxidoreductases
+              1.16  Oxidizing metal ions
+               1.16.3  With oxygen as acceptor
+                1.16.3.2  bacterial non-heme ferritin
+                 102371719
+            Exosome [BR:asn04147]
+             Exosomal proteins
+              Exosomal proteins of other body fluids (saliva and urine)
+               102371719
+              Exosomal proteins of bladder cancer cells
+               102371719
+POSITION    Un
+MOTIF       Pfam: Ferritin Amidohydro_1
+DBLINKS     NCBI-ProteinID: XP_006019135
+            NCBI-GeneID: 102371719
+AASEQ       180
+            MESQVHQNFHADSEAAVNHFVNLELYASYVYLSMSYYFDRDDVALQNVAKLLKKQSHEHR
+            EQAEKLLQYQNKRGGHIVLQDIKKPEHDEWGNSLEAMQSALQLERAVNQALLDLHNLATG
+            KNDPHLCDFLESEYLDEQVKAIKELGDHLTNLKRLKVPQDGVGEYLFDRLTLGECNQEVC
+NTSEQ       543
+            atggagtctcaggtgcaccagaatttccatgctgactctgaggcagctgtgaaccacttt
+            gtaaacttggagttgtatgctagctatgtctacttatccatgtcatactactttgaccgt
+            gatgatgtggccctgcagaatgtggccaaactcctgaagaagcagtcgcatgagcacagg
+            gagcaggctgaaaagctcctgcaataccaaaacaagcgaggtggacacattgttttgcag
+            gacatcaagaaaccagagcatgatgaatgggggaacagcttggaagccatgcaatctgcc
+            ctgcagctggagagggctgtgaaccaggccctgctggacctccataacctggctacaggg
+            aaaaatgatcctcacctctgtgacttcctggagtcggagtacctggatgagcaggtgaag
+            gccatcaaggaacttggagaccacctaaccaatttgaagcgcctcaaggtgccacaagat
+            ggtgtaggggagtacctgtttgacagactcacccttggggagtgtaaccaagaagtgtgc
+            tga
+///
+ENTRY       102373181         CDS       T02922
+NAME        FTL
+DEFINITION  (RefSeq) ferritin light chain
+ORTHOLOGY   K00522  ferritin heavy chain [EC:1.16.3.2]
+ORGANISM    asn  Alligator sinensis (Chinese alligator)
+BRITE       Enzymes [BR:asn01000]
+             1. Oxidoreductases
+              1.16  Oxidizing metal ions
+               1.16.3  With oxygen as acceptor
+                1.16.3.2  bacterial non-heme ferritin
+                 102373181 (FTL)
+            Exosome [BR:asn04147]
+             Exosomal proteins
+              Exosomal proteins of other body fluids (saliva and urine)
+               102373181 (FTL)
+              Exosomal proteins of bladder cancer cells
+               102373181 (FTL)
+POSITION    Un
+MOTIF       Pfam: Ferritin Rubrerythrin
+DBLINKS     NCBI-ProteinID: XP_006014987
+            NCBI-GeneID: 102373181
+AASEQ       176
+            MDSQVRQNYHRDCEAAINRMVNMELYASYVYMSMSYYFDRDDVALQHVAHFFLEQSHEER
+            EHAERLLRFQNQRGGRVLLQDIKKPERDAWGSTLEAMEAALQLEKTVNQALLDLHRLASE
+            KADPHLCDLLESHYLDEQVKAIKKLGDYITNLRRLGPQGGLGEYLFDKHSLEGSSS
+NTSEQ       531
+            atggactcccaggtgcgccagaactaccaccgcgactgcgaggccgccatcaaccgcatg
+            gtgaacatggagctgtacgccagctatgtctacatgtccatgtcatactactttgaccgt
+            gacgatgtggcactacagcatgtggcccacttcttcctggagcagtcacatgaggagcgg
+            gagcacgccgagcgcctgctgcgcttccagaaccagcgtggaggccgcgtcctgctccag
+            gacatcaagaagccagagcgagatgcttggggctccacactggaggccatggaggctgcg
+            ctgcagctggagaagactgtcaaccaggccctgctggacctgcaccgactggcctccgag
+            aaggctgacccccatctctgtgacctgctggagtcccactacctggacgagcaagtgaaa
+            gccatcaagaagctgggcgactatatcaccaacctgcgccgcctgggtccccagggggga
+            ctgggcgagtacctcttcgacaagcacagcctggagggcagcagcagctga
+///
+ENTRY       102373260         CDS       T02922
+NAME        GUSB
+DEFINITION  (RefSeq) glucuronidase beta
+ORTHOLOGY   K01195  beta-glucuronidase [EC:3.2.1.31]
+ORGANISM    asn  Alligator sinensis (Chinese alligator)
+PATHWAY     asn00040  Pentose and glucuronate interconversions
+            asn00531  Glycosaminoglycan degradation
+            asn00860  Porphyrin and chlorophyll metabolism
+            asn00983  Drug metabolism - other enzymes
+            asn01100  Metabolic pathways
+            asn04142  Lysosome
+MODULE      asn_M00014  Glucuronate pathway (uronate pathway)
+            asn_M00076  Dermatan sulfate degradation
+            asn_M00077  Chondroitin sulfate degradation
+            asn_M00078  Heparan sulfate degradation
+            asn_M00129  Ascorbate biosynthesis, animals, glucose-1P => ascorbate
+BRITE       KEGG Orthology (KO) [BR:asn00001]
+             Metabolism
+              Carbohydrate metabolism
+               00040 Pentose and glucuronate interconversions
+                102373260 (GUSB)
+              Glycan biosynthesis and metabolism
+               00531 Glycosaminoglycan degradation
+                102373260 (GUSB)
+              Metabolism of cofactors and vitamins
+               00860 Porphyrin and chlorophyll metabolism
+                102373260 (GUSB)
+              Xenobiotics biodegradation and metabolism
+               00983 Drug metabolism - other enzymes
+                102373260 (GUSB)
+             Cellular Processes
+              Transport and catabolism
+               04142 Lysosome
+                102373260 (GUSB)
+            Enzymes [BR:asn01000]
+             3. Hydrolases
+              3.2  Glycosylases
+               3.2.1  Glycosidases, i.e. enzymes that hydrolyse O- and S-glycosyl compounds
+                3.2.1.31  beta-glucuronidase
+                 102373260 (GUSB)
+POSITION    Un
+MOTIF       Pfam: Glyco_hydro_2_C Glyco_hydro_2_N Glyco_hydro_2 PAD_porph
+DBLINKS     NCBI-ProteinID: XP_014379983
+            NCBI-GeneID: 102373260
+AASEQ       569
+            MPVPASFNDITQDPNLRRFIGWVWYEKEVLLPKHWLQDTFKTRVVLRVGSAHYYAIVWVN
+            GVQVVEHEGGHLPFEADISTIVQASPGDPCRITIAVNNTLSPYTLPPGTIQYLKDESKYP
+            KGYFVQNTKFDFFNYAGIHRPVVVYTTPVAYIDDITVTTALSGNIGVVRYEVSVIGSSQY
+            SLSLNLREKEGKVVATGQEAVGELKVVDPKLWWPYLMHENPGYLYYLEVKLSAQVDEDLT
+            EDVYTVPVGIRTVHVTSSQFLINGKPFYFHGVNKHEDADIRGKGLDWSLIAKDFNLLKWL
+            GANSFRTSHYPYAEEIMDLCDTYGIVVIDECPGVGMKDIENFGNQSLAHHLVVMEELIRR
+            DKNRPSVVMWSVANEPASELPPAANYFKTVIAHTKAIDPTRPVTFVSNANYARDHGAPYV
+            DVICVNSYFSWYHDSGHLEVIQLQLNTQFENWYETYHKPIIQSEYGADAVSGLHSDPPLM
+            FSEEYQVAVLKQYHAVLDKKRKEYVIGELIWNFADFMTDQAVTRVLGNKKGIFTRQRQPK
+            PAAFVLRDRYWKLANESSCLPRTVQYYNL
+NTSEQ       1710
+            atgccagtacctgccagcttcaatgacatcactcaggatcccaacctgcggcgattcatc
+            ggctgggtgtggtatgagaaggaggtgctgcttcccaagcactggcttcaggacaccttc
+            aagacccgggtggtgcttcgggtgggcagcgcccattactatgccatagtgtgggtcaat
+            ggagtgcaggttgtggagcatgaagggggccacctcccctttgaagctgacataagcacc
+            attgttcaagccagccctggagatccatgccgcatcaccatcgcagtcaacaacacgctg
+            tcgccatacactctgcctcctgggacgattcagtacctgaaggatgagtctaagtatccc
+            aagggctactttgtacagaacaccaagtttgattttttcaactatgcgggaattcaccgc
+            ccggttgtggtgtacacaacccctgttgcctacatagacgacatcactgtgactactgcc
+            ctctcggggaacatcggtgtggtgcgatatgaggtatcggtgattggcagctcacaatac
+            tccttgtcactgaatttacgtgagaaagagggaaaagtggttgccacaggccaggaagct
+            gtgggggaattgaaagtggtggatcccaaactttggtggccttatctgatgcatgaaaac
+            cctggctacctttactatttagaggttaaattgtcagcccaggtggacgaggacctgact
+            gaggatgtgtacacagtccctgttgggatccgcactgtacatgtgaccagcagccagttc
+            ctcatcaacgggaaacccttctacttccacggagtcaacaagcatgaagatgctgacatc
+            cgtggtaaaggactggactggtccctgatcgccaaggacttcaacttgctgaagtggctt
+            ggagctaattccttccgcacgagccactatccgtatgcagaggagatcatggatctgtgc
+            gacacatatggcatcgtggttattgatgagtgtcctggagtggggatgaaagacattgag
+            aacttcgggaaccaatccttggcacatcatctggtggtgatggaggagctgatccgcagg
+            gataaaaacaggccatcggtcgtgatgtggtctgtagccaatgagcccgcctcagagctg
+            cctccagcagctaactacttcaagacagtgatagctcatactaaagccattgatcccacc
+            agacctgtaacctttgtgtcaaatgctaattacgctcgtgatcacggtgctccttatgtt
+            gatgtaatttgtgtaaatagctacttctcctggtaccacgactctggccacttggaggtt
+            attcagctgcaactcaatacacagtttgagaactggtatgaaacctaccacaaacccatt
+            atccagagtgaatatggagcagacgctgtatctgggctgcacagtgatccaccactgatg
+            ttcagcgaggagtaccaggtagcagtgctgaagcaataccatgctgtcttggacaagaag
+            aggaaggagtatgtgatcggggagctcatttggaactttgctgatttcatgacggaccaa
+            gctgtgacacgcgttttggggaacaagaaagggatatttactcgtcaacggcaacctaag
+            ccagctgcgtttgttctcagagacagatactggaagcttgcaaatgaatcaagttgtctt
+            cctcgtacagtgcagtattataacctatga
+///
+ENTRY       102373399         CDS       T02922
+NAME        HMOX1
+DEFINITION  (RefSeq) heme oxygenase 1
+ORTHOLOGY   K00510  heme oxygenase (biliverdin-producing) [EC:1.14.14.18]
+ORGANISM    asn  Alligator sinensis (Chinese alligator)
+PATHWAY     asn00860  Porphyrin and chlorophyll metabolism
+BRITE       KEGG Orthology (KO) [BR:asn00001]
+             Metabolism
+              Metabolism of cofactors and vitamins
+               00860 Porphyrin and chlorophyll metabolism
+                102373399 (HMOX1)
+            Enzymes [BR:asn01000]
+             1. Oxidoreductases
+              1.14  Acting on paired donors, with incorporation or reduction of molecular oxygen
+               1.14.14  With reduced flavin or flavoprotein as one donor, and incorporation of one atom of oxygen into the other donor
+                1.14.14.18  heme oxygenase (biliverdin-producing)
+                 102373399 (HMOX1)
+POSITION    Un
+MOTIF       Pfam: Heme_oxygenase Com_YlbF
+DBLINKS     NCBI-ProteinID: XP_006026050
+            NCBI-GeneID: 102373399
+AASEQ       299
+            METSRMASPETTTRDLSESIKEATKEVHEQAENTEFMKKFQKAQVSLQEFKLVTASLYHI
+            YSALEEEIERNKEHPAYAPVYFPAELHRKDALEQDLEYFYGPTWREEIPCSQATQKYVER
+            IHYVGQHEPETLVAHAYTRYLGDLSGGQVLKKIAQKALQLPVTGDGLAFFTFDGVSSATK
+            FKQLYRSRMNSIEMDPATRDXXXXXXXXXXXTCLQKIQLFQELQKMVSQGDENNHPAQQK
+            PELRTRNTNRTHEHASAPMKDDGKAKMRHMDLLPSTPLVRWILALSFIVTTVAVGFFAM
+NTSEQ       900
+            atggaaacgtccaggatggccagccctgaaaccacaaccagagacctgtcagaatccata
+            aaggaagccaccaaggaggtgcatgaacaggcagagaacacagagttcatgaagaaattt
+            cagaaggcacaggtgtcactccaggaatttaagctggttacagcttctttgtaccacatc
+            tactctgctctggaggaggagattgagcgtaacaaggagcacccagcctatgcccctgtt
+            tacttcccagctgagcttcaccgcaaagatgccctggaacaagacttggagtatttctat
+            ggccctacgtggagggaagagatcccttgttcccaggccactcagaaatatgtggagagg
+            atccactatgtgggtcagcatgaacctgagaccctggtagcccatgcctatacaagatat
+            ttgggagatctgtctggtgggcaggtgctaaagaagatagcccagaaagctcttcagttg
+            cctgttactggagatggcctagcttttttcacttttgatggtgtgtccagtgccacaaag
+            ttcaagcagctctatcggtcccggatgaattccatcgagatggacccagccaccagagac
+            aannnnnnnnnnnnnnnnnnnnnnnnnnnnnnnacatgcctgcaaaaaatacaactgttt
+            caagagctgcagaagatggtgtctcagggcgacgagaacaatcaccctgcacaacagaag
+            ccagagcttcgcacaaggaacacgaacagaacacatgagcacgcttcagctcccatgaaa
+            gatgacggaaaggcaaagatgaggcacatggacctgctgcccagcactcctcttgtacgg
+            tggattctcgcccttagcttcatagtgacaacagtggctgtgggcttctttgccatgtga
+///
+ENTRY       102373916         CDS       T02922
+DEFINITION  (RefSeq) protoheme IX farnesyltransferase, mitochondrial
+ORTHOLOGY   K02257  protoheme IX farnesyltransferase [EC:2.5.1.-]
+ORGANISM    asn  Alligator sinensis (Chinese alligator)
+PATHWAY     asn00190  Oxidative phosphorylation
+            asn00860  Porphyrin and chlorophyll metabolism
+            asn01100  Metabolic pathways
+BRITE       KEGG Orthology (KO) [BR:asn00001]
+             Metabolism
+              Energy metabolism
+               00190 Oxidative phosphorylation
+                102373916
+              Metabolism of cofactors and vitamins
+               00860 Porphyrin and chlorophyll metabolism
+                102373916
+            Enzymes [BR:asn01000]
+             2. Transferases
+              2.5  Transferring alkyl or aryl groups, other than methyl groups
+               2.5.1  Transferring alkyl or aryl groups, other than methyl groups (only sub-subclass identified to date)
+                2.5.1.-  
+                 102373916
+            Prenyltransferases [BR:asn01006]
+             Compound prenylation
+              Protoheme farnesyltransferase
+               102373916
+            Mitochondrial biogenesis [BR:asn03029]
+             Mitochondrial quality control factors
+              Mitochondrial respiratory chain complex assembly factors
+               Complex-IV assembly factors
+                102373916
+POSITION    Un
+MOTIF       Pfam: UbiA SID-1_RNA_chan
+DBLINKS     NCBI-ProteinID: XP_006030155
+            NCBI-GeneID: 102373916
+AASEQ       212
+            PLLAVSFAASCAIPGIALLTLGVNSLTGALGAFNIFLYTCCYTPMKRMSIANTWVGAVVG
+            AIPPIMGWTAATGSLDPGALLLGGILYSWQFPHFNALSWNLREDYSRGGYCMMSVTHPAM
+            CKRVALRHCLALIGLSTMAPVLDVTTWTFPVISLPINLYISYLGFRFYRDADRSSSRSLF
+            FCSLWHLPMLLLLMLTCKKSLIENDDKGKLQS
+NTSEQ       640
+            tccactccttgctgtgtcctttgctgcctcctgtgcaattccaggaatcgccctgttgac
+            actgggagtaaattctctcactggggcactaggagccttcaacattttcctctacacatg
+            ttgttatacaccaatgaaaagaatgagcattgccaacacatgggtgggggctgttgttgg
+            tgccattcctcccatcatgggctggactgcagctactggcagtcttgatcctggtgcatt
+            actgctgggaggaattctctactcctggcagttccctcatttcaatgccctgagctggaa
+            cctccgggaggattattcccgaggaggatactgtatgatgtccgtcacccacccggcaat
+            gtgcaagcgggtagctctgcgtcattgtttggccttaattggactctcaacaatggcccc
+            tgtcctcgacgtcaccacgtggactttccctgtcatttcactccctatcaatctgtatat
+            ttcctacctcggctttcggttctacagggatgcggaccgcagcagctccagaagtctttt
+            tttctgcagtctgtggcacttaccaatgcttctgcttctcatgctcacgtgtaagaaatc
+            tctgatagagaatgacgacaaagggaagcttcaaagctga
+///
+ENTRY       102374239         CDS       T02922
+NAME        UROS
+DEFINITION  (RefSeq) uroporphyrinogen III synthase
+ORTHOLOGY   K01719  uroporphyrinogen-III synthase [EC:4.2.1.75]
+ORGANISM    asn  Alligator sinensis (Chinese alligator)
+PATHWAY     asn00860  Porphyrin and chlorophyll metabolism
+            asn01100  Metabolic pathways
+BRITE       KEGG Orthology (KO) [BR:asn00001]
+             Metabolism
+              Metabolism of cofactors and vitamins
+               00860 Porphyrin and chlorophyll metabolism
+                102374239 (UROS)
+            Enzymes [BR:asn01000]
+             4. Lyases
+              4.2  Carbon-oxygen lyases
+               4.2.1  Hydro-lyases
+                4.2.1.75  uroporphyrinogen-III synthase
+                 102374239 (UROS)
+POSITION    Un
+MOTIF       Pfam: HEM4
+DBLINKS     NCBI-ProteinID: XP_006026645
+            NCBI-GeneID: 102374239
+AASEQ       262
+            MKVLLLKDPKERDSGPDPYIQELGSYGFEATLIPVLSFEFVSLQSLFEKLSHPECYGGLI
+            FTSPRAVEAVKLCLKENSKNEAWTKSLKQKWNAKSTYVVGKATASLVEEIGLAPQGEKCG
+            NAEKLAGYICSKETPNSSSLLFPCGALKREVLPTVLKEKGILLESLTVYQTAQHPNLQES
+            LKNYFSQQGMPASIAFFSPSGVKFCLQHIQKFSGNFADQIKFAAIGPTTAEAMEAEGVPV
+            SCTAENPTPQDLAAGIKKVFHL
+NTSEQ       789
+            atgaaggttctgttactgaaggaccccaaagagagagactcgggaccagatccatatatt
+            caggaattaggatcatatggatttgaagcaactttaattcctgttttgtcttttgaattt
+            gtgtctcttcaaagtttgtttgaaaagctctctcatccagaatgctatggaggtctaatt
+            tttaccagtccaagagcagtagaagctgtcaagttatgtttaaaagagaacagtaaaaat
+            gaagcctggacaaaatctctgaaacagaaatggaatgcaaaatcaacatatgttgtagga
+            aaagccacagcttctctagtggaagaaattggccttgccccacaaggagagaagtgtgga
+            aatgctgaaaaactagctggatacatttgctcaaaggagacaccaaattcatcatctctt
+            ctttttccttgtggagctctcaaaagagaagtacttccaacagtgctcaaggaaaaaggt
+            attttactggaaagcctcactgtttatcagactgctcaacatcccaatctccaagaatcc
+            ttgaagaattatttctcacaacaggggatgccagcaagcattgcgttcttcagcccatct
+            ggtgtcaaattttgtcttcagcatattcagaagttttctggcaattttgctgatcaaatt
+            aagtttgctgctattggtccaacaactgctgaagcaatggaagctgaaggagtccctgtc
+            agttgcactgcagagaatcctactccacaggaccttgctgctggcatcaaaaaagtcttt
+            catttgtag
+///
+ENTRY       102375451         CDS       T02922
+NAME        ALAD
+DEFINITION  (RefSeq) aminolevulinate dehydratase
+ORTHOLOGY   K01698  porphobilinogen synthase [EC:4.2.1.24]
+ORGANISM    asn  Alligator sinensis (Chinese alligator)
+PATHWAY     asn00860  Porphyrin and chlorophyll metabolism
+            asn01100  Metabolic pathways
+BRITE       KEGG Orthology (KO) [BR:asn00001]
+             Metabolism
+              Metabolism of cofactors and vitamins
+               00860 Porphyrin and chlorophyll metabolism
+                102375451 (ALAD)
+            Enzymes [BR:asn01000]
+             4. Lyases
+              4.2  Carbon-oxygen lyases
+               4.2.1  Hydro-lyases
+                4.2.1.24  porphobilinogen synthase
+                 102375451 (ALAD)
+            Exosome [BR:asn04147]
+             Exosomal proteins
+              Exosomal proteins of other body fluids (saliva and urine)
+               102375451 (ALAD)
+POSITION    Un
+MOTIF       Pfam: ALAD
+DBLINKS     NCBI-ProteinID: XP_006022710
+            NCBI-GeneID: 102375451
+AASEQ       340
+            MGLDSVSEMQADSILHSGYFHPVLRSWQTAATAFDASNLIYPIFVTDNPDAEEPIASLPG
+            QARYGVNKLEGMLRPLVEDGLKCVLIFGVPSKVPKDGRGSAADSKDMPAIQAIRKIRSSF
+            PELLIACDVCLCPYTSHGHCGILREDGTIQNETSCQRLAEVSLAYAKAGCHIVAPSDMMD
+            GRIASIKQALISNNMGNKVCVMSYSAKFASCFYGPFRDAAQSKPAFGDRRCYQLPPGARG
+            LALRAVDRDVREGADMLMVKPGMPYLDIVGEVKARHHAHPLAVYHVSGEFAMLWHGAKAG
+            AFDLKAAVMEVMRGFRRAGADIIITYFVPQLLKWLKEQEA
+NTSEQ       1023
+            atgggattggactcagtttccgagatgcaggcagactccattctccacagcggctacttc
+            caccctgttctgcgctcctggcagaccgcagccacagcctttgatgcatctaacctcatc
+            taccccatttttgtcactgacaaccctgatgcagaggagccgatcgccagcctccccgga
+            caagccaggtatggcgtcaacaagctggaggggatgctgcgccccctggtggaggatggc
+            ctgaagtgtgtgctgatctttggcgtgcccagtaaagtccccaaggatggaagaggctcc
+            gctgctgactccaaagacatgccagccatccaggccatcaggaagatccgttcctccttc
+            ccagagctgctgattgcctgcgatgtctgcctgtgcccctacacctcacatgggcactgt
+            ggcatcctgcgggaggatggcaccatccagaatgagaccagctgccagaggctggcagaa
+            gtgtcactggcctatgccaaggcaggatgccacatcgtggccccttcagatatgatggat
+            ggacgcattgcatccataaaacaagccctgatctccaacaacatgggcaacaaggtctgt
+            gtgatgagctacagtgccaagtttgcttcctgcttctatggtcccttcagagatgctgct
+            cagtccaaacctgcctttggagaccggcgatgttaccagcttcctccaggtgccaggggc
+            ctggccctgcgagctgtggaccgagacgtgagggagggagcagacatgctgatggtaaag
+            ccggggatgccctacctggatattgtgggagaagtcaaagccaggcatcatgcccaccca
+            ctggcagtttaccatgtatctggggagttcgccatgctgtggcatggagcaaaggctggt
+            gcctttgacctaaaggctgctgtgatggaggtgatgagagggttcaggcgagcaggggct
+            gacatcatcattacctacttcgtgccccagctgctgaagtggctgaaggagcaagaggca
+            tga
+///
+ENTRY       102375887         CDS       T02922
+NAME        ALAS2
+DEFINITION  (RefSeq) 5'-aminolevulinate synthase 2
+ORTHOLOGY   K00643  5-aminolevulinate synthase [EC:2.3.1.37]
+ORGANISM    asn  Alligator sinensis (Chinese alligator)
+PATHWAY     asn00260  Glycine, serine and threonine metabolism
+            asn00860  Porphyrin and chlorophyll metabolism
+            asn01100  Metabolic pathways
+BRITE       KEGG Orthology (KO) [BR:asn00001]
+             Metabolism
+              Amino acid metabolism
+               00260 Glycine, serine and threonine metabolism
+                102375887 (ALAS2)
+              Metabolism of cofactors and vitamins
+               00860 Porphyrin and chlorophyll metabolism
+                102375887 (ALAS2)
+            Enzymes [BR:asn01000]
+             2. Transferases
+              2.3  Acyltransferases
+               2.3.1  Transferring groups other than aminoacyl groups
+                2.3.1.37  5-aminolevulinate synthase
+                 102375887 (ALAS2)
+            Amino acid related enzymes [BR:asn01007]
+             Aminotransferase (transaminase)
+              Class II
+               102375887 (ALAS2)
+POSITION    Un
+MOTIF       Pfam: Aminotran_1_2 Cys_Met_Meta_PP Aminotran_5 DegT_DnrJ_EryC1
+DBLINKS     NCBI-ProteinID: XP_006032051
+            NCBI-GeneID: 102375887
+AASEQ       475
+            MGTLGAAVQRAPPELQEDVATCSDTEEAPPRLQLPAGSFPYEQFFAERLAAKRQDHSYRV
+            FRTVTRHVDTPPLARTDHGTDVAIWCSNDYLGLSRHPQVLHAATEALQAHGLGAGGTRNI
+            SGTSWFHVALELALAKLHRTDAALVFSSCFVANDATLSTLASLLPGCEVFSDAGNHASMI
+            QGIRRSGAPRHIFRHNDPVHLDELLRHTEPSTPKIVAFETVHSMDGSICPLGELLEVARA
+            HGALTFADEVHAVGLYGSRGGGIAERDGLQHQLDIVSGTLGKAVGAVGGYIAGPQMLVDA
+            VRSLAPGLIFTTALPPAVLAGALAALAVLAGTEGRALRRAHQRHAAMLRRCLRDARLPAL
+            PSQSHIVPLRVGEAAACTRVSERLLTHDGIYIQAINYPTVPRGHELLRLAPTPHHTPPMI
+            EHLVECLSRAWEAEGLPLMPPGDPTCGFCQRPLHLELLSQWERDCFGTLSVPLCA
+NTSEQ       1428
+            atggggacgttgggggccgcggtgcagcgtgccccgcctgagctgcaggaggacgtggcc
+            acctgctcagacactgaggaggccccaccccgcctgcagctgcctgcgggctcattcccc
+            tatgagcagttctttgcagagcggctggcggcaaagcgccaggatcactcataccgtgtc
+            ttccgcactgtcacgcgccatgtggacacacctcccctggcccgcactgaccatggcacc
+            gacgtggccatctggtgcagcaacgactacctgggcctaagccgccacccgcaagtgctg
+            cacgctgccacggaggccctccaggctcatggccttggggccggggggacacggaacatc
+            tcaggcaccagctggttccatgtggcactggagctggcactggccaagcttcaccgcact
+            gatgctgccctggtcttctcctcctgcttcgtggccaacgacgccacccttagcaccctg
+            gccagcttgctgccaggctgtgaggtattctcggacgcggggaatcatgcatccatgatc
+            cagggcatcagacgcagcggggcaccacgccacatcttccgccacaatgacccagtgcac
+            ctggacgagctgctgcggcacacagagcccagcacccccaagattgtggccttcgagact
+            gtgcactccatggatggctcaatctgccctctgggggagctgctggaggtggcacgggca
+            catggggcactgacgtttgcagacgaggtccatgccgtggggctctatgggtcacggggt
+            ggcggcatcgctgagcgtgatggtctccagcaccagctcgacattgtctctggcaccctc
+            ggcaaggcggtgggtgcagtgggagggtacatcgcagggccacaaatgttggtggatgca
+            gtgcgcagcctggcaccagggctgatctttaccacagcgctgccccctgcagtgctggct
+            ggggcactggcagcgctggccgtgctggcagggactgagggcagggcgctgcgccgtgcc
+            caccagcgccacgctgccatgctgcgccgctgcctgcgtgatgcccgcctgcctgccctg
+            cccagccaaagccacattgtgcctctgcgtgtgggggaggcagcggcctgcacccgggtg
+            agcgagcggctcctgacccatgatggcatctacattcaggccatcaactaccccacggtg
+            ccgcgcggccatgagctgctgcgcctggcacccaccccacatcacaccccacccatgatt
+            gagcacttagttgagtgcttgtcccgggcgtgggaggcagaagggctgccactgatgcct
+            ccaggagacccgacctgtggcttctgccagcgccctctgcatctggagctgctcagtcag
+            tgggagcgcgactgctttgggaccctgtctgtgcccctttgcgcctga
+///
+ENTRY       102375964         CDS       T02922
+NAME        UGT2A1
+DEFINITION  (RefSeq) UDP-glucuronosyltransferase 2A1
+ORTHOLOGY   K00699  glucuronosyltransferase [EC:2.4.1.17]
+ORGANISM    asn  Alligator sinensis (Chinese alligator)
+PATHWAY     asn00040  Pentose and glucuronate interconversions
+            asn00053  Ascorbate and aldarate metabolism
+            asn00140  Steroid hormone biosynthesis
+            asn00830  Retinol metabolism
+            asn00860  Porphyrin and chlorophyll metabolism
+            asn00980  Metabolism of xenobiotics by cytochrome P450
+            asn00982  Drug metabolism - cytochrome P450
+            asn00983  Drug metabolism - other enzymes
+            asn01100  Metabolic pathways
+MODULE      asn_M00014  Glucuronate pathway (uronate pathway)
+            asn_M00129  Ascorbate biosynthesis, animals, glucose-1P => ascorbate
+BRITE       KEGG Orthology (KO) [BR:asn00001]
+             Metabolism
+              Carbohydrate metabolism
+               00040 Pentose and glucuronate interconversions
+                102375964 (UGT2A1)
+               00053 Ascorbate and aldarate metabolism
+                102375964 (UGT2A1)
+              Lipid metabolism
+               00140 Steroid hormone biosynthesis
+                102375964 (UGT2A1)
+              Metabolism of cofactors and vitamins
+               00830 Retinol metabolism
+                102375964 (UGT2A1)
+               00860 Porphyrin and chlorophyll metabolism
+                102375964 (UGT2A1)
+              Xenobiotics biodegradation and metabolism
+               00980 Metabolism of xenobiotics by cytochrome P450
+                102375964 (UGT2A1)
+               00982 Drug metabolism - cytochrome P450
+                102375964 (UGT2A1)
+               00983 Drug metabolism - other enzymes
+                102375964 (UGT2A1)
+            Enzymes [BR:asn01000]
+             2. Transferases
+              2.4  Glycosyltransferases
+               2.4.1  Hexosyltransferases
+                2.4.1.17  glucuronosyltransferase
+                 102375964 (UGT2A1)
+            Glycosyltransferases [BR:asn01003]
+             Others
+              Hydrophobic molecule
+               102375964 (UGT2A1)
+POSITION    Un
+MOTIF       Pfam: UDPGT Glyco_tran_28_C
+DBLINKS     NCBI-ProteinID: XP_006027572
+            NCBI-GeneID: 102375964
+AASEQ       530
+            MLARWFPLLLCVQMCFWDSGSCGKVLVWPTDASHWINLKMILGELILRGHDVTVLVPSAT
+            LLIDYDDPTSPFDFEVLKVPFTKETVKTVLQDFLSLCLYEKPHLSHWEALVKIRQMMTTF
+            TKMSKQTCDGFVLNPKLITKLRHGGFDVLISDPLAPGGELVAEVLEIPFVYTFRFSEGNT
+            LERLCGGIPAPPSYVPASTGGLTDRMSFLGRLTNFLLYLYNDALYLYFWEDEWNQYYSNV
+            LGRPTTLCETMGKAEMWLIRTYWDFEFPRPYLPNFEFVGGLHCQPAKPLPEEMEEFVQSS
+            GEHGIVVFSLGSMIHNLTDEKNNMIATALSQLPQKVLWRYKGKKPETLGTNTRIYDWIPQ
+            NDLLGHAKTKAFITHGGTNGIYEAIYHGVPMVGIPIFADQPDNIAHMRAKGMAVELDFNT
+            MKAQDLVDAVNMVVNNFTYKENAIRLSQIHHDQLVKPLDRAVFWIEFVMRHKGAKHLRPA
+            AHQLTWYQYHCLDVLAFLLTCATVTLFIAVKCCLFCCKKCGRIVRKRKTE
+NTSEQ       1593
+            atgctggcaaggtggtttcctctactgctctgtgttcagatgtgcttctgggactcagga
+            tcctgtgggaaggtccttgtttggcccactgatgccagccactggatcaacttaaaaatg
+            atactgggagaactcatcctgcggggccacgacgtgactgtgctggtgccatcagcgaca
+            ttgctcattgattacgatgaccccacctccccctttgactttgaggtccttaaagtgccc
+            ttcacaaaggagaccgtgaagacagtgctgcaagacttcctgagcctgtgcctgtacgag
+            aagccccacctctcccactgggaggccctggtgaaaatacgacaaatgatgaccaccttc
+            accaagatgtcaaagcagacctgcgatggctttgtgctgaaccccaagctgataacgaag
+            ttgcgtcatggagggtttgatgtgttaatctctgaccctcttgctcctgggggtgagctg
+            gtagcagaggtgcttgaaatcccctttgtctatacctttcggttctccgaagggaacacc
+            ctggagcgcctttgtggagggattccagccccaccttcttatgtgccagctagcacaggg
+            ggactgacggacaggatgtccttcttggggaggctgactaacttcctgctgtacctatac
+            aatgatgcactgtacctgtatttttgggaggatgagtggaatcagtattacagcaacgtc
+            ttaggaaggcccaccacactgtgtgaaacaatggggaaagcagagatgtggttgatccga
+            acatactgggactttgaatttcctcgcccatacctgcccaactttgagtttgttggggga
+            ctccactgccagcctgcgaagccattacctgaggaaatggaagaatttgtccagagttca
+            ggggaacatggcatcgtggtgttttctctgggctcaatgattcacaacctgactgatgag
+            aaaaataacatgattgctacagccctcagccagcttccgcagaaggttctttggaggtac
+            aagggaaagaaaccagaaactttaggaaccaacactagaatttatgactggataccccaa
+            aatgatctgcttggccatgccaagacaaaagccttcatcactcacggtggaaccaatggg
+            atctatgaagctatttaccatggggtgcccatggttggcattcccatatttgctgaccag
+            cctgacaacattgctcacatgagggccaaggggatggcagttgagctggattttaacacg
+            atgaaagcccaagacctagttgatgcagtgaacatggttgttaacaacttcacctataag
+            gaaaatgccatacggttgtcacagattcaccatgaccagcttgtgaaacctctggaccga
+            gctgtcttctggattgaatttgttatgagacacaaaggagcaaagcacttgagaccagca
+            gctcaccagctcacttggtaccagtaccactgcctggatgtcctggcgttcttgctcacc
+            tgcgccacagtgactcttttcatcgctgtcaagtgctgcttattttgctgtaagaaatgt
+            ggtaggattgtcaggaagaggaaaacggaatag
+///
+ENTRY       102376273         CDS       T02922
+NAME        FECH
+DEFINITION  (RefSeq) ferrochelatase
+ORTHOLOGY   K01772  ferrochelatase [EC:4.99.1.1]
+ORGANISM    asn  Alligator sinensis (Chinese alligator)
+PATHWAY     asn00860  Porphyrin and chlorophyll metabolism
+            asn01100  Metabolic pathways
+BRITE       KEGG Orthology (KO) [BR:asn00001]
+             Metabolism
+              Metabolism of cofactors and vitamins
+               00860 Porphyrin and chlorophyll metabolism
+                102376273 (FECH)
+            Enzymes [BR:asn01000]
+             4. Lyases
+              4.99  Other lyases
+               4.99.1  Sole sub-subclass for lyases that do not belong in the other subclasses
+                4.99.1.1  ferrochelatase
+                 102376273 (FECH)
+POSITION    Un
+MOTIF       Pfam: Ferrochelatase
+DBLINKS     NCBI-ProteinID: XP_006019151
+            NCBI-GeneID: 102376273
+AASEQ       400
+            MSVVKSRSQVTVQIQWRGQGSAAATAASETKSTKLQSQPEKRNPKTGVLMLNMGGPETLE
+            DVHDFLLRLFLDKDLMTLPVQNKMAPFIAKRRTPKIQEQYSKIGGGSPIKKWTAVQGEGM
+            VKLLDGMSPHTAPHKYYIGFRYVHPLTEEAIEEMEKDGVERAIAFTQYPQYSCSTTGSSL
+            NAIYRYYNKKGEKPKMKWSIIDRWPTHPLLIQCFADHIQKELDLFPPEKRKEVVILFSAH
+            SLPMSVVNRGDPYPQEVGATVQKVMEKLNYSNPYRLVWQSKVGPMPWLGPPTDEAIKGLC
+            ERGKKNILLVPIAFTSDHIETLYELDIEYAQGVANECGVENIRRAESLNGNPLFSKALAD
+            LVYSHIQSNEICSKQLTLRCPLCVNPVCGETKVFFTNQQL
+NTSEQ       1203
+            atgagtgttgtgaaaagcagaagtcaggtcacagtccaaatacagtggagaggtcaggga
+            tccgcagccgcaacagcagcctcagaaacaaaaagcacaaagcttcaaagtcagccagaa
+            aagaggaaccctaaaactggagttctgatgttaaacatgggagggccagaaacactggag
+            gatgtccacgacttcctccttaggctttttctagataaagacctaatgacgcttcctgta
+            caaaataagatggcaccattcattgccaaacgtcgcacaccaaaaatccaagaacaatat
+            agcaagattggaggcggatcaccaattaagaaatggactgcagtacaaggagaaggcatg
+            gtgaaactgctggatggaatgtctcctcacactgcacctcataaatactatattggtttt
+            cggtatgtccatcctctgacagaagaagcaattgaagagatggaaaaagatggagttgaa
+            agggctattgctttcacacagtacccacagtacagctgttctaccacaggaagcagctta
+            aatgccatttatcggtactataataaaaagggggagaagccaaagatgaaatggagcatt
+            attgacaggtggcctacacatccccttctcattcagtgctttgcagaccacatacagaaa
+            gaactggatctgttcccaccagagaaaaggaaagaagttgtgattcttttctcagctcac
+            tcacttccaatgtctgttgtgaaccgcggtgatccataccctcaagaggtgggagctact
+            gtccaaaaagtcatggagaagctgaactattccaacccttacaggcttgtttggcagtcc
+            aaagtaggaccaatgccgtggcttggtccaccgacagatgaagctattaaaggactctgt
+            gaaaggggaaagaagaatattttgttggttccaatagcatttactagtgaccacattgaa
+            acactctatgaactggatattgaatatgcacaaggtgtagctaatgagtgtggagttgag
+            aacatcagaagagctgagtcccttaatggaaatccattgttttccaaggcactcgcagac
+            ttggtctattcacatatccagtcaaatgaaatatgctccaagcaattaaccctccgttgt
+            ccactttgtgtaaatcctgtctgcggggagacaaaagtcttcttcactaatcaacagcta
+            tga
+///
+ENTRY       102378123         CDS       T02922
+NAME        HEPH
+DEFINITION  (RefSeq) hephaestin
+ORTHOLOGY   K14735  hephaestin [EC:1.16.3.1]
+ORGANISM    asn  Alligator sinensis (Chinese alligator)
+PATHWAY     asn00860  Porphyrin and chlorophyll metabolism
+BRITE       KEGG Orthology (KO) [BR:asn00001]
+             Metabolism
+              Metabolism of cofactors and vitamins
+               00860 Porphyrin and chlorophyll metabolism
+                102378123 (HEPH)
+            Enzymes [BR:asn01000]
+             1. Oxidoreductases
+              1.16  Oxidizing metal ions
+               1.16.3  With oxygen as acceptor
+                1.16.3.1  ferroxidase
+                 102378123 (HEPH)
+POSITION    Un
+MOTIF       Pfam: Cu-oxidase_2 Cu-oxidase_3
+DBLINKS     NCBI-ProteinID: XP_014373948
+            NCBI-GeneID: 102378123
+AASEQ       1143
+            MGSWWQLLQSLLYIHVLLPLFAEGVTRVYYLGIHEVKWNYAPTGKNIISDLNITADLEAS
+            AFLQPGKDRVGSIYKKSVYKQYSDSTYTTEISKPAWLGFLGPIIRAEVSDTILVHLKNFA
+            SRPYTIHPHGVFYEKDSEGSQYPDVSSPEHKKDDSIPPGGNHTYTWTIPEGHSPTADDTN
+            CLTWIYHSHIDAPKDVASGLIGPLLTCKEGVLTGTSQRRHDIDLDFFLMFSVIDENLSWY
+            LDENIASFCTDPGSVNKEDEEFQESNRMHAINGYLFGNLPDLTMCAGDQVAWHLFGMGNE
+            IDIHTAFFHGQMLTIRDHKTDVASLFPATFVTAHMIAINPGKWLLSCQVNDHFKAGMEAL
+            YEVRHCSQKTPESALTGKVRTYYIAAKEGQWNYGPSGLDLSTEESLQEPGSSAEQFFKRG
+            PGRIGGTYWKARYTEYTDATXXXXXLKEEKHLGILGPVIKAEVGDTILVIFANKASWPFS
+            IQPHGVLYGKEWEGAIYHNGLSWNGVSVKPLHNFTYRWTVPQHVGPTASDPPCLTWMYSS
+            AVNPYRDTNSGLVGPLLICKPGTLSENNKQKGIDKEFYLLFGVFDENLSWYLSANIKYHL
+            KVEEASVEKNEAFKESNRMHAINGFMFSNMPKLEVCKGDTVAWHLMGLGSEADVHGAVFQ
+            GNTFQMNGMRRGTANLFPHTFATAFMQPDNKGNFEIYCQTTNHYQSGMREQYFVSECGKK
+            IPALAQRYEGVRTYYITAEEVEWDYAPDRSWELKRHNNSGKESYGNIFLSNENGLLGSKY
+            KKAVYREYTDGTFKILKNRSSDDEHLGILGPFIWAEVGDVLNIVFKNSATRPYSIHAHGV
+            LEKNDGQLEAAMPGEIVTYRWDIPERSGPGSNDSACVSWVYYSMVDPVKDMYSGLIGPLK
+            VCRKGILHPNGKRKDMNKEFALLFLVFDENQSWYLEENVETHGDQSKINLEDERFIESNK
+            LHAINGRVYANLPGLTMYQGDWVSWYLLGMGQEIDVHTVHFHAESFTQRYGKMYRADVVD
+            LFPGTFVMVEMLVGNPGTWLLHCHVSDHIHAGMEILFHILHKPVTTPPDDESKNFSMFGY
+            KLDPGQVQTTIIILTVAGIVLFLTASFLLGVIIRLERQKKLRRNRRSILDDGFKLMSQKN
+            QVI
+NTSEQ       3432
+            atgggatcctggtggcaactgctacagtccttgctttacatccatgtgctgctgccactc
+            tttgctgaaggtgtcaccagagtctattacctggggatccacgaggtgaaatggaactat
+            gctccaacagggaagaacataatcagcgacctaaacattacagctgacttggaagcctct
+            gcattcctccagcctggcaaggacagggtaggaagcatatacaaaaaatctgtctataag
+            caatactcagactccacgtacacaactgagatcagcaaacctgcctggctggggtttctt
+            gggcccatcatccgagctgaagtgagcgataccattcttgtgcacctaaaaaattttgcc
+            agtcggccatacacgatccatcctcatggcgtgttctatgaaaaggactcagaagggtcc
+            cagtaccccgatgtgtcctcaccagagcataagaaggatgattccattccaccaggaggg
+            aatcatacatatacttggactatacctgaaggtcatagcccaacagctgatgacacaaac
+            tgcttgacctggatctaccactctcatattgatgcaccaaaggatgttgcttctgggtta
+            attgggccattactcacatgcaaagaaggagtgctaactggcacctcccaaaggaggcat
+            gacatagaccttgatttctttttgatgttcagtgtcatagatgagaacctgagctggtac
+            ttggatgagaatattgcttctttctgcactgacccaggctctgtcaacaaggaggatgag
+            gagtttcaagagagcaacagaatgcatgctattaatggttacttgtttggcaacctgcca
+            gatctgacaatgtgtgctggggatcaggtagcatggcacctctttgggatgggcaatgag
+            attgacatccacacagctttcttccatggacagatgctcaccatcagagaccacaagact
+            gatgtggccagccttttcccagctacttttgtgacagcccacatgattgccattaaccct
+            gggaaatggcttctgagctgtcaggtcaatgatcacttcaaagctggaatggaggcactc
+            tatgaagtcagacattgttctcagaaaactccagagtcagcccttacagggaaagtccgg
+            acatactacatagctgcaaaggaaggacagtggaattatggaccctcaggacttgacctg
+            agcactgaggaaagcttgcaggagccagggagctctgctgagcagttcttcaagcggggc
+            cccggtcggattgggggaacttactggaaggccagatacacggaatacactgatgcaact
+            nttnnnnnnnnnnggttgaaagaagagaagcatcttgggatacttggtccagtgataaaa
+            gctgaagtgggagacaccatcttggtgatatttgctaacaaagcctcctggcccttcagc
+            attcagccccatggagtactttatgggaaggaatgggaaggagctatctatcacaatggc
+            ctgtcatggaatggagtctctgttaaacctctccataatttcacgtatcgctggacagta
+            ccacaacatgttggacccacagccagtgaccctccctgtttaacctggatgtactcctct
+            gctgtgaatccctacagagacactaactcaggcttagttggccccctattgatctgcaaa
+            cctggaactctgagtgagaacaacaaacagaaagggatcgacaaggagttttaccttctc
+            ttcggtgtgtttgatgagaatctcagctggtatttaagtgcaaacataaagtaccatttg
+            aaagtggaagaggcctctgtagaaaagaacgaagctttcaaggagtccaacagaatgcat
+            gccattaatggatttatgttctctaacatgcccaagctggaggtatgtaaaggagacact
+            gtagcctggcacctgatgggcctgggaagtgaggcagacgtgcatggagctgtgttccag
+            ggaaatacctttcaaatgaatgggatgagaagaggtacagccaatctcttccctcacaca
+            tttgccactgccttcatgcagcctgataacaaagggaattttgagatctattgccaaaca
+            accaaccactatcagtctgggatgagggagcagtactttgtttctgaatgcggcaaaaag
+            attcctgctcttgcccagcgctatgaaggagtgaggacatactacatcacggcagaggag
+            gtggagtgggattatgcaccagatcgtagctgggagctgaaacgacacaacaattctggg
+            aaggaaagctatggcaacatatttctgagcaatgagaatggactccttggctccaagtac
+            aagaaagcagtttacagggagtacactgatgggacattcaagatactcaagaacaggagc
+            agtgatgatgagcacttagggatcttgggtccttttatctgggcagaagttggagatgta
+            ctcaatatcgtgtttaagaacagtgctacccgcccctactccattcatgcacatggggta
+            ctggaaaagaatgatggacagctggaagctgcaatgcctggtgaaattgtaacataccgg
+            tgggacatcccggaaaggtctggcccaggatccaatgattctgcctgtgtttcgtgggtc
+            tactactccatggttgacccagtaaaggatatgtacagtggcctgattggccccctaaag
+            gtctgccgaaaagggatactgcaccctaacgggaaaaggaaggacatgaacaaggagttt
+            gctctccttttcctggtttttgatgaaaatcagtcctggtatctggaggaaaatgtggaa
+            actcatggggatcagagcaagatcaacctggaggatgaacgatttatagagagcaataaa
+            ttgcacgccataaatggtagggtctatgcaaacttgcctgggctgactatgtaccaagga
+            gactgggtgagctggtacctactgggaatgggccaagagattgatgtgcacacagtccat
+            tttcatgccgaaagcttcacacagaggtatggcaagatgtacagagcggatgttgtggat
+            ctgtttcctgggacttttgtgatggtggagatgctggttgggaaccctgggacttggctg
+            cttcattgccatgtttcagatcatatccacgctggtatggaaatacttttccacatctta
+            cacaaaccagtgacaactcctccggatgatgagtcaaagaatttcagtatgtttggatat
+            aagctggatccagggcaagtgcagaccacaatcatcattctgaccgttgcaggaattgta
+            ctgttcctcactgccagcttcctgctgggagtgatcatccgtcttgaaaggcaaaaaaaa
+            ttaagacgcaacaggagatccatactggatgatggcttcaaactcatgtctcaaaagaat
+            caagtgatttag
+///
+ENTRY       102378894         CDS       T02922
+DEFINITION  (RefSeq) cytochrome c oxidase assembly protein COX15 homolog
+ORTHOLOGY   K02259  cytochrome c oxidase assembly protein subunit 15
+ORGANISM    asn  Alligator sinensis (Chinese alligator)
+PATHWAY     asn00190  Oxidative phosphorylation
+            asn00860  Porphyrin and chlorophyll metabolism
+            asn01100  Metabolic pathways
+BRITE       KEGG Orthology (KO) [BR:asn00001]
+             Metabolism
+              Energy metabolism
+               00190 Oxidative phosphorylation
+                102378894
+              Metabolism of cofactors and vitamins
+               00860 Porphyrin and chlorophyll metabolism
+                102378894
+            Mitochondrial biogenesis [BR:asn03029]
+             Mitochondrial quality control factors
+              Mitochondrial respiratory chain complex assembly factors
+               Complex-IV assembly factors
+                102378894
+POSITION    Un
+MOTIF       Pfam: COX15-CtaA DUF4807
+DBLINKS     NCBI-ProteinID: XP_014380227
+            NCBI-GeneID: 102378894
+AASEQ       352
+            MSAQPGLQTPTPEPRVPRCSAVCGAAPQPRALRRLTESGLSMVDWHLVKGMKPPRSSRDW
+            EAEFRKYQQFPEFKILNRHMTLAEFKFIWYMEYSHRMWGRGVGLLYVLPAAYFWKKGWLS
+            RPMKGTVLALCGLVCFQGLLGWYMVKSLEEKPESHDIPRVSQYRLAAHLGSALVLYAASL
+            WSGLSLLLSRHELPETRQLLRLRHFAHGTTGLIFLTALSGAFVAGLDAGLVYNSFPKMGD
+            RWIPDDLLSFSPMLKNVFENPTTVQFDHRILVSASVTAITALYLFSRRVVLPRRTKMAVA
+            SLLAVAYMQVGLGISTLLLYVPTPLAATHQSGSLALLSVALWLMSELRRVPK
+NTSEQ       1059
+            atgtcagcacagccagggttacagacgcccacaccggagccgcgagtgccgcgctgctct
+            gccgtgtgcggcgccgcgcctcagccgcgtgctctccgcaggctgacggagtcggggctc
+            tcgatggtggactggcacctggtgaagggcatgaagcccccgcgctcgtcgcgcgactgg
+            gaggccgagttccgcaagtaccagcagttcccagagtttaaaatcctgaatcgccacatg
+            acgctggcggagttcaagttcatctggtacatggagtactcccaccgcatgtgggggcgg
+            ggtgtgggcctgctctacgtcctgcctgccgcctacttctggaagaagggctggctcagc
+            cgccccatgaagggcactgtcctcgcgctctgcggcctcgtctgcttccagggactgcta
+            ggctggtacatggtgaagagtttggaagagaagccggagtctcacgacatcccccgggtc
+            agccagtaccgtctagctgctcacctgggctctgcactcgttctgtacgcagccagcctg
+            tggagtgggctctccctgctgctctcgcgacacgagttacctgaaacccgtcagttgctc
+            cgcctgagacattttgctcacgggaccacaggcctcatcttcctcaccgctctctcaggt
+            gcctttgtggcaggcctggatgctggcctggtttacaactccttccccaaaatgggggac
+            cgctggatcccagacgatctcctctctttctcccccatgctgaagaacgtctttgagaat
+            cccacaactgtccagtttgatcacaggatactggtgagtgcttcggtcactgccatcacc
+            gccctctacctcttctctcggagggtcgtcctcccacgtaggaccaagatggcggtggcc
+            tccttactggctgtggcctacatgcaggtgggcctgggcatcagcaccctgctgctgtac
+            gtccccacgcctctggctgctacacaccagtcgggctcgctggcactgctcagcgtggcg
+            ctgtggctcatgagcgaactccgtcgtgttccaaaatag
+///
+ENTRY       102381414         CDS       T02922
+NAME        CPOX
+DEFINITION  (RefSeq) coproporphyrinogen oxidase
+ORTHOLOGY   K00228  coproporphyrinogen III oxidase [EC:1.3.3.3]
+ORGANISM    asn  Alligator sinensis (Chinese alligator)
+PATHWAY     asn00860  Porphyrin and chlorophyll metabolism
+            asn01100  Metabolic pathways
+BRITE       KEGG Orthology (KO) [BR:asn00001]
+             Metabolism
+              Metabolism of cofactors and vitamins
+               00860 Porphyrin and chlorophyll metabolism
+                102381414 (CPOX)
+            Enzymes [BR:asn01000]
+             1. Oxidoreductases
+              1.3  Acting on the CH-CH group of donors
+               1.3.3  With oxygen as acceptor
+                1.3.3.3  coproporphyrinogen oxidase
+                 102381414 (CPOX)
+POSITION    Un
+MOTIF       Pfam: Coprogen_oxidas
+DBLINKS     NCBI-ProteinID: XP_006029516
+            NCBI-GeneID: 102381414
+AASEQ       411
+            MGTLWFYETLNKCRSLYNLQSADPVTMRNHRKIQKTVKLRDTTLPTDLLPGDISQAEWER
+            INHKDLHKDHKDLNWLIAHRALPRHDFMAPPVSGLRELRSRRGEMRSRVELLLMETQARV
+            CRALAQLDGAAAFSVDSWERQEGGGGISCVLQDGDIFEKAGVNVSVVFGHLSEEAAQQMR
+            SRGKTLKTKDGKLPFCAMGVSSVIHPKNPHVPTIHFNYRYFEIEQADGSKQWWFGGGTDL
+            TPTYLNQEDAVHFHKTLKEACDKHGPELYPKYKKWCDNYFYIKHRGERRGIGGIFFDDLD
+            SPSKEEVFQFVQSCAEAIVPCYIPIVKKHCHDSFSPEEKLWQQLRRGRYVEFNLVYDRGT
+            KFGLATPGSRIESILMSLPLTARWEYMHSPPENSKEAEILEVLRNPKNWVH
+NTSEQ       1236
+            atgggcacactgtggttctacgagaccctaaacaagtgccgcagtttgtacaacctgcag
+            agcgcagacccagtgaccatgagaaaccacaggaagatccagaagacagtgaaactaagg
+            gacaccacattgcccacggacctgctcccaggcgacataagccaggctgagtgggagcgc
+            atcaaccacaaggatctgcacaaagatcacaaggacctgaactggctcatagcccaccga
+            gctctaccacggcacgacttcatggcgccgccggtgagcggcctgcgggagctgcggagc
+            cggcgcggcgagatgcggagccgcgtggagctgctgctcatggagacgcaggcgcgggtg
+            tgccgcgcgctggcgcagctggacggcgccgccgccttttccgtggacagctgggagcgc
+            caggagggtggtggtggcatcagctgtgtgcttcaggatggcgatatctttgagaaggca
+            ggtgttaatgtgtccgtagtatttggtcatctttctgaggaagctgcacaacagatgaga
+            agcagagggaaaactctgaagactaaagatggtaaactaccattttgtgccatgggtgta
+            agctctgttatccacccaaagaatcctcacgttccaactatacacttcaactacagatat
+            tttgaaattgagcaagcagatgggtctaagcagtggtggtttggtggtggaactgacctt
+            actccaacttatttgaaccaagaggatgctgttcattttcacaaaactttgaaagaagct
+            tgtgataagcatggtccagaactgtaccccaagtataagaaatggtgcgacaactatttt
+            tatatcaaacatcgtggagagcgaagagggattggtggcatattctttgatgatctagac
+            tctccctcaaaagaagaagtgtttcagtttgtgcagagctgtgctgaagccattgtgccc
+            tgttatattcccattgtgaagaaacactgtcatgattccttcagtcccgaggaaaagtta
+            tggcagcagcttcgtagaggaaggtacgtcgagttcaatcttgtctatgacagaggtaca
+            aagtttggccttgcaacgccaggatccaggattgaaagcattcttatgtctctgcccctg
+            actgccaggtgggaatacatgcactcgccaccagagaattccaaggaagctgagatccta
+            gaagtcctgcgtaatcccaagaactgggtacactga
+///
+ENTRY       102381974         CDS       T02922
+NAME        EPRS
+DEFINITION  (RefSeq) glutamyl-prolyl-tRNA synthetase
+ORTHOLOGY   K14163  bifunctional glutamyl/prolyl-tRNA synthetase [EC:6.1.1.17 6.1.1.15]
+ORGANISM    asn  Alligator sinensis (Chinese alligator)
+PATHWAY     asn00860  Porphyrin and chlorophyll metabolism
+            asn00970  Aminoacyl-tRNA biosynthesis
+            asn01100  Metabolic pathways
+MODULE      asn_M00359  Aminoacyl-tRNA biosynthesis, eukaryotes
+BRITE       KEGG Orthology (KO) [BR:asn00001]
+             Metabolism
+              Metabolism of cofactors and vitamins
+               00860 Porphyrin and chlorophyll metabolism
+                102381974 (EPRS)
+             Genetic Information Processing
+              Translation
+               00970 Aminoacyl-tRNA biosynthesis
+                102381974 (EPRS)
+            Enzymes [BR:asn01000]
+             6. Ligases
+              6.1  Forming carbon-oxygen bonds
+               6.1.1  Ligases forming aminoacyl-tRNA and related compounds
+                6.1.1.15  proline---tRNA ligase
+                 102381974 (EPRS)
+                6.1.1.17  glutamate---tRNA ligase
+                 102381974 (EPRS)
+            Transfer RNA biogenesis [BR:asn03016]
+             Eukaryotic Type
+              Aminoacyl-tRNA synthetases (AARSs)
+               Multi-aminoacyl-tRNA synthetase complex (MSC)
+                102381974 (EPRS)
+POSITION    Un
+MOTIF       Pfam: tRNA-synt_1c WHEP-TRS tRNA-synt_1c_C ProRS-C_1 tRNA-synt_2b HGTP_anticodon GST_C GST_C_3 GST_C_2
+DBLINKS     NCBI-ProteinID: XP_006022406
+            NCBI-GeneID: 102381974
+AASEQ       1516
+            MALSLTVNVGNPPLGALLTVEHVKNDFEILVEEGKETVLRISDHVTFTDANSIARYLARV
+            ATSAGLYGSNLLEHTEIDHWLEFSATKLSAPSQFPSAIHELNHCLSLRTYLVGNSLSLAD
+            LCVWAVLKGSNIWQEELQQNKAPVHVKRWYDFLEAQCAFQSVGTKWAAATPKTNVATEKK
+            QDVGKFVELPGAEVGKVIVRFPPEASGYLHIGHAKAALLNQHYQVNFKGKLIMRFDDTNP
+            EKEKEDFEKVILEDVAMLHIKPDQFTYTSDHFETIMKYAEKLIQEGKAYVDNTPAEQMKM
+            EREQRKESKHRNNSVEKNLEMWEEMKKGTEYGQTCCLRAKIDMSCNNGCMRDPTLYRCKN
+            QPHPRTGNTYKVYPTYDFACPIVDSIEGVTHALRTTEYHDRDEQFYWIIEALGIRKPYIW
+            EYSRLNLNNTVLSKRKLTWFVNEGLVDGWDDPRFPTVRGVLRRGMTVEGLKQFIAAQGSS
+            RSVVNMEWDKIWAFNKKVIDPVAPRYTALLKDDVVTVNIPEAVEEMKEVAKHPKNPDVGL
+            KPVWYGSRVLIEGADADTLTEGEMVTFINWGNIIITKIHRNSNRKIVSIDAKLNLENKDY
+            KKTAKITWLTNTPSAPLIPSVCVNYEHLITKPVLGKDEDFKQYVNRNSKQEELMLGDPCL
+            KELKKGDIIQLQRRGFFICDQPYEPISPYSCKEAPCILIYIPDGHTKEMPTSGSKEKTKA
+            ETAKKEASSASKEKPTPPFVADTSTAPADPVVLYNRVSAQGDVVRDLKAKKASKEDIDAA
+            VKQLLALKAEYREKTGQEYKPGSHPAAAASVPSVPSNLETSSMLDSTTLYDKVAEQGDMV
+            RKLKAERAPKDKVDEAVRLLLSLKAEYKEKTGQDYKPGHPPAAQTSASPQATSIETSGSD
+            TPEAKALYDKVALQGEVVRKLKAEKAEKDKIDAAVQELLQLKAQYKSFAGVDYKPASMTG
+            IEDKDKKKKEKENKSEKQNKQQKQNETPKKESPKEQCANDLSSNGAGEGQGPKKQTRLGL
+            EAKKEENLADWFSQVITKSEMIEYYDVSGCYVLRPWAYAIWEAIRDFFDTEIKKLGVENC
+            YFPMFVSQAALEKEKTHIADFAPEVAWVTRSGKTELAEPIAVRPTSETVMYPAYAKWVQS
+            HRDLPIKLNQWCNVVRWEFKHPQPFLRTREFLWQEGHTAFATYEEAAEEVLQILDLYARV
+            YEEFLAIPVVKGRKTEKEKFAGGDYTTTVEAYISASGRAIQGATSHHLGQNFSKMFEIVF
+            EDPKKPGEKQLAYQNSWGITTRTIGVMTMIHGDNMGLVLPPRVACVQVIIIPCGITNSLS
+            EEDKDALLKKCNDYLKRLLSVNIRVRADLRDNYSPGWKFNHWELKGVPIRLEVGPRDMKN
+            HQFVAVRRDTGQKLTFAEDETEDKLSQILEEIHANLYNRAFEDLKNHMVVSNDMDDFQKE
+            LDSGKIVQIPFCGEIECEDWIKKTTARDQDLEPGAPSMGAKSLCIPFKPLCELQAGTKCV
+            CGKNPAKFYTLFGRSY
+NTSEQ       4551
+            atggcgctgagcctcacggtgaacgtggggaaccctccccttggagccttgctgactgta
+            gagcatgtgaagaacgattttgaaattttagttgaagaaggcaaagagaccgtcctccgt
+            atatctgatcatgttacattcactgatgcaaattctatagcccgctatcttgctagagtt
+            gccacttctgctgggctatatggttcaaatcttttggagcacacagagattgaccattgg
+            ctggaattcagtgctacaaagttatctgctccatcccagttcccttcagcaatccatgaa
+            ctcaatcactgcttgtctctgagaacctatttggttgggaattccctgagtctggcagac
+            ttgtgtgtctgggctgtactaaaaggcagtaatatatggcaggaagagttgcaacaaaac
+            aaagctccagtccatgtgaaacgctggtatgactttcttgaagcacagtgtgcctttcag
+            tcagtgggtaccaagtgggctgctgctacaccaaagactaacgtggcaacagagaagaaa
+            caggatgttgggaaatttgttgaactcccaggtgcagaggtggggaaggttattgtacga
+            tttcctcctgaggccagtgggtacttacatattggtcacgcaaaagctgctctgctaaat
+            caacactatcaggttaactttaagggaaagctcatcatgaggtttgatgacacaaatcct
+            gaaaaagaaaaagaagactttgaaaaggttattctggaagacgttgcgatgcttcacatc
+            aaaccagatcaatttacatatacctcagatcattttgaaacaataatgaaatacgcagag
+            aagctcattcaagaagggaaagcttatgtggataacactcctgcagaacaaatgaaaatg
+            gagcgtgaacagaggaaagaatccaaacacagaaataactctgtagaaaagaatttagaa
+            atgtgggaagaaatgaaaaagggaacagaatatggacaaacctgttgtctacgagcaaaa
+            atagacatgagttgcaacaatggatgtatgagagatccaactctttatcgttgcaaaaac
+            cagccacatccacgcactggaaatacctacaaggtttaccctacatatgacttcgcctgc
+            cccattgttgacagtattgaaggtgttacacatgcattgagaacaacagaataccatgac
+            agagatgaacagttctactggatcattgaagccttgggtataaggaagccatacatctgg
+            gaatacagccgtctgaacctcaacaatactgtgctatctaaaagaaagctcacgtggttt
+            gtcaatgaagggctggtggatggatgggatgatccaagatttcccactgtccgtggtgtg
+            ctgagaagaggtatgacagttgaaggattaaaacagtttattgcagcacaaggctcctct
+            cgatctgttgtgaacatggaatgggacaaaatttgggcatttaacaaaaaggttatagac
+            ccagtagcacctcggtacactgctttactgaaagatgacgtcgtcactgtgaacattcct
+            gaagctgtggaggagatgaaagaagtggccaaacacccaaagaatcctgatgttgggttg
+            aagccagtatggtatggctctagagtgctgattgagggtgcagacgcagacacgctgacg
+            gagggagaaatggttacattcataaattggggcaacattattatcactaagatacacaga
+            aactcaaacaggaaaattgtatcgattgatgccaagctgaacctagagaacaaggattac
+            aaaaaaactgctaagatcacttggctaacaaacacgccatctgcacctcttatcccatct
+            gtctgtgttaactatgaacatctcatcaccaaaccagtcctgggcaaagatgaagatttc
+            aagcagtatgtcaacagaaatagcaagcaagaagaactgatgttaggtgatccctgtctt
+            aaagaattgaaaaaaggggacattatacagcttcagagaagaggattctttatttgtgat
+            caaccctatgagccaattagcccatatagctgtaaagaggctccgtgcattttgatttat
+            atccctgatggacacacaaaggaaatgccaacatctggctcaaaggagaaaaccaaggca
+            gaaactgcaaagaaagaggctagctctgcttccaaggaaaagcctactcctccatttgtt
+            gctgatacctctactgcacctgcggaccctgtggtactttacaacagagtgtctgctcag
+            ggtgatgtggttcgtgacttgaaagctaagaaggcatcaaaggaagatattgatgcagct
+            gtgaaacagctattggccttgaaagcagaatacagggagaagactggtcaggagtataaa
+            cctggaagtcatccagcagctgctgcttcagtacctagtgtgccctccaaccttgagacc
+            tccagcatgctggacagcacaactctttatgataaagtggcagaacaaggggatatggtc
+            cggaagcttaaagctgagagagcaccaaaagataaagtggatgaagctgtcaggctcctc
+            ctgtctctaaaggcagaatataaagaaaagactggacaagattacaagccaggtcatcca
+            ccagcagctcagacatctgcttcaccccaggcaacaagcatagaaaccagtggttcagac
+            acaccagaagccaaagccctgtatgacaaggtggctcttcaaggagaagtagttcgaaaa
+            ctaaaagcagagaaagcagaaaaggacaaaatagatgcagcagtgcaggaactccttcag
+            ctgaaggcccagtacaagtcttttgctggagtagactataaacctgcctcgatgactggc
+            attgaggataaagataagaaaaagaaagagaaggaaaataagtctgaaaagcagaataag
+            caacagaaacaaaatgaaaccccaaagaaagaatctccgaaagaacagtgtgccaatgac
+            ctctcttcaaatggagcaggagaaggtcaaggccctaagaaacagaccaggctgggactt
+            gaagctaaaaaagaagaaaatcttgctgattggttctctcaggtgatcacaaaatcagag
+            atgattgaatactacgacgtgagtggctgctatgttcttcgtccatgggcttatgcgatc
+            tgggaagccattagagatttcttcgacactgagataaaaaaacttggtgtggaaaactgc
+            tatttccctatgtttgtgtctcaggctgcactagagaaagaaaaaactcatatagctgac
+            tttgcccccgaggttgcttgggttacaaggtctggcaaaaccgaactggctgagccaatt
+            gctgtacgtcctacaagtgaaacagttatgtatcctgcctatgcaaaatgggtgcagtct
+            caccgagatcttcctatcaagcttaatcagtggtgcaatgtagtgcgttgggagttcaaa
+            catccccaacccttcctccgcactcgtgaattcctttggcaggaaggacacactgcattt
+            gccacttacgaagaagcagcagaggaggtattacagattcttgatctgtatgctagagta
+            tatgaagaattcttagcaatacctgttgtgaaaggaagaaaaactgaaaaagagaaattt
+            gcaggcggtgactatacaacaacagtggaggcatatatatctgctagtggaagagctatc
+            cagggagcaacatcccatcatcttgggcagaatttttctaagatgtttgagattgtgttt
+            gaggatcccaagaagccaggcgagaaacagttagcttatcagaactcttggggcattaca
+            actcggaccattggtgtaatgaccatgattcatggagataatatggggctggtactgcca
+            cctcgggtagcttgtgttcaggttataattattccttgtggcatcacaaattcactttct
+            gaggaagacaaagatgccctgctgaagaaatgcaatgactaccttaagaggctgctcagt
+            gttaatattcgtgtccgtgctgacttaagagacaattattcacctggttggaagttcaat
+            cactgggagctaaagggtgttccaattaggctggaagtgggaccacgagatatgaagaac
+            catcagtttgttgctgtcagaagagacacaggacagaagttgacatttgctgaagatgag
+            acagaggataaactcagccagattttggaggagatccatgctaacctctacaacagagca
+            tttgaagacctgaaaaatcacatggtggtgtctaatgatatggatgactttcaaaaagaa
+            cttgattccggaaagattgtgcagattcccttttgtggggagattgaatgtgaggactgg
+            atcaagaaaactactgccagggatcaagatcttgagcctggtgccccatccatgggagca
+            aaaagtctctgcatccccttcaaacctctctgtgagctgcaggctggaacaaaatgtgtg
+            tgtggcaagaaccctgccaagttctacactctgtttggccgtagttactaa
+///
+ENTRY       102382988         CDS       T02922
+DEFINITION  (RefSeq) protoheme IX farnesyltransferase, mitochondrial-like
+ORTHOLOGY   K02257  protoheme IX farnesyltransferase [EC:2.5.1.-]
+ORGANISM    asn  Alligator sinensis (Chinese alligator)
+PATHWAY     asn00190  Oxidative phosphorylation
+            asn00860  Porphyrin and chlorophyll metabolism
+            asn01100  Metabolic pathways
+BRITE       KEGG Orthology (KO) [BR:asn00001]
+             Metabolism
+              Energy metabolism
+               00190 Oxidative phosphorylation
+                102382988
+              Metabolism of cofactors and vitamins
+               00860 Porphyrin and chlorophyll metabolism
+                102382988
+            Enzymes [BR:asn01000]
+             2. Transferases
+              2.5  Transferring alkyl or aryl groups, other than methyl groups
+               2.5.1  Transferring alkyl or aryl groups, other than methyl groups (only sub-subclass identified to date)
+                2.5.1.-  
+                 102382988
+            Prenyltransferases [BR:asn01006]
+             Compound prenylation
+              Protoheme farnesyltransferase
+               102382988
+            Mitochondrial biogenesis [BR:asn03029]
+             Mitochondrial quality control factors
+              Mitochondrial respiratory chain complex assembly factors
+               Complex-IV assembly factors
+                102382988
+POSITION    Un
+MOTIF       Pfam: UbiA
+DBLINKS     NCBI-ProteinID: XP_006033053
+            NCBI-GeneID: 102382988
+AASEQ       256
+            MFLPMKGMDEVTLDQYVGVPLALYNGLDVCARCRAVEHWVKGLFVWHLQKRAMQHMPCKL
+            IQICRLASKRWITFQHFSFLKRMYVTQCNKSLYQQAKPKPDPVAPPFQERQHLGHEKTVI
+            HKIKPVSLPCLPLPEASKGAEFSKAKLAAEIEGSATSGIEESKEEKQWKEMKLQLDDLPG
+            ILARLSKIKLTALVVSTASAGFAMAPVPFDFTCFLLASVGTGLASCAANSINQFFEVPFD
+            SNMNRTKNRPLVRGQI
+NTSEQ       770
+            atgttcttaccaatgaagggaatggatgaagtaacgctggatcagtatgttggtgtgccg
+            cttgcactgtataatggtctggatgtctgtgcaagatgccgggcagtggagcattgggtc
+            aaaggcttatttgtttggcaccttcagaaaagagcgatgcagcatatgccgtgcaagctt
+            atacaaatttgcaggctagccagtaaaagatggattacatttcagcactttagcttcctc
+            aaacgaatgtatgtaacacagtgcaacaaaagcctctatcagcaagcaaaaccgaagcca
+            gatccagttgcacctcctttccaggagaggcaacatttggggcatgaaaaaacggttata
+            cataagattaagccagtttcgcttccctgcctacctttgcctgaggcatcaaaaggagct
+            gagttcagcaaagcaaagttagctgcagaaatagaaggctcagcaacatcaggaatagaa
+            gaatccaaggaagaaaaacaatggaaagaaatgaagttacagctggacgatttaccagga
+            attttagcacgtttgtccaaaatcaaacttacagccctggttgtgagtaccgcatcagct
+            ggatttgcaatggctccagtcccttttgacttcacttgtttcctgcttgcctctgttgga
+            actggacttgcttcctgtgctgccaactccatcaatcaattctttgaggttccatttgat
+            tcaaatatgaacaggacaaagaacagacctctggtgcgaggacagatcag
+///
+ENTRY       102383435         CDS       T02922
+DEFINITION  (RefSeq) UDP-glucuronosyltransferase 1-6-like
+ORTHOLOGY   K00699  glucuronosyltransferase [EC:2.4.1.17]
+ORGANISM    asn  Alligator sinensis (Chinese alligator)
+PATHWAY     asn00040  Pentose and glucuronate interconversions
+            asn00053  Ascorbate and aldarate metabolism
+            asn00140  Steroid hormone biosynthesis
+            asn00830  Retinol metabolism
+            asn00860  Porphyrin and chlorophyll metabolism
+            asn00980  Metabolism of xenobiotics by cytochrome P450
+            asn00982  Drug metabolism - cytochrome P450
+            asn00983  Drug metabolism - other enzymes
+            asn01100  Metabolic pathways
+MODULE      asn_M00014  Glucuronate pathway (uronate pathway)
+            asn_M00129  Ascorbate biosynthesis, animals, glucose-1P => ascorbate
+BRITE       KEGG Orthology (KO) [BR:asn00001]
+             Metabolism
+              Carbohydrate metabolism
+               00040 Pentose and glucuronate interconversions
+                102383435
+               00053 Ascorbate and aldarate metabolism
+                102383435
+              Lipid metabolism
+               00140 Steroid hormone biosynthesis
+                102383435
+              Metabolism of cofactors and vitamins
+               00830 Retinol metabolism
+                102383435
+               00860 Porphyrin and chlorophyll metabolism
+                102383435
+              Xenobiotics biodegradation and metabolism
+               00980 Metabolism of xenobiotics by cytochrome P450
+                102383435
+               00982 Drug metabolism - cytochrome P450
+                102383435
+               00983 Drug metabolism - other enzymes
+                102383435
+            Enzymes [BR:asn01000]
+             2. Transferases
+              2.4  Glycosyltransferases
+               2.4.1  Hexosyltransferases
+                2.4.1.17  glucuronosyltransferase
+                 102383435
+            Glycosyltransferases [BR:asn01003]
+             Others
+              Hydrophobic molecule
+               102383435
+POSITION    Un
+MOTIF       Pfam: UDPGT Glyco_tran_28_C Glyco_transf_4
+DBLINKS     NCBI-ProteinID: XP_014373662
+            NCBI-GeneID: 102383435
+AASEQ       589
+            MAFPVHELYLFGAGVLLFLPLLKFAESGKLLVIPQDGSHWLSMRDVVEKLSEKGHEIVVI
+            APESNLLLKESKLYTRKTYKVPYKQEDLFQRFRGFAKGIFHEVHFPYTILQEYQNNMYII
+            NMFFYNCNNLLKDREIIQYLEESKFDVLFTDPALPCGVILAEHLSIPSVYFFRGFPCSLE
+            HAICKSPNPVSYIPRCYTRHTDHMTFSQRVLNLLVTSLETPLFQDLYTKYQDIASEFLQR
+            DVHLPTLYRNGSIWLLRYDFVFEYPRPVMPNMVFIGGINCKMGKKLPQELASEFLQREVT
+            VLELFSKASVWLMRYDFVFEYPRPLMPNMIFIGGINCEQKKPLSEEFEAIVNASGEHGIV
+            VFSLGSMVSEIPMKKAMEIAEALGKVPQTVIWRYTGEAPPNLSKNTKLVKWLPQNDLLAH
+            PKTRAFITHGGSHGVYEGICNGVPMVLMPLFGDQMDNAMRVESRGAGVTLNILEMTSKDI
+            ADALNTVINDIRYKENIMRLSALHLDRPVHPLDLAVHWVEFVMRHKGAPHLRPAAHDLNW
+            IQYHSLDVIAFLLAVVLVTTFISFECCLFCCRKCFCKKGRDKSSKSKMQ
+NTSEQ       1770
+            atggctttcccagttcatgaactttacctgtttggtgctggggttctccttttcttacct
+            ttgctcaagtttgcagaaagtgggaagctgctggtgataccacaggatggaagtcactgg
+            ctcagcatgcgtgacgtggtggagaagctgagtgagaaggggcatgagatagtagtcatc
+            gctccagaatctaatttgctcttgaaagaatcaaagctgtacacaaggaaaacatataaa
+            gtgccttacaaacaagaggatcttttccagcgtttccgtgggtttgctaaagggatcttt
+            catgaggtccattttccatatacgattcttcaagaataccagaacaacatgtatattatt
+            aatatgtttttttacaactgtaacaacctcctgaaggacagagaaatcatacagtatctg
+            gaggagagtaaatttgatgtgctctttacagacccagcattgccttgtggggtgatcctt
+            gcagagcatctgtccattccttctgtgtacttcttccgtggattcccatgtagcttggag
+            catgcaatctgtaaaagtcccaaccctgtttcttacatcccaaggtgctataccaggcac
+            acagaccacatgactttttcccagagagtgctgaatttgcttgttacctccctcgagaca
+            ccacttttccaagatttgtataccaaataccaagacattgcttctgaatttctccagaga
+            gatgtgcacttaccaacgctttacagaaatggctcaatctggctactgagatatgacttt
+            gtgtttgagtatcccaggccagtgatgcccaacatggtcttcattggtggcataaattgt
+            aagatgggaaaaaaactgcctcaggaactggcttctgagtttcttcaaagagaggtaaca
+            gtcctggaactgttcagcaaggcatcagtttggctgatgagatatgattttgtgtttgag
+            tatcccagaccactcatgccaaatatgatcttcattggaggcataaactgtgagcagaag
+            aaaccattatcagaggaatttgaagccattgtgaatgcctctggcgaacatggcattgtt
+            gtcttttctttgggctcaatggtctcagagattccaatgaagaaagccatggaaattgcc
+            gaagccttggggaaagtacctcaaacagttatctggaggtacactggagaagcaccaccc
+            aacctttcaaagaacacaaagctagtcaagtggctgccacagaatgatctacttgctcat
+            ccgaaaacccgtgcctttatcactcatggaggctcacatggggtctatgagggaatatgt
+            aatggcgtgccaatggtgctaatgcccctgtttggagaccagatggataatgctatgcgg
+            gtggaatcacggggtgcaggagtgacactgaatattcttgaaatgacttctaaggacata
+            gctgatgcactgaatacagtaattaatgatataagatacaaggaaaatatcatgcgtctt
+            tctgcccttcatctagacaggcctgtgcaccctctcgacttggcagtgcactgggttgaa
+            tttgtgatgagacacaagggggcaccacatttgcggcctgcagcccacgacctcaactgg
+            attcagtaccactctctggatgttattgctttcctcctggcagtggtgctcgttaccaca
+            ttcatatctttcgaatgttgcctattctgctgtaggaaatgtttctgtaaaaaaggaaga
+            gacaagtcaagcaaatcaaagatgcagtaa
+///
+ENTRY       102383483         CDS       T02922
+NAME        FTH1
+DEFINITION  (RefSeq) ferritin heavy chain 1
+ORTHOLOGY   K00522  ferritin heavy chain [EC:1.16.3.2]
+ORGANISM    asn  Alligator sinensis (Chinese alligator)
+BRITE       Enzymes [BR:asn01000]
+             1. Oxidoreductases
+              1.16  Oxidizing metal ions
+               1.16.3  With oxygen as acceptor
+                1.16.3.2  bacterial non-heme ferritin
+                 102383483 (FTH1)
+            Exosome [BR:asn04147]
+             Exosomal proteins
+              Exosomal proteins of other body fluids (saliva and urine)
+               102383483 (FTH1)
+              Exosomal proteins of bladder cancer cells
+               102383483 (FTH1)
+POSITION    Un
+MOTIF       Pfam: Ferritin Rubrerythrin Mad3_BUB1_I_2
+DBLINKS     NCBI-ProteinID: XP_006033393
+            NCBI-GeneID: 102383483
+AASEQ       182
+            MATSPSQVRQNYHQDCEAAVNRQINLELYASYVYLSMSYYFDRDDVALKNFAKYFLHQSH
+            EEREHAEKLMKLQNQRGGRIFLHDIKKPDRDDWENGLTAMECALHLEKNVNQSLLELHKL
+            ATEKNDPHLCDFIETHYLDEQVKSIKELGDHVTNLRKMGAPKYGMAEYLFDKHTLGDSDN
+            ES
+NTSEQ       549
+            atggccacatccccctctcaggtgcggcagaactaccaccaggactgcgaggccgccgtc
+            aaccggcagatcaacctggagctctacgcctcctacgtgtacctcagcatgtcttactat
+            tttgaccgtgatgatgtggctctgaaaaactttgccaagtatttcctgcaccagtcgcac
+            gaagagcgtgaacacgctgagaaactgatgaaactgcagaatcagcggggtggtcgcatc
+            ttcctgcatgacatcaagaaaccagaccgtgatgactgggagaatggattgacagcaatg
+            gagtgtgccttgcatctggaaaagaatgtgaaccagtcactcttggagctgcacaagctg
+            gcaactgagaagaatgaccctcatttgtgtgacttcattgagacccactacttggatgag
+            caagtgaagtctattaaagagcttggtgaccatgtgaccaacctccggaagatgggggca
+            ccaaagtatgggatggcggagtacctctttgacaagcacaccctgggggacagtgacaac
+            gagagctga
+///
+ENTRY       102384511         CDS       T02922
+DEFINITION  (RefSeq) cytochrome c-type heme lyase
+ORTHOLOGY   K01764  cytochrome c heme-lyase [EC:4.4.1.17]
+ORGANISM    asn  Alligator sinensis (Chinese alligator)
+PATHWAY     asn00860  Porphyrin and chlorophyll metabolism
+BRITE       KEGG Orthology (KO) [BR:asn00001]
+             Metabolism
+              Metabolism of cofactors and vitamins
+               00860 Porphyrin and chlorophyll metabolism
+                102384511
+            Enzymes [BR:asn01000]
+             4. Lyases
+              4.4  Carbon-sulfur lyases
+               4.4.1  Carbon-sulfur lyases (only sub-subclass identified to date)
+                4.4.1.17  holocytochrome-c synthase
+                 102384511
+POSITION    Un
+MOTIF       Pfam: Cyto_heme_lyase
+DBLINKS     NCBI-ProteinID: XP_006021914
+            NCBI-GeneID: 102384511
+AASEQ       271
+            MGLSASSPSLAVQSPNVSEHQTASPPSECPMHQKKMEGCAVHVKSSDQGAENQNVVPAHQ
+            EHAYEYVVCPVKSGSSQTTDDIDPRNMMPPPNQVPSPDQPFPLSTVREESTIPRAYSEKK
+            WVYPSEQMFWNAMLKKGWRWKKDDISPEDMTNIIKIHNQNNEQAWKEILKWEALHVVECP
+            CGPTLIRFGGKAKEYSPRARIRSWMGYELPFDRHDWIVDRCGKEVRYVIDYYDGGEVDKD
+            YQFTILDVRPAFDSISAIWDRMKVAWWRWTS
+NTSEQ       816
+            atgggtttgtcagcgtcatctccatcccttgcagttcagtcacccaatgtatctgaacat
+            caaacagcatctccaccttcagaatgtccaatgcatcagaaaaaaatggaaggttgtgca
+            gtgcacgtaaaatcatctgaccagggagctgaaaaccaaaacgttgttcctgcacatcaa
+            gaacacgcgtatgaatatgtggtgtgtcctgttaaatctggttcatctcaaacaacagat
+            gatatagaccccagaaatatgatgccacctcctaatcaggtgccatccccagatcaacca
+            tttccactgtcaactgtcagagaagagtctaccattcctagagcatactctgaaaaaaaa
+            tgggtttatccttcagagcaaatgttttggaatgctatgcttaagaaaggatggaggtgg
+            aaaaaagatgacatctctcctgaagatatgactaatattattaagattcacaatcaaaat
+            aatgagcaagcttggaaagagattttaaagtgggaagctcttcatgtcgtggaatgtcca
+            tgtggaccaacattgattcgatttggtggtaaagctaaggagtattcaccaagagccaga
+            atacgttcatggatgggatatgaacttccttttgacagacatgattggatagttgatcgt
+            tgtggaaaggaagtcagatatgttattgattattatgatggtggagaagtagataaggac
+            tatcagttcaccatcttggatgtccgtcctgcatttgattccatctctgctatatgggac
+            aggatgaaggtagcttggtggcgctggacttcataa
+///
+ENTRY       102385151         CDS       T02922
+NAME        UROD
+DEFINITION  (RefSeq) uroporphyrinogen decarboxylase
+ORTHOLOGY   K01599  uroporphyrinogen decarboxylase [EC:4.1.1.37]
+ORGANISM    asn  Alligator sinensis (Chinese alligator)
+PATHWAY     asn00860  Porphyrin and chlorophyll metabolism
+            asn01100  Metabolic pathways
+BRITE       KEGG Orthology (KO) [BR:asn00001]
+             Metabolism
+              Metabolism of cofactors and vitamins
+               00860 Porphyrin and chlorophyll metabolism
+                102385151 (UROD)
+            Enzymes [BR:asn01000]
+             4. Lyases
+              4.1  Carbon-carbon lyases
+               4.1.1  Carboxy-lyases
+                4.1.1.37  uroporphyrinogen decarboxylase
+                 102385151 (UROD)
+POSITION    Un
+MOTIF       Pfam: URO-D
+DBLINKS     NCBI-ProteinID: XP_006015852
+            NCBI-GeneID: 102385151
+AASEQ       369
+            MEANGPRRPEGFPELKNDTFLRAARGDETEYTPVWCMRQAGRYLPEFRETRATQDFFATC
+            RSPKTCCELTLQPLRRFPLDAAIIFSDILVVPQALGMEVVMVPGKGPTFPEPLKEVEDLL
+            KLRPKVDVAAELGYVFEAITLTRHRLEGKVPLIGFSGAPWTLMSYMIEGGGSNTMAKAKA
+            WLYRHPEASHRLLRLLADLIVQYLVGQVAAGAQALQLFESHAGHLGPEQFGEFALPYLRD
+            IVQQVKSSLEEAALPAVPMIVFAKDAHYALEELARSGYDVVGLDWTIQPREARERTGPCV
+            TLQGNLDPCALYAPKERIGELVKTMLEGFGTQRYIANLGHGLYPDVSPEHVGAFVEAVHT
+            HSRHLSRHK
+NTSEQ       1110
+            atggaggcgaacgggccgcggcgccccgagggattccctgagctgaagaacgacacgttt
+            ctgagggcggcaagaggagatgagacggagtacacgcccgtctggtgcatgcggcaggcc
+            gggcgctacctcccagagtttcgtgagacccgtgccacccaggacttctttgccacctgc
+            cgaagccccaagacgtgctgcgagctgaccctgcagccgctgaggcgatttcccctggat
+            gcggccatcatcttctcagacatcctggtggtgccccaggcactgggcatggaagtggtg
+            atggtccccggcaaagggcccaccttcccagagcccctgaaggaggtggaggacctgctg
+            aagctgcggccaaaggtggacgtggcagcggagctgggctacgtcttcgaggccatcacg
+            ctcacgcggcaccgcctggaaggcaaggtgcccctcatcggcttctccggtgctccatgg
+            acgctcatgtcctacatgatcgagggtggcggctcgaacactatggccaaggccaaggcc
+            tggttgtatcggcaccctgaggccagccaccgcctcctgcgcctcctggcggacctcatc
+            gtgcaatacctggtggggcaagtggcggctggtgcacaggcgctgcagctgtttgagtcc
+            cacgctggacacctgggcccagagcagttcggggagtttgccctgccctacctgcgggac
+            atcgtgcagcaggtgaagagcagcctggaggaggctgcgctgcctgctgtgcccatgatt
+            gtctttgccaaggacgcgcactatgcgctggaggagctggcgcggtccggctacgacgtg
+            gttggcctcgactggaccatccagccccgggaagcgcgggagcggacaggcccatgcgtg
+            accctccaaggcaacctggacccttgtgccctctacgcacccaaggagcggatcggggag
+            ctagtgaagacgatgctcgaggggtttgggacccagcgctacatcgccaacctgggtcac
+            ggactgtaccccgacgtgagccctgagcacgtgggtgccttcgtggaagctgtgcacaca
+            cactcccgccacctcagccggcacaagtga
+///
+ENTRY       102385570         CDS       T02922
+NAME        HMBS
+DEFINITION  (RefSeq) hydroxymethylbilane synthase
+ORTHOLOGY   K01749  hydroxymethylbilane synthase [EC:2.5.1.61]
+ORGANISM    asn  Alligator sinensis (Chinese alligator)
+PATHWAY     asn00860  Porphyrin and chlorophyll metabolism
+            asn01100  Metabolic pathways
+BRITE       KEGG Orthology (KO) [BR:asn00001]
+             Metabolism
+              Metabolism of cofactors and vitamins
+               00860 Porphyrin and chlorophyll metabolism
+                102385570 (HMBS)
+            Enzymes [BR:asn01000]
+             2. Transferases
+              2.5  Transferring alkyl or aryl groups, other than methyl groups
+               2.5.1  Transferring alkyl or aryl groups, other than methyl groups (only sub-subclass identified to date)
+                2.5.1.61  hydroxymethylbilane synthase
+                 102385570 (HMBS)
+POSITION    Un
+MOTIF       Pfam: Porphobil_deam Porphobil_deamC MGS
+DBLINKS     NCBI-ProteinID: XP_006037669
+            NCBI-GeneID: 102385570
+AASEQ       360
+            MENCTSRNSQDENGLKDRIIRVGTRKSQLARIQTDSVVEMLCKQYPGLHFEIVAMSTTGD
+            KILDTALSKIGEKSLFTKELENALERNEVDLVVHSLKDLPTSLPPGFTIGAICKRENPHD
+            AVVFHPKSCGKTLNALPDKSVIGTSSLRRAAQLKRSFPQLEFRDIRGNLNTRLKKLDEKE
+            DFSAIILAAAGLRRMGWENRIGQILNPEDCLYAVGQGALAIEVRAKDQEILDMVSALHDG
+            ETVLCCIAERAFMKHLEGGCSVPVAVSTLLKDSQLYLTGAVYSLDGSDSLRETMQTSVNY
+            PQQNEDGPNDDVQHVGITAKNIPHRAQEAAEKLGTELASLLLSKGAKHILNVARQLNDAR
+NTSEQ       1083
+            atggaaaattgtacatcaaggaacagccaggacgaaaatggcctgaaagacagaattatc
+            cgagtgggcaccaggaagagccagctggctcggattcagactgacagtgtggtcgagatg
+            ctctgcaagcaataccctggccttcactttgagatagttgccatgtcaacaactggagat
+            aagattctggacacggctctttccaagatcggggagaagagtctttttaccaaagagctg
+            gaaaatgcactagaaagaaacgaagttgacctggtggttcactccttgaaggacctgcca
+            acatcgcttccccctggctttactattggtgccatctgcaaaagggaaaacccacatgat
+            gctgttgtgtttcatcctaagagctgtgggaaaacactcaatgccctccctgacaagagt
+            gtcattggaaccagttcacttcggcgtgcagcacagctcaaaaggagctttcctcagctg
+            gagttcagggatattagagggaatttaaacacccgcttaaaaaagctggatgagaaggag
+            gatttcagtgctataatccttgctgcagctggactgaggaggatgggctgggagaatcgg
+            attggtcagattctaaaccctgaggattgtctttatgctgttggccagggtgccttagca
+            atagaagttcgagccaaagaccaagagatactggatatggtatctgccctgcatgatggg
+            gagacagtgctgtgctgcattgctgagagagcctttatgaaacatctggaggggggatgt
+            agcgtccctgttgcagtcagcaccctactgaaagactcccagttgtatttgacaggagct
+            gtctacagcttggatggatcagatagcctgagagaaactatgcagaccagtgttaattac
+            ccacagcagaatgaagatggacccaatgatgatgtgcagcacgttggtatcacagccaag
+            aacattcctcatcgtgctcaagaggctgcagagaagctaggtaccgaactagccagcttg
+            ctgctgagcaagggagccaagcacatcctcaatgtggcaaggcaactcaatgatgcccgc
+            taa
+///
+ENTRY       102385770         CDS       T02922
+NAME        EARS2
+DEFINITION  (RefSeq) glutamyl-tRNA synthetase 2, mitochondrial
+ORTHOLOGY   K01885  glutamyl-tRNA synthetase [EC:6.1.1.17]
+ORGANISM    asn  Alligator sinensis (Chinese alligator)
+PATHWAY     asn00860  Porphyrin and chlorophyll metabolism
+            asn00970  Aminoacyl-tRNA biosynthesis
+            asn01100  Metabolic pathways
+MODULE      asn_M00359  Aminoacyl-tRNA biosynthesis, eukaryotes
+BRITE       KEGG Orthology (KO) [BR:asn00001]
+             Metabolism
+              Metabolism of cofactors and vitamins
+               00860 Porphyrin and chlorophyll metabolism
+                102385770 (EARS2)
+             Genetic Information Processing
+              Translation
+               00970 Aminoacyl-tRNA biosynthesis
+                102385770 (EARS2)
+            Enzymes [BR:asn01000]
+             6. Ligases
+              6.1  Forming carbon-oxygen bonds
+               6.1.1  Ligases forming aminoacyl-tRNA and related compounds
+                6.1.1.17  glutamate---tRNA ligase
+                 102385770 (EARS2)
+            Amino acid related enzymes [BR:asn01007]
+             Aminoacyl-tRNA synthetase
+              Class I (A)
+               102385770 (EARS2)
+            Transfer RNA biogenesis [BR:asn03016]
+             Eukaryotic Type
+              Aminoacyl-tRNA synthetases (AARSs)
+               Multi-aminoacyl-tRNA synthetase complex (MSC)
+                102385770 (EARS2)
+             Prokaryotic Type
+               Other AARSs
+                102385770 (EARS2)
+            Prokaryotic defense system [BR:asn02048]
+             Toxin-antitoxin system (TA system)
+              Type II TA system
+               Type II TA system related factors
+                102385770 (EARS2)
+POSITION    Un
+MOTIF       Pfam: tRNA-synt_1c
+DBLINKS     NCBI-ProteinID: XP_006027195
+            NCBI-GeneID: 102385770
+AASEQ       531
+            MLSSPLSGRRVRPPALGREERGGRRPRPGACPASSSWRVASNVSRLLCFLPHTPGFLHLG
+            GLRTALYNYIFAKKHGGSFILRLEDTDQSRVVPGAAEGIEDMLEWAGIPPDESPRRGGPA
+            GPYQQSRRLELYTKACDVLVEKGAAYRCFCTPQRLELLKKEALRSRQVPRYDNRCRHLTA
+            KQVAEKLSQGSEWVIRFRLEGDVEPFNDLVYGWTRHEVASVEGDPVILKGDGFPTYHLAN
+            VVDDHHMEISHVLRGTEWLTSTSKHLLLYRAFGWDPPQFAHLPLLLNRDGTKLSKRQGDI
+            FVERFAQDGYLPEALLDIITTCGSGFTGNQGGRTLEQLISEFNVGRITTHSALLDLDKLP
+            EFNRTHLVRRIEDERLRPKVVGELQALVEQAYGEQLVDRQVLEKDYVERVLLLWKGRISL
+            LKSLVSPSYSYLWVRPSVPREQLQALSAEVDEIGRLVLGLVEGQATALTTEGLSQDLKGL
+            QERIKGTKYSTMMKILRLALSGQQQGPSIAEMMVSLGPREACERIRKMLSS
+NTSEQ       1596
+            atgctttcaagccccctcagcggtcgccgagtccgaccccctgccctgggcagggaagag
+            cgcgggggccgacgaccccggccaggtgcgtgtccagcctcctcctcttggcgcgtggca
+            tccaatgtatcccgactcctctgctttctgccccacaccccaggctttctgcacttgggc
+            ggcctccgcacggctttgtacaactatatttttgccaaaaagcacggagggagctttatc
+            ttgagactggaggatacggatcagagccgagtggtgcccggggccgcggaaggtatcgaa
+            gacatgctggagtgggcaggtatcccgcctgatgagagcccgcgccgaggtggccccgct
+            gggccctaccagcagtctcgcaggcttgagctgtacacgaaagcctgtgacgtccttgtg
+            gagaagggagcagcttaccgctgcttttgcactccccagcgcctggagctgctgaaaaag
+            gaagcactgcgcagtcggcaggtgccacggtacgacaacaggtgccgacacctgaccgct
+            aaacaagtagctgagaagctgtcgcaaggctccgagtgggtgatccgcttccgactggag
+            ggagatgtggagccctttaatgacctggtttatgggtggaccagacacgaagtggccagc
+            gtcgaaggggacccggtgatcctaaagggggacggcttccccacctaccacctggcgaat
+            gtggtggatgaccatcacatggaaatcagccacgttctgcgtgggacggagtggctgact
+            tcgacgtccaagcacctccttctctacagagcctttggctgggaccccccccagttcgcc
+            catctcccgctgctcctgaacagagacggcaccaagctgtccaaacggcagggtgacatc
+            ttcgtggaacgttttgctcaagacggctacttgccagaagcgctgctggacattataacc
+            acctgcggctctgggtttacaggtaaccagggggggcggacgctggagcagttgatctcg
+            gagttcaacgtgggccggataacaacccactccgccctgctggacctggacaagctcccg
+            gagttcaacaggactcacctggtccggcgcattgaggacgagaggctacgacccaaggtg
+            gtgggagagctgcaggccctggtggagcaggcttatggggaacagctcgtggacagacag
+            gttctagagaaggactatgtggagcgtgtcctgctgctgtggaaaggccgcataagcctc
+            ctgaagagcctggtgtcgcccagctactcctacttgtgggtgaggccctctgtgccccga
+            gagcagctgcaagccttgtcagcagaagtggatgagatagggaggctggttctcgggctg
+            gtggaagggcaggccaccgctctcaccaccgagggcttgagccaagacttgaaaggcctg
+            caggagaggatcaaggggaccaaatacagcaccatgatgaaaatcctccgcttggccctc
+            agtggacagcagcaagggccgagcattgcagagatgatggtctccctgggcccccgagag
+            gcgtgtgaacggatacggaagatgctgtccagctag
+///
+ENTRY       102387963         CDS       T02922
+NAME        BLVRB
+DEFINITION  (RefSeq) biliverdin reductase B
+ORTHOLOGY   K05901  biliverdin reductase / flavin reductase [EC:1.3.1.24 1.5.1.30]
+ORGANISM    asn  Alligator sinensis (Chinese alligator)
+PATHWAY     asn00740  Riboflavin metabolism
+            asn00860  Porphyrin and chlorophyll metabolism
+BRITE       KEGG Orthology (KO) [BR:asn00001]
+             Metabolism
+              Metabolism of cofactors and vitamins
+               00740 Riboflavin metabolism
+                102387963 (BLVRB)
+               00860 Porphyrin and chlorophyll metabolism
+                102387963 (BLVRB)
+            Enzymes [BR:asn01000]
+             1. Oxidoreductases
+              1.3  Acting on the CH-CH group of donors
+               1.3.1  With NAD+ or NADP+ as acceptor
+                1.3.1.24  biliverdin reductase
+                 102387963 (BLVRB)
+              1.5  Acting on the CH-NH group of donors
+               1.5.1  With NAD+ or NADP+ as acceptor
+                1.5.1.30  flavin reductase (NADPH)
+                 102387963 (BLVRB)
+POSITION    Un
+MOTIF       Pfam: NAD_binding_10 NmrA Epimerase 3Beta_HSD TrkA_N Ssl1 RmlD_sub_bind
+DBLINKS     NCBI-ProteinID: XP_006031445
+            NCBI-GeneID: 102387963
+AASEQ       209
+            MATCKNIVIFGATGMTGLATLAQALQAGYQVTVLVRDPARLPPDLRPTHVVVGDVLDPSA
+            VDRAVRGQDAVIIILGTRNDLSPTTMMSEGTKNIVTAMKAHGIRKVVVCLSAFLMWDPAK
+            VPARLQPVTDDHIRMHRVLQDSGLDCVSVMPPHIADDQPLTGDYTVTVNAASGSRVISKH
+            DLGHFFLQCLSTAQYDGKNVYLSRHYPKE
+NTSEQ       630
+            atggccacctgcaagaacatcgtcatcttcggggccacgggcatgacagggctggccacg
+            ctggcgcaagccctgcaggccggctaccaggtgacggtgctggtgcgggacccggcgcgg
+            ctgcccccggacctgcgcccgacacacgtggtggtgggcgacgtgctggaccccagcgcc
+            gtggaccgggctgtgcgggggcaggacgccgtcatcatcatcctgggcacccgcaatgac
+            ctcagccccaccaccatgatgtccgagggcaccaagaacatcgtgaccgccatgaaggcc
+            cacgggatccgcaaggtggtcgtgtgcctgtcggccttcctgatgtgggacccggccaag
+            gtgccggccaggctgcagcccgtgaccgacgaccacatccgcatgcaccgcgtcctgcag
+            gactcgggcctggactgcgtctccgtcatgccgccccacatcgccgatgaccagccgctg
+            accggggactacacggtgaccgtgaacgcggcgagcggctcccgcgtcatctccaagcac
+            gacttgggccacttcttcctgcagtgcctgagcacggcccagtacgacggcaagaacgtc
+            tacctctcccgccactaccccaaggagtga
+///

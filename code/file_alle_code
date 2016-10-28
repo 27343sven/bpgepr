@@ -1,7 +1,7 @@
 #alle code in een file
 #--------------------------------------------------------------------------------
 #BASIS
-
+cp ../sequenties_groep_14.fa .
 #1 Download het rna.fa bestand van de Alligator sinensis.
 wget ftp://ftp.ncbi.nlm.nih.gov/genomes/Alligator_sinensis/RNA/rna.fa.gz
 
@@ -39,7 +39,7 @@ cat test_klaar |egrep XP|sort|uniq > XP_nummers
 cat XP_nummers | sed 's!\(.*\).*!http://www.ncbi.nlm.nih.gov/protein/?term=&!g'| wget -i- -q -O- | egrep "<title>" | awk -F"- " '{print $1}' | cut -d [ -f 1 | awk -v N=2 '{sep=""; for (i=N; i<=NF; i++) {printf("%s%s",sep,$i); sep=OFS}; printf("\n")}' > eiwit_namen
 
 #12 Zet bestand "XP_nummers" en "eiwit_namen" in een bestand.
-pr -m -t -J XP_nummers eiwit_name  > Lijst_eiwit_code_en_naam
+pr -m -t -J XP_nummers eiwit_namen  > Lijst_eiwit_code_en_naam
 
 #-----------------------------------------------------------------------------------
 #EXONEN
@@ -134,14 +134,9 @@ pr -m -t enkele_xm_nummers alle_gen_id > xm_met_gen_id
 #------------------------------------------------------------------------------------
 #
 
+sed -r 's/^(XM_[0-9]*\.[0-9])[\t ]*Gene ID: ([0-9]*)/sed -i "s{\1{\2{" exonen_sven/' xm_met_gen_id > alexanderShulginakawillem
 
-
-
-
-
-
-
-
-
+chmod +x alexanderShulginakawillem
+./alexanderShulginakawillem
 
 
