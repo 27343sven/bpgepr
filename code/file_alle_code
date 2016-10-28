@@ -75,15 +75,21 @@ cat  alleen_asn_id |sed 's%.*%http://www.genome.jp/dbget-bin/www_bget?&%'| wget 
 #1 eiwitten van de bioserver af halen
 cat  Proteoom_01.fa Proteoom_04.fa Proteoom_05.fa Proteoom_06.fa Proteoom_08.fa Proteoom_09.fa Proteoom_10.fa Proteoom_11.fa  Proteoom_12.fa  Proteoom_13.fa  Proteoom_14.fa|tr "\n" " "| sed 's/>/\n>/g'|  egrep "cytochrome c-type heme lyase"
 
-#2 XP_014374584.1 is tekst bestand met daarin. (toch?)
+#2 tekst bestand met daarin de sequentie van het desbetreffende eiwit
+cat Sequenties_E | egrep -A4 'XP_014374584' > XP_014374584.1
+
+#3 BLASTen van de eerste 30 hits van de eiwitsequentie 
 blastp -db nr -query XP_014374584.1 -remote -max_target_seqs 30 -outfmt 5 -out Blasttest
 
-#3
+#4 eiwitsequenties en accession code van de sequenties uit het BLAST bestand halen
 cat Blasttest | awk '/<Hit_accession>/{print}/<Hsp_hseq>/{print}' | sed ':again;$!N;$!b again; s/<[^>]*>//g' | tr -d ' ' | sed 's/^/>/;n' > tpE_XP_sequentie
 
-#4
+#5 toevoegen van eigen eiwit aan de lijst met sequenties
 cat XP_014374584.1 >> tpE_XP_sequentie 
+
+#6 genereren van de fylogenetische boom met behulp van clustalW
 clustalw -TYPE=PROTEIN -ALIGN -infile=tpE_XP_sequentie -outfile=tpe2boom.aln
+
 #------------------------------------------------------------------------------------
 # Eiwit sequentie
 
