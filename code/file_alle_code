@@ -93,7 +93,14 @@ clustalw -TYPE=PROTEIN -ALIGN -infile=tpE_XP_sequentie -outfile=tpe2boom.aln
 #------------------------------------------------------------------------------------
 # Eiwit sequentie
 
-cat protein.fa | tr -d '\n' | sed 's/>/\n&/g' | egrep -f XP_nummers | sed 's/]/&\n/g'
+#1 ophalen van proteoom van het organisme
+wget "ftp://ftp.ncbi.nlm.nih.gov/genomes/Alligator_sinensis/protein/protein.fa.gz" 
+
+#2 gunzippen van het bestand
+gunzip protein.fa.gz
+
+#3 tekst bestand met de eiwit sequentie en accession code van onze eiwitten
+cat protein.fa | tr -d '\n' | sed 's/>/\n&/g' | egrep -f XP_nummers | sed 's/]/&\n/g' > lijst_XPnummers_en_sequentie
 
 #------------------------------------------------------------------------------------
 #GEN ID met XM
