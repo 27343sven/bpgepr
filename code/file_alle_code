@@ -88,7 +88,7 @@ cat alle_kegg_site | grep -o -P '(?<=\[).*(?=\])'|egrep "EC"|tr " " "\n"| tr -d 
 cat alle_kegg_site | grep -o -P '(?<=K[0-9]{5}).*(?=\[)'| tr "/" "\n"| awk '{if(substr($0,1,2)=="  "){print substr($0,3,length($0))}else if(substr($0,1,1)==" "){print substr($0,2,length($0))}   else{print $0}}' > alle_ec_namen
 
 #11
-pr -m -t -J alle_EC_nummers alle_ec_namen > test_ec_naam
+pr -m -t -J alle_EC_nummers alle_ec_namen  | sort -u -t\t -k1,1 > test_ec_naam
 
 #------------------------------------------------------------------------------------
 # Fylogenie
