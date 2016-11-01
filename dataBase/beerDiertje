@@ -15,11 +15,10 @@ CREATE TABLE GEN_14 (
 	primary key (GEN_ID));
 
 CREATE TABLE EIWIT_14 (
-	EIWIT_ID smallint,
+	EIWIT_ID varchar,
 	Eiwit_naam varchar,
-	gen_naam varchar,
 	Eiwit_sequentie varchar,
-	Accessienummer smallint,
+	Accessienummer int,
 	primary key (eiwit_ID)
 );
 
@@ -29,32 +28,32 @@ CREATE TABLE EXON_14 (
 	Start_exon int,
 	Stop_exon int,
 	primary key (exon_I, gen_id)
-
 );
 
 CREATE TABLE koppel_14 (
 	exon_I smallint,
-	eiwit_ID smallint,
-	primary key (exon_I, eiwit_ID)	
+	gen_id int,
+	eiwit_ID varchar(30),
+	primary key (exon_I, gen_id, eiwit_ID)	
 );
 
 CREATE TABLE PATHWAY_14 (
 	pathway_nummer smallint,
-	pathway_naam varchar(25),
+	pathway_naam varchar(40),
 	primary key (pathway_nummer)
 );
 CREATE TABLE PATHWAY_KOPPEL (
-	eiwit_id smallint,
-	pathway_nummer smallint,
+	EIWIT_ID varchar,
+	pathway_nummer int,
 	primary key (eiwit_id, pathway_nummer)
 );
 CREATE TABLE EC_KOPPEL (
-	eiwit_id smallint,
+	EIWIT_ID varchar,
 	ec_nummer varchar(10),
 	primary key (eiwit_id, ec_nummer)
 );
 CREATE TABLE EC_14 (
 	ec_nummer varchar(10),
-	ec_naam varchar(20),
+	ec_naam varchar(50),
 	primary key (ec_nummer)
 );

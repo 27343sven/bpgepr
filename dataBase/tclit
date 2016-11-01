@@ -107,15 +107,11 @@ while {$q==1} {
 		if {$ww== ""} {
 			set buttons {{"Vul je wachtwoord in" ""}}
 			set returnValues [inputBox $buttons]
-			puts stderr "$returnValues"
-			
 			if {$onthoudOfVergeet == "vergeet mijn wachtwoord"} {
 				set ww "$returnValues"
 			}
 		}
 		# dit kan vast korter maar boeit niet
-		puts "$ww"
-		#puts [string compare "$ww" "_Cancel"]
 			if {[catch {if {$onthoudOfVergeet == "vergeet mijn wachtwoord"} {
 				if {! 0 == [string compare "$returnValues" "_CANCEL"]} {
 					exec -ignorestderr >&@stdout "./verwijderAsShellScript" "$returnValues\n"
@@ -132,7 +128,7 @@ while {$q==1} {
 		if {$ww== ""} {
 			set buttons {{"Vul je wachtwoord in" ""}}
 			set returnValues [inputBox $buttons]
-			puts stderr "$returnValues"
+			#puts stderr "$returnValues"
 			if {$onthoudOfVergeet == "vergeet mijn wachtwoord"} {
 				set ww "$returnValues"
 			}
@@ -155,7 +151,7 @@ while {$q==1} {
 		if {$ww== ""} {
 			set buttons {{"Vul je wachtwoord in" ""}}
 			set returnValues [inputBox $buttons]
-			puts stderr "$returnValues"
+			#puts stderr "$returnValues"
 			if {$onthoudOfVergeet == "vergeet mijn wachtwoord"} {
 				set ww "$returnValues"
 			}
@@ -163,11 +159,11 @@ while {$q==1} {
 		if {[catch {
 			if {$onthoudOfVergeet == "vergeet mijn wachtwoord"} {
 				if {! 0 == [string compare "$returnValues" "_CANCEL"]} {
-					exec -ignorestderr >&@stdout "./vullAsShellScript" "$returnValues\n"
+					exec -ignorestderr >&@stdout "../code/fileFinalCode4.8" "$returnValues\n"
 				}
 			} else {
 				if {! 0==[string compare "$ww" "_CANCEL"]} {
-					exec -ignorestderr >&@stdout "./vullAsShellScript" "$ww\n"
+					exec -ignorestderr >&@stdout "../code/fileFinalCode4.8" "$ww\n"
 				}
 			}
 		}]} {
