@@ -6,7 +6,7 @@
 # aka windows subsystem linux
 # cd ../realwrldTest && ../dataBase/genLengte \
 if test "$1" = "";then
-	read token
+	read -s token
 else
 	token=$1
 fi
