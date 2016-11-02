@@ -223,6 +223,7 @@ grep -vf - <<< $'Genomic-Interval-Exon\nExon table\n----------------' gen_table_
 echo pz
 # ik baal er een beetje van dat ik aan het einde een sort uniq moet doen
 # gelukkig hebben we pizza
+egrep -v RNA exonen_sven | egrep -v XM > exonen_sven_fout_maar_ook_goed
 sed -r "`cat exonen_sven_fout_maar_ook_goed | tr \"-\" \" \" | awk '{printf(\"s/([0-9]{,2})[ \\\\t]*\"$3\" \" $1\"/\\\1 \"$0\"/g;\")}'`" dataStuffExon | awk '{print $1"%"$4"%"$5}' > genEiwitExon
  #2 geeft alle exonen met gen
 #fi
