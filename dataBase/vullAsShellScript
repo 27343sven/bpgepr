@@ -26,7 +26,7 @@ COPY EXON_14 FROM 'C:/Users/Public/vullDataBase' DELIMITER ' ' NULL AS 'NULL'\""
 && cp genEiwitExon /mnt/c/Users/Public/vullDataBase \
 && cd ../dataBase \
 && echo $token | sudo -S su - postgres -c "psql `cat .postSettings` <<< \"1234hello
-COPY KOPPEL_14 FROM 'C:/Users/Public/vullDataBase' DELIMITER ' ' NULL AS 'NULL'\"" \
+COPY KOPPEL_14 FROM 'C:/Users/Public/vullDataBase' DELIMITER '%' NULL AS 'NULL'\"" \
 && echo helloThere \
 && cd ../realwrldTest \
 && cp proTijdelijk /mnt/c/Users/Public/vullDataBase \

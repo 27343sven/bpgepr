@@ -200,7 +200,6 @@ if [ -e xm_met_gen_id ]
 then
  echo xm wordt al gecombineerd met genID
 else
- cat exonen_sven | awk '{print $2}' | sort | uniq | awk '{if(substr($0, 1, 1) != "E"){print $0}}' > XM_tabel_2
  cat XM_tabel_2 | sed 's!\(.*\).*!http://www.ncbi.nlm.nih.gov/gene/?term=&!g'| wget -q -i- -O files_ncbi_voor_genid
  cat files_ncbi_voor_genid |egrep "Gene ID: [0-9]{9}" -o >alle_gen_id
  #2
@@ -224,7 +223,7 @@ grep -vf - <<< $'Genomic-Interval-Exon\nExon table\n----------------' gen_table_
 echo pz
 # ik baal er een beetje van dat ik aan het einde een sort uniq moet doen
 # gelukkig hebben we pizza
-grep -v Genomic-Interval-Exon gen_table_gen | awk 'BEGIN{a="";b=""}{if (substr($1, 0, 1) == ":") {a=substr($0, 4)} else {if (substr($1, 0, 2) == "XM") {b=$0} else {print a,b,$0}}}' | sed 's/Exon-table-for\-\-mRNA\-\-//g'| sed 's/\-and\-protein\-/\t/g' | awk "BEGIN{a=\"`sed ':a;N;$!ba;s/\n/\\\\n/g' dataStuffExon`\";split(a, b, \"\\n\")}{for (c in b) {split(b[c], d, \" \");if (d[2]==\$1 && d[3]\"-\"d[4]==\$3){print d[1], \$2, \$1}}} " |awk "BEGIN{a=\"`cat exonen_sven|cut -f2-3|sed ':a;N;$!ba;s/\n/\\\\n/g'`\";split(a, b, \"\\n\")}{for (c in b) {split(b[c], d, \" \");if (d[1]==\$3){print \$1, d[1], d[2]}}}" | sort | uniq > genEiwitExon
+sed -r "`cat exonen_sven_fout_maar_ook_goed | tr \"-\" \" \" | awk '{printf(\"s/([0-9]{,2})[ \\\\t]*\"$3\" \" $1\"/\\\1 \"$0\"/g;\")}'`" dataStuffExon | awk '{print $1"%"$4"%"$5}' > genEiwitExon
  #2 geeft alle exonen met gen
 #fi
 # maak een bestand die tabellen combineert
