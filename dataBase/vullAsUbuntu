@@ -1,0 +1,59 @@
+#!/bin/bash
+#cat exon_table_full | awk 'BEGIN{q=1;m=""}{split($4, w, "-");if (m == $1){q++} else {m=$1;q=1}if (w[2] != "") {print q,substr($1, 2),w[1],w[2]}}' > vullDataBase && echo $1 | sudo -S su - postgres -c "psql `cat .postSettings` <<< \"1234hello
+#COPY EXON_14 FROM '`pwd`/vullDataBase' DELIMITER ' '\""
+# hierboven doet het op systeem waar server == client
+# hieronder waar server == wndws AND client == WSL
+# aka windows subsystem linux
+# cd ../realwrldTest && ../dataBase/genLengte \
+if test "$1" = "";then
+	read -s token
+else
+	token=$1
+fi
+
+cd ../realwrldTest \
+&& cp genIDLength ../vullDataBase \
+&& cd ../dataBase \
+&& echo $token | sudo -S su - postgres -c "psql `cat .postSettings` <<< \"1234hello
+COPY GEN_14 FROM '$PWD/../vullDataBase' DELIMITER ' ' NULL AS 'NULL'\"" \
+&& cd ../realwrldTest \
+&& cp dataStuffExon ../vullDataBase \
+&& cd ../dataBase \
+&& echo $token | sudo -S su - postgres -c "psql `cat .postSettings` <<< \"1234hello
+COPY EXON_14 FROM '$PWD/../vullDataBase' DELIMITER ' ' NULL AS 'NULL'\"" \
+&& echo good bye \
+&& cd ../realwrldTest \
+&& cp genEiwitExon ../vullDataBase \
+&& cd ../dataBase \
+&& echo $token | sudo -S su - postgres -c "psql `cat .postSettings` <<< \"1234hello
+COPY KOPPEL_14 FROM '$PWD/../vullDataBase' DELIMITER '%' NULL AS 'NULL'\"" \
+&& echo helloThere \
+&& cd ../realwrldTest \
+&& cp proTijdelijk ../vullDataBase \
+&& cd ../dataBase \
+&& echo $token | sudo -S su - postgres -c "psql `cat .postSettings` <<< \"1234hello
+COPY EIWIT_14 FROM '$PWD/../vullDataBase' DELIMITER '#' NULL AS 'NULL'\""\
+&& cd ../realwrldTest \
+&& cp asnkoppelpathwayMoter ../vullDataBase \
+&& cd ../dataBase \
+&& echo $token | sudo -S su - postgres -c "psql `cat .postSettings` <<< \"1234hello
+COPY PATHWAY_KOPPEL FROM '$PWD/../vullDataBase' DELIMITER '^' NULL AS 'NULL'\""\
+&& cd ../realwrldTest \
+&& cp ECKoppelMoter ../vullDataBase \
+&& cd ../dataBase \
+&& echo $token | sudo -S su - postgres -c "psql `cat .postSettings` <<< \"1234hello
+COPY EC_koppel FROM '$PWD/../vullDataBase' DELIMITER '\$' NULL AS 'NULL'\""\
+&& cd ../realwrldTest \
+&& cp test_ec_naam ../vullDataBase \
+&& cd ../dataBase \
+&& echo $token | sudo -S su - postgres -c "psql `cat .postSettings` <<< \"1234hello
+COPY EC_14 FROM '$PWD/../vullDataBase' DELIMITER '~' NULL AS 'NULL'\"" \
+&& cd ../realwrldTest \
+&& cp pathwayOutput ../vullDataBase \
+&& cd ../dataBase \
+&& echo $token | sudo -S su - postgres -c "psql `cat .postSettings` <<< \"1234hello
+COPY PATHWAY_14 FROM '$PWD/../vullDataBase' DELIMITER '%' NULL AS 'NULL'\""
+#koppelASNMoter|pathwayMoter
+# verplaats vullDataBase naar een plaats waar rechten zijn
+
+
