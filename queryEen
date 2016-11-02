@@ -1,0 +1,1 @@
+SELECT max(exon_i) AS max_exon, gen_id FROM exon_14 GROUP BY gen_id ORDER BY max_exon DESC;
