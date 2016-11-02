@@ -159,11 +159,13 @@ while {$q==1} {
 		if {[catch {
 			if {$onthoudOfVergeet == "vergeet mijn wachtwoord"} {
 				if {! 0 == [string compare "$returnValues" "_CANCEL"]} {
-					exec -ignorestderr >&@stdout "../code/fileFinalCode4.8" "$returnValues\n"
+					exec -ignorestderr >&@stdout "../code/fileFinalCode4.8" "../realwrldTest"
+					exec -ignorestderr >&@stdout "./../dataBase/vullAsShellScript" "../realwrldTest"
 				}
 			} else {
 				if {! 0==[string compare "$ww" "_CANCEL"]} {
 					exec -ignorestderr >&@stdout "../code/fileFinalCode4.8" "$ww\n"
+					exec -ignorestderr >&@stdout "./../dataBase/vullAsShellScript" "$ww\n"
 				}
 			}
 		}]} {
