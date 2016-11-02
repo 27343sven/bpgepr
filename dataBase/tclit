@@ -159,13 +159,13 @@ while {$q==1} {
 		if {[catch {
 			if {$onthoudOfVergeet == "vergeet mijn wachtwoord"} {
 				if {! 0 == [string compare "$returnValues" "_CANCEL"]} {
-					exec -ignorestderr >&@stdout "../code/fileFinalCode4.8" "../realwrldTest"
-					exec -ignorestderr >&@stdout "./../dataBase/vullAsShellScript" "../realwrldTest"
+					#exec -ignorestderr >&@stdout bash "../code/fileFinalCode4.8" "../realwrldTest"
+					exec -ignorestderr >&@stdout bash "./../dataBase/vullAsUbuntu" "../realwrldTest"
 				}
 			} else {
 				if {! 0==[string compare "$ww" "_CANCEL"]} {
-					exec -ignorestderr >&@stdout "../code/fileFinalCode4.8" "$ww\n"
-					exec -ignorestderr >&@stdout "./../dataBase/vullAsShellScript" "$ww\n"
+					#exec -ignorestderr >&@stdout bash "../code/fileFinalCode4.8" "$ww\n"
+					exec -ignorestderr >&@stdout bash "./../dataBase/vullAsUbuntu" "$ww\n"
 				}
 			}
 		}]} {
@@ -181,7 +181,7 @@ while {$q==1} {
 		exit
 	}
 	if {$reply==5} {
-		exec -ignorestderr >&@stdout "./myscript" "$ww\n"
+		exec -ignorestderr >&@stdout bash "./myscript" "$ww\n"
 	}
 	if { $reply==6} {
 		if {$onthoudOfVergeet=="onthoud mijn wachtwoord"} {
