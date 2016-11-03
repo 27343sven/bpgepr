@@ -140,7 +140,7 @@ cat asn_id_GEKOPPELD_MET_XPnummer|awk '{print $1}'> alleen_asn_id
 #4.5 maak een database import aan
 sed `tr \\\\t :<asn_id_GEKOPPELD_MET_XPnummer|cut -d\: -f 1\ 2\ 4|sed -r 's@:XP@\ XP@;s/(.+?) (.+?)/ -e s\/\1\/\2\//'|tr -d \\\n` ASN_code_met_EC|grep XP | cut -d\: -f2|tr \\t \$|awk -F\$ '{print $2"$"$1}'> ECKoppelMoter
 # 4.5.5 maakt een koppeltabel tussen asn in eiwit en pathway naam
-grep -v RNA ASN_code_met_pathway | cut -c9- | tr : \\t | cut -f1\ 3|tr \\t \^ > asnkoppelpathwayMoter
+grep -v RNA ASN_code_met_pathway | cut -c9- | tr : \\t | cut -f1\ 3|awk -F\^ '{print $2,$1}'|tr \\t \^|tr -d \  > asnkoppelpathwayMoter
 #5 Alle KEGG site van de asn ids worden gedownload en in  bestand alle_kegg_site gezet.
 cat  alleen_asn_id |sed 's%.*%http://rest.kegg.jp/get/&%'| wget -i- -q  -O alle_kegg_site
 echo some
