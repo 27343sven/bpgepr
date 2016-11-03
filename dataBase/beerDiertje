@@ -10,7 +10,6 @@ CREATE TABLE GEN_14 (
 	GEN_ID int,
 	gen_naam varchar,
 	chromosoomNummer smallint,
-	gen_Lengte int,
 	primary key (GEN_ID));
 
 CREATE TABLE EIWIT_14 (
