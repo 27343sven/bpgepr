@@ -1,4 +1,5 @@
 #!/bin/bash
+#roept zoutZuur aan wat al onze tabellen verwijdert
 if grep -q 'Microsoft' /proc/version 2>/dev/null ||\
    grep -q 'Microsoft' /proc/sys/kernel/osrelease 2>/dev/null
 then
