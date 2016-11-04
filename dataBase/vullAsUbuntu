@@ -15,43 +15,51 @@ fi
 cd $3 \
 && cp genIDLength ../vullDataBase \
 && cd .. \
-&& echo $2 | sudo -S su - postgres -c "psql `cat .postSettings` <<< \"
+&& echo $2 | sudo -S service postgresql restart \
+echo $2 | sudo -S su - postgres -c "psql <<< \"
 COPY GEN_14 FROM '$PWD/vullDataBase' DELIMITER ' ' NULL AS 'NULL'\"" \
 && cd $1 \
 && cp dataStuffExon ../vullDataBase \
 && cd .. \
+&& echo $2 | sudo -S service postgresql restart \
 && echo $token | sudo -S su - postgres -c "psql `cat .postSettings` <<< \"
 COPY EXON_14 FROM '$PWD/vullDataBase' DELIMITER ' ' NULL AS 'NULL'\"" \
 && echo good bye \
 && cd $1 \
 && cp genEiwitExon ../vullDataBase \
 && cd .. \
+&& echo $2 | sudo -S service postgresql restart \
 && echo $token | sudo -S su - postgres -c "psql `cat .postSettings` <<< \"
 COPY KOPPEL_14 FROM '$PWD/vullDataBase' DELIMITER '%' NULL AS 'NULL'\"" \
 && echo helloThere \
 && cd $1 \
 && cp proTijdelijk ../vullDataBase \
 && cd .. \
+&& echo $2 | sudo -S service postgresql restart \
 && echo $token | sudo -S su - postgres -c "psql `cat .postSettings` <<< \"
 COPY EIWIT_14 FROM '$PWD/vullDataBase' DELIMITER '#' NULL AS 'NULL'\""\
 && cd $1 \
 && cp asnkoppelpathwayMoter ../vullDataBase \
 && cd .. \
+&& echo $2 | sudo -S service postgresql restart \
 && echo $token | sudo -S su - postgres -c "psql `cat .postSettings` <<< \"
-COPY PATHWAY_KOPPEL FROM '$PWD/vullDataBase' DELIMITER '^' NULL AS 'NULL'\""\
+COPY PATHWAY_SHADOW_KOPPEL_14 FROM '$PWD/vullDataBase' DELIMITER '^' NULL AS 'NULL'\""\
 && cd $1 \
 && cp ECKoppelMoter ../vullDataBase \
 && cd .. \
+&& echo $2 | sudo -S service postgresql restart \
 && echo $token | sudo -S su - postgres -c "psql `cat .postSettings` <<< \"
-COPY EC_koppel FROM '$PWD/vullDataBase' DELIMITER '\$' NULL AS 'NULL'\""\
+COPY EC_koppel_14 FROM '$PWD/vullDataBase' DELIMITER '\$' NULL AS 'NULL'\""\
 && cd $1 \
 && cp test_ec_naam ../vullDataBase \
 && cd .. \
+&& echo $2 | sudo -S service postgresql restart \
 && echo $token | sudo -S su - postgres -c "psql `cat .postSettings` <<< \"
 COPY EC_14 FROM '$PWD/vullDataBase' DELIMITER '~' NULL AS 'NULL'\"" \
 && cd $1 \
 && cp pathwayOutput ../vullDataBase \
 && cd .. \
+&& echo $2 | sudo -S service postgresql restart \
 && echo $token | sudo -S su - postgres -c "psql `cat .postSettings` <<< \"
 COPY PATHWAY_SHADOW_14 FROM '$PWD/vullDataBase' DELIMITER '%' NULL AS 'NULL'\""
 #koppelASNMoter|pathwayMoter

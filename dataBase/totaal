@@ -1,6 +1,8 @@
 #!/bin/bash
-read -s ww
+read -p "vul je wachtwoord in dit wordt totaal niet doorgestuurd naar onze eigen servers, die van yahoo en google en electronische leeromgeving, facebook, het deep web, websec.fr: " -s ww
+
 ./maakAsShellScript "$ww"
 mkdir dataMap
-./../code/fileFinalCode4.8 dataMap
-./vullAsUbuntu dataMap "$ww"
+cp ../sequenties_groep_14.fa dataMap
+./fileFinalCode4.9 dataMap
+./vullAsUbuntu dataMap "$ww" dataMap
