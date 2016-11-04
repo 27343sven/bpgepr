@@ -1,1 +1,2 @@
+#roept beerDiertje aan die de database maakt, hiermee wordt eerst de psql shell geopend
 echo $1 | sudo -S su - postgres -c "psql `cat .postSettings` < `pwd`/beerDiertje"
