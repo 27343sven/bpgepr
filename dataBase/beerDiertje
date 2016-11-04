@@ -6,6 +6,7 @@
 -- wijzig dit dus dan ook niet terug!
 -- oja genstart en stop trouwens ook!
 -- versie 0.1.0
+-- dit is de sql code die onze database aanmaakt
 CREATE TABLE GEN_14 (
 	GEN_ID int,
 	gen_naam varchar,
