@@ -35,11 +35,12 @@ CREATE TABLE koppel_14 (
 	primary key (exon_I, gen_id, eiwit_ID)	
 );
 
-CREATE TABLE PATHWAY_14 (
+CREATE TABLE PATHWAY_SHADOW_14 (
 	pathway_nummer smallint,
 	pathway_naam varchar(40),
 	primary key (pathway_nummer)
 );
+CREATE OR REPLACE VIEW pathway_14 AS SELECT 'asn'|| substring(to_char(pathway_nummer, '00000')from 2), pathway_naam FROM PATHWAY_SHADOW_14;
 CREATE TABLE PATHWAY_KOPPEL (
 	EIWIT_ID varchar,
 	pathway_nummer int,

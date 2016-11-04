@@ -5,16 +5,17 @@
 # hieronder waar server == wndws AND client == WSL
 # aka windows subsystem linux
 # cd ../realwrldTest && ../dataBase/genLengte \
-if test "$1" = "";then
+cd $1
+if test "$2" = "";then
 	read -s token
 else
-	token=$1
+	token=$2
 fi
 
 cd ../realwrldTest \
 && cp genIDLength ../vullDataBase \
 && cd ../dataBase \
-&& echo $token | sudo -S su - postgres -c "psql `cat .postSettings` <<< \"
+&& echo $2 | sudo -S su - postgres -c "psql `cat .postSettings` <<< \"
 COPY GEN_14 FROM '$PWD/../vullDataBase' DELIMITER ' ' NULL AS 'NULL'\"" \
 && cd ../realwrldTest \
 && cp dataStuffExon ../vullDataBase \
@@ -52,8 +53,6 @@ COPY EC_14 FROM '$PWD/../vullDataBase' DELIMITER '~' NULL AS 'NULL'\"" \
 && cp pathwayOutput ../vullDataBase \
 && cd ../dataBase \
 && echo $token | sudo -S su - postgres -c "psql `cat .postSettings` <<< \"
-COPY PATHWAY_14 FROM '$PWD/../vullDataBase' DELIMITER '%' NULL AS 'NULL'\""
+COPY PATHWAY_SHADOW_14 FROM '$PWD/../vullDataBase' DELIMITER '%' NULL AS 'NULL'\""
 #koppelASNMoter|pathwayMoter
 # verplaats vullDataBase naar een plaats waar rechten zijn
-
-

@@ -1,1 +1,9 @@
-echo $1 | sudo -S su - postgres -c "psql `cat .postSettings` < `pwd`/zoutZuur"
+#!/bin/bash
+if grep -q 'Microsoft' /proc/version 2>/dev/null ||\
+   grep -q 'Microsoft' /proc/sys/kernel/osrelease 2>/dev/null
+then
+	echo $1 | sudo -S su - postgres -c "psql `cat .postSettings` <<< \"$2
+`cat $(pwd)/zoutZuur`\""
+else
+	echo $1 | sudo -S su - postgres -c "psql `cat .postSettings` < `pwd`/zoutZuur"
+fi

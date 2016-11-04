@@ -11,7 +11,7 @@
 #	as published by Sam H*c**a*
 #
 # Dit is een insider build
-#	Versie rond de 43.0.1
+#	Versie rond de 86.3.1
 # Vijf jaar lang
 #
 # oja
@@ -87,6 +87,17 @@ if {! [file exists ".onzichtbaarBestand"] } {
 	puts $f ""
 	close $f
 }
+set windows [exec bash -c "if grep -q 'Microsoft' /proc/version 2>/dev/null || grep -q 'Microsoft' /proc/sys/kernel/osrelease 2>/dev/null\
+\nthen echo \"w\";else echo \"gw\";fi"]
+set psqlww ""
+if {$windows=="w"} {
+after 3000 {destroy .dialog1}
+	tk_dialog .dialog1 "Windows" "Je hebt windows, t is maar dat je het weet" info 0 OK
+	set psqlww [inputBox {{"vul ff je postgresql wachtwoord in" ""}}]
+} {
+after 3000 {destroy .dialog1}
+tk_dialog .dialog1 "gen windows" "Je draait geen windows, ofzo" info 0 OK
+}
 
 set q 1
 set onthoudOfVergeet "vergeet mijn wachtwoord"
@@ -114,11 +125,11 @@ while {$q==1} {
 		# dit kan vast korter maar boeit niet
 			if {[catch {if {$onthoudOfVergeet == "vergeet mijn wachtwoord"} {
 				if {! 0 == [string compare "$returnValues" "_CANCEL"]} {
-					exec -ignorestderr >&@stdout "./verwijderAsShellScript" "$returnValues\n"
+					exec -ignorestderr >&@stdout "./verwijderAsShellScript" "$returnValues\n" "$psqlww\n"
 				}
 			} else {
 				if {! 0==[string compare "$ww" "_CANCEL"]} {
-					exec -ignorestderr >&@stdout "./verwijderAsShellScript" "$ww\n"}} }]
+					exec -ignorestderr >&@stdout "./verwijderAsShellScript" "$ww\n" "$psqlww\n"}} }]
 			} {
 				puts ""
 			}
@@ -135,12 +146,12 @@ while {$q==1} {
 		}
 		if {[catch {if {$onthoudOfVergeet == "vergeet mijn wachtwoord"} {
 			if {! 0 == [string compare "$returnValues" "_CANCEL"]} {
-				exec -ignorestderr >&@stdout "./maakAsShellScript" "$returnValues\n"
+				exec -ignorestderr >&@stdout "./maakAsShellScript" "$returnValues\n" "$psqlww\n"
 			}
 		} else {
 			
 			if {! 0==[string compare "$ww" "_CANCEL"]} {
-				exec -ignorestderr >&@stdout "./maakAsShellScript" "$ww\n"
+				exec -ignorestderr >&@stdout "./maakAsShellScript" "$ww\n" "$psqlww\n"
 			}
 		}
 		}]} {
@@ -159,13 +170,21 @@ while {$q==1} {
 		if {[catch {
 			if {$onthoudOfVergeet == "vergeet mijn wachtwoord"} {
 				if {! 0 == [string compare "$returnValues" "_CANCEL"]} {
-					#exec -ignorestderr >&@stdout bash "../code/fileFinalCode4.8" "../realwrldTest"
-					exec -ignorestderr >&@stdout bash "./../dataBase/vullAsUbuntu" "../realwrldTest"
+					# exec -ignorestderr >&@stdout bash "../code/fileFinalCode4.8" "../realwrldTest"
+					if {$windows=="w"} {
+						exec -ignorestderr >&@stdout bash "./../dataBase/vullAsShellScript" "../realwrldTest" "$returnValues\n" "$psqlww\n"
+					} {
+						exec -ignorestderr >&@stdout bash "./../dataBase/vullAsUbuntu" "../realwrldTest" "$returnValues\n" "$psqlww\n"
+					}
 				}
 			} else {
 				if {! 0==[string compare "$ww" "_CANCEL"]} {
-					#exec -ignorestderr >&@stdout bash "../code/fileFinalCode4.8" "$ww\n"
-					exec -ignorestderr >&@stdout bash "./../dataBase/vullAsUbuntu" "$ww\n"
+					# exec -ignorestderr >&@stdout bash "../code/fileFinalCode4.8" "$ww\n"
+					if {$windows=="w"} {
+						exec -ignorestderr >&@stdout bash "./../dataBase/vullAsUbuntu" "../realwrldTest" "ok" "$ww\n" "$psqlww\n"
+					} {
+						exec -ignorestderr >&@stdout bash "./../dataBase/vullAsShellScript" "../realwrldTest" "$ww\n" "$psqlww\n"
+					}
 				}
 			}
 		}]} {
