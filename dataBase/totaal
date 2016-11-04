@@ -1,0 +1,6 @@
+#!/bin/bash
+read -s ww
+./maakAsShellScript "$ww"
+mkdir dataMap
+./../code/fileFinalCode4.8 dataMap
+./vullAsUbuntu dataMap "$ww"
