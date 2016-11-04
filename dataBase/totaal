@@ -2,5 +2,6 @@
 read -s ww
 ./maakAsShellScript "$ww"
 mkdir dataMap
+cp ../sequenties_groep_14.fa dataMap/
 ./../code/fileFinalCode4.8 dataMap
-./vullAsUbuntu dataMap "$ww"
+./vullAsUbuntu dataMap "$ww" dataMap
