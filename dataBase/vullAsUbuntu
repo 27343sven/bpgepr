@@ -12,44 +12,44 @@ else
 	token=$2
 fi
 
-cd ../realwrldTest \
+cd $3 \
 && cp genIDLength ../vullDataBase \
 && cd ../dataBase \
 && echo $2 | sudo -S su - postgres -c "psql `cat .postSettings` <<< \"
 COPY GEN_14 FROM '$PWD/../vullDataBase' DELIMITER ' ' NULL AS 'NULL'\"" \
-&& cd ../realwrldTest \
+&& cd $1 \
 && cp dataStuffExon ../vullDataBase \
 && cd ../dataBase \
 && echo $token | sudo -S su - postgres -c "psql `cat .postSettings` <<< \"
 COPY EXON_14 FROM '$PWD/../vullDataBase' DELIMITER ' ' NULL AS 'NULL'\"" \
 && echo good bye \
-&& cd ../realwrldTest \
+&& cd $1 \
 && cp genEiwitExon ../vullDataBase \
 && cd ../dataBase \
 && echo $token | sudo -S su - postgres -c "psql `cat .postSettings` <<< \"
 COPY KOPPEL_14 FROM '$PWD/../vullDataBase' DELIMITER '%' NULL AS 'NULL'\"" \
 && echo helloThere \
-&& cd ../realwrldTest \
+&& cd $1 \
 && cp proTijdelijk ../vullDataBase \
 && cd ../dataBase \
 && echo $token | sudo -S su - postgres -c "psql `cat .postSettings` <<< \"
 COPY EIWIT_14 FROM '$PWD/../vullDataBase' DELIMITER '#' NULL AS 'NULL'\""\
-&& cd ../realwrldTest \
+&& cd $1 \
 && cp asnkoppelpathwayMoter ../vullDataBase \
 && cd ../dataBase \
 && echo $token | sudo -S su - postgres -c "psql `cat .postSettings` <<< \"
 COPY PATHWAY_KOPPEL FROM '$PWD/../vullDataBase' DELIMITER '^' NULL AS 'NULL'\""\
-&& cd ../realwrldTest \
+&& cd $1 \
 && cp ECKoppelMoter ../vullDataBase \
 && cd ../dataBase \
 && echo $token | sudo -S su - postgres -c "psql `cat .postSettings` <<< \"
 COPY EC_koppel FROM '$PWD/../vullDataBase' DELIMITER '\$' NULL AS 'NULL'\""\
-&& cd ../realwrldTest \
+&& cd $1 \
 && cp test_ec_naam ../vullDataBase \
 && cd ../dataBase \
 && echo $token | sudo -S su - postgres -c "psql `cat .postSettings` <<< \"
 COPY EC_14 FROM '$PWD/../vullDataBase' DELIMITER '~' NULL AS 'NULL'\"" \
-&& cd ../realwrldTest \
+&& cd $1 \
 && cp pathwayOutput ../vullDataBase \
 && cd ../dataBase \
 && echo $token | sudo -S su - postgres -c "psql `cat .postSettings` <<< \"
